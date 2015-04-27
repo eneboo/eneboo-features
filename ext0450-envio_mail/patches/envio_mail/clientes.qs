@@ -182,7 +182,7 @@ function envioMail_enviarEmailContacto()
 
 	var emailContacto:String = this.child("tdbContactos").cursor().valueBuffer("email");
 
-	if (!emailContacto || emailContacto == "") {
+	if (!emailContacto || emailContacto == "" && !util.sqlSelect("empresa","noremitente","1 = 1") ) {
 		MessageBox.warning(util.translate("scripts", "El contacto no tiene el campo email informado."), MessageBox.Ok, MessageBox.NoButton);
 		return false;
 	}

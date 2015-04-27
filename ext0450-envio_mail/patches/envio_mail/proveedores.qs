@@ -44,9 +44,9 @@ function envioMail_enviarEmail()
 	var codProveedor:String = cursor.valueBuffer("codproveedor");
 	var tabla:String = "proveedores";
 	var emailProveedor:String = flfactppal.iface.pub_componerListaDestinatarios(codProveedor, tabla);
-	if (!emailProveedor) {
-		return;
-	}
+	if (!emailProveedor || emailProveedor == "")
+		if (!util.sqlSelect("empresa","nodestinatario","1 = 1")) 
+			return;
 
 	var cuerpo:String = "";
 	var asunto:String = "";

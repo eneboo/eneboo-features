@@ -56,6 +56,11 @@ function envioMail_enviarDocumento(codRecibo:String, codCliente:String)
 
 	var tabla:String = "clientes";
 	var emailCliente:String = flfactppal.iface.pub_componerListaDestinatarios(codCliente, tabla);
+	
+	if (!emailCliente || emailCliente == "")
+		if (!util.sqlSelect("empresa","nodestinatario","1 = 1")) 
+			return;
+	
 	var rutaIntermedia:String = util.readSettingEntry("scripts/flfactinfo/dirCorreo");
 	if (!rutaIntermedia.endsWith("/")) {
 		rutaIntermedia += "/";

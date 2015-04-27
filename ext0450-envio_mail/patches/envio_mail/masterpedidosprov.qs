@@ -55,9 +55,9 @@ function envioMail_enviarDocumento(codPedido:String, codProveedor:String)
 
 	var tabla:String = "proveedores";
 	var emailProveedor:String = flfactppal.iface.pub_componerListaDestinatarios(codProveedor, tabla);
-	if (!emailProveedor) {
-		return;
-	}
+	if (!emailProveedor || emailProveedor == "")
+		if (!util.sqlSelect("empresa","nodestinatario","1 = 1")) 
+			return;
 
 	var rutaIntermedia:String = util.readSettingEntry("scripts/flfactinfo/dirCorreo");
 	if (!rutaIntermedia.endsWith("/")) {
