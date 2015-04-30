@@ -172,7 +172,9 @@ function oficial_facturar(codigo:String)
 		return;
 	
 	var hoy = new Date();
-	
+	hoy = util.addDays(hoy, -1);
+	hoy = util.addDays(hoy, 1);
+		
 	var curTab:FLSqlCursor = new FLSqlCursor("contratos");
 	var curPed:FLSqlCursor = new FLSqlCursor("periodoscontratos");
 	
