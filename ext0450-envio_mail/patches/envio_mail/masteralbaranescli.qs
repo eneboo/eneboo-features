@@ -90,8 +90,7 @@ function envioMail_enviarDocumento(codAlbaran:String, codCliente:String)
 	curImprimir.setValueBuffer("descripcion", "temp");
 	curImprimir.setValueBuffer("d_albaranescli_codigo", codigo);
 	curImprimir.setValueBuffer("h_albaranescli_codigo", codigo);
-	var whereFijo:String = "PARAM_titulo\nAlbarán\nPARAM_tabla\nalbaranescli\nPARAM_subtabla\nalbaran\nPARAM_orderdef\nalbaranescli.codigo\nPARAM_tablareldoc\npedidoscli\nPARAM_reldoc\npedido\n";
-	flfactinfo.iface.pub_lanzarInforme(curImprimir, "i_albaranescli", "", "", false, false, whereFijo, "i_albaranescli", 1, rutaDocumento, true);
+	flfactinfo.iface.pub_lanzarInforme(curImprimir, "i_albaranescli", "", "", false, false, "", "i_albaranescli", 1, rutaDocumento, true);
 
 	var arrayDest:Array = [];
 	arrayDest[0] = [];
