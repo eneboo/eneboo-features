@@ -230,7 +230,24 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                             					parametrosJasper = "GROUPBY\n" + groupBy+"\n" + parametrosJasper;
                             					cantidadParametrosJasper++;
                             					} else debug("JASPER_PLUGIN :: PELIGRO :: El parámetro GROUPBY no es el automático");
-
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////  MODO X2CANVAS  ///////////////////////////////////////
+				
+				var estadoX2canvas:Boolean = false;
+				
+				try {
+					estadoX2canvas = sys.isCloudMode();
+					if ( parametrosJasper.lastIndexOf("X2CANVAS\n") == -1)
+                            			{
+                            			parametrosJasper = "X2CANVAS\n" + estadoX2canvas +"\n" + parametrosJasper;
+                            			cantidadParametrosJasper++;
+                            			}
+                        		} catch (e) {
+					debug("JASPER_PLUGIN :: Este ejecutable no soprta el modo nube");
+				    }
+                            					
+/////////////////////  MODO X2CANVAS  ///////////////////////////////////////                            					
+/////////////////////////////////////////////////////////////////////////////
                             	if (etiquetas == true) //Si son etiquetas.
                             		{
                             	if ( parametrosJasper.lastIndexOf("ETIQUETAFILA\n") == -1)
