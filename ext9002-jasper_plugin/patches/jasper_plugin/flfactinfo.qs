@@ -237,12 +237,12 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
 				
 				try {
 					estadoX2canvas = sys.isCloudMode();
-					if ( parametrosJasper.lastIndexOf("X2CANVAS\n") == -1)
-                            			{
-                            			parametrosJasper = "X2CANVAS\n" + estadoX2canvas +"\n" + parametrosJasper;
-                            			cantidadParametrosJasper++;
-                            			}
-                        		} catch (e) {
+					if (estadoX2canvas)
+						{
+                            				parametrosJasper = "X2CANVAS\n" + sys.cloudFolder +"\n" + parametrosJasper;
+                            				cantidadParametrosJasper++;
+                        			}
+                        	    } catch (e) {
 					debug("JASPER_PLUGIN :: Este ejecutable no soprta el modo nube");
 				    }
                             					
