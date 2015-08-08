@@ -63,10 +63,10 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                                 // Agregamos los parametros extras al whereFijo
                                 this.iface.whereFijoExt = "";
                                 this.iface.whereFijoExtendido(nombreInforme);
-                
+
                                 if (!whereFijo || whereFijo == "")
                                     whereFijo = this.iface.whereFijoExt;
-                                else 
+                                else
                                     whereFijo = whereFijo + this.iface.whereFijoExt;
 
                              	if (!whereFijo || whereFijo == "")
@@ -232,21 +232,21 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                             					} else debug("JASPER_PLUGIN :: PELIGRO :: El parámetro GROUPBY no es el automático");
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////  MODO X2CANVAS  ///////////////////////////////////////
-				
+
 				var estadoX2canvas:Boolean = false;
-				
+
 				try {
 					estadoX2canvas = sys.isCloudMode();
 					if (estadoX2canvas)
 						{
-                            				parametrosJasper = "X2CANVAS\n" + sys.cloudFolder +"\n" + parametrosJasper;
+                            				parametrosJasper = "X2CANVAS\n" + sys.cloudId() +"\n" + parametrosJasper;
                             				cantidadParametrosJasper++;
                         			}
                         	    } catch (e) {
-					debug("JASPER_PLUGIN :: Este ejecutable no soprta el modo nube");
+					debug("JASPER_PLUGIN :: Este ejecutable no soporta el modo nube");
 				    }
-                            					
-/////////////////////  MODO X2CANVAS  ///////////////////////////////////////                            					
+
+/////////////////////  MODO X2CANVAS  ///////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
                             	if (etiquetas == true) //Si son etiquetas.
                             		{
@@ -490,17 +490,17 @@ if (sys.osName() == "WIN32")
                              if (sys.osName() != "WIN32") //Convertimos el fichero a UTF8 si no es win32
      	                     xmlFinal = sys.toUnicode(xmlFinal, "utf8");
      	                     //Creamos el nombre del fichero...
-                             var directorio = this.iface.rutaReports + this.iface.dbName + this.iface.barra + "temp_files" ;	
+                             var directorio = this.iface.rutaReports + this.iface.dbName + this.iface.barra + "temp_files" ;
 			     var ficheroTemporal = directorio + this.iface.barra + nombreReport + date.getYear().toString() + "_"
                        + date.getMonth().toString() + "_" + date.getDay().toString() + "_" + date.getHours().toString() + "_" + date.getMinutes().toString() + date.getSeconds().toString()+ date.getMilliseconds().toString() + ".jrxml";
-                       
-                       
+
+
                        //Comprobamos si temp_files existe
 			     var dir = new Dir();
-			     if (!dir.fileExists(directorio)) 
-				dir.mkdir(directorio);	
-				
-			
+			     if (!dir.fileExists(directorio))
+				dir.mkdir(directorio);
+
+
                         //guardamos el fichero
                         try {
                             var ficheroD = new File(ficheroTemporal);
