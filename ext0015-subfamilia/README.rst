@@ -12,13 +12,15 @@ Capturas de pantalla
    :width: 500px
     
    Edición de subfamilia.
-
+   
+------
 
 .. figure:: /gestiweb/eneboo-features/blob/master/ext0015-subfamilia/doc/edicion_familia.png?raw=true
    :width: 500px
     
    Edición de familia con nueva pestaña de subfamilias.
    
+------
 
 .. figure:: /gestiweb/eneboo-features/blob/master/ext0015-subfamilia/doc/edicion_articulo.png?raw=true
    :width: 500px
