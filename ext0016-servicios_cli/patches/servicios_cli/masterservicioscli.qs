@@ -384,7 +384,7 @@ function oficial_copiaLineas(idServicio:Number, idAlbaran:Number):Boolean
 	var cantidad:Number;
 	var totalEnAlbaran:Number;
 	var curLineaServicio:FLSqlCursor = new FLSqlCursor("lineasservicioscli");
-	curLineaServicio.select("idservicio = " + idServicio);
+	curLineaServicio.select("idservicio = " + idServicio + " ORDER BY idlinea");
 	while (curLineaServicio.next()) {
 		curLineaServicio.setModeAccess(curLineaServicio.Browse);
 		curLineaServicio.refreshBuffer();
