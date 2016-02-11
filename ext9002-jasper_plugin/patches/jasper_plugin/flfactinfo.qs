@@ -16,9 +16,14 @@ class jasperPlugin extends oficial /** %from: oficial */ {
     var whereCursor:String;
     var whereFijoExt:String;
     var reportAnterior;
+    var ciclosLlamada:Number;
+    
     function jasperPlugin( context ) { oficial( context ); }
 function lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String, etiquetas:Boolean, impDirecta:Boolean, whereFijo:String, nombreReport:String, numCopias:Number, impresora:String, pdf:Boolean) {
         return this.ctx.jasperPlugin_lanzarInforme(cursor, nombreInforme, orderBy, groupBy, etiquetas, impDirecta, whereFijo, nombreReport, numCopias, impresora, pdf);
+    }
+    function comprobarFichero(rptViewer:FLReportViewer, fichero:String) {
+            this.ctx.jasperPlugin_comprobarFichero(rptViewer, fichero);
     }
 function comprobarJasperFisico( reportName:String ):Boolean {
             return this.ctx.jasperPlugin_comprobarJasperFisico(reportName);
@@ -63,10 +68,10 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                                 // Agregamos los parametros extras al whereFijo
                                 this.iface.whereFijoExt = "";
                                 this.iface.whereFijoExtendido(nombreInforme);
-
+                
                                 if (!whereFijo || whereFijo == "")
                                     whereFijo = this.iface.whereFijoExt;
-                                else
+                                else 
                                     whereFijo = whereFijo + this.iface.whereFijoExt;
 
                              	if (!whereFijo || whereFijo == "")
@@ -230,24 +235,7 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                             					parametrosJasper = "GROUPBY\n" + groupBy+"\n" + parametrosJasper;
                             					cantidadParametrosJasper++;
                             					} else debug("JASPER_PLUGIN :: PELIGRO :: El parámetro GROUPBY no es el automático");
-/////////////////////////////////////////////////////////////////////////////
-/////////////////////  MODO X2CANVAS  ///////////////////////////////////////
 
-				var estadoX2canvas:Boolean = false;
-
-				try {
-					estadoX2canvas = sys.isCloudMode();
-					if (estadoX2canvas)
-						{
-                            				parametrosJasper = "X2CANVAS\n" + sys.cloudId() +"\n" + parametrosJasper;
-                            				cantidadParametrosJasper++;
-                        			}
-                        	    } catch (e) {
-					debug("JASPER_PLUGIN :: Este ejecutable no soporta el modo nube");
-				    }
-
-/////////////////////  MODO X2CANVAS  ///////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////
                             	if (etiquetas == true) //Si son etiquetas.
                             		{
                             	if ( parametrosJasper.lastIndexOf("ETIQUETAFILA\n") == -1)
@@ -392,8 +380,15 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                             if (impDirecta) {
                                     rptViewer.printReport();
                             } else if (pdf) {
+                                    // KLO. Antes de crear el pdf nos aseguramos de que no existe uno anterior.
+                                    //debug("KLO========> fichero adjunto: "+impresora);
+                                    if (File.exists(impresora)) {
+                                        File.remove(impresora);
+                                        //debug("KLO====> He eliminado el fichero adjunto: "+impresora);
+                                    }
                                     //Si pdf es true, en el parámetro impresora está la ruta completa del fichero pdf
                                     rptViewer.printReportToPDF(impresora);
+                                    this.iface.comprobarFichero(rptViewer, impresora);
                             } else {
                                     this.iface.mostrarInformeVisor(rptViewer);
                             }
@@ -402,6 +397,26 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
             }
     }
 
+// KLO. Lo hemos hecho en KLO para solventar el problema de retardo al enviar un adjunto por correo-e
+function jasperPlugin_comprobarFichero(rptViewer:FLReportViewer, fichero:String)
+{
+    //debug("Llamada ...");
+    var util:FLUtil = new FLUtil();
+    if (!File.exists(fichero) && this.iface.ciclosLlamada <= 30) {
+        //debug("KLO======> No existe el fichero");
+        sys.AQTimer.singleShot(1000, this.iface.comprobarFichero(fichero));
+        this.iface.ciclosLlamada++;
+    } else {
+        if (this.iface.ciclosLlamada > 30) {
+            MessageBox.warning(util.translate("scripts", "Hubo un error al generar el fichero adjunto.\nOperación cancelada."), MessageBox.Ok, MessageBox.NoButton);
+            this.iface.ciclosLlamada = 0;
+            return;
+        }
+        rptViewer.printReportToPDF(fichero);
+        //debug("terminado");
+    }
+}
+    
 /** Agrega parametros directamente al whereFijo
 \end */
 function jasperPlugin_whereFijoExtendido(nombreInforme:String)
@@ -490,17 +505,17 @@ if (sys.osName() == "WIN32")
                              if (sys.osName() != "WIN32") //Convertimos el fichero a UTF8 si no es win32
      	                     xmlFinal = sys.toUnicode(xmlFinal, "utf8");
      	                     //Creamos el nombre del fichero...
-                             var directorio = this.iface.rutaReports + this.iface.dbName + this.iface.barra + "temp_files" ;
+                             var directorio = this.iface.rutaReports + this.iface.dbName + this.iface.barra + "temp_files" ;	
 			     var ficheroTemporal = directorio + this.iface.barra + nombreReport + date.getYear().toString() + "_"
                        + date.getMonth().toString() + "_" + date.getDay().toString() + "_" + date.getHours().toString() + "_" + date.getMinutes().toString() + date.getSeconds().toString()+ date.getMilliseconds().toString() + ".jrxml";
-
-
+                       
+                       
                        //Comprobamos si temp_files existe
 			     var dir = new Dir();
-			     if (!dir.fileExists(directorio))
-				dir.mkdir(directorio);
-
-
+			     if (!dir.fileExists(directorio)) 
+				dir.mkdir(directorio);	
+				
+			
                         //guardamos el fichero
                         try {
                             var ficheroD = new File(ficheroTemporal);
