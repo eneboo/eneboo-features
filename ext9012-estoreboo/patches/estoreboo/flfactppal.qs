@@ -2,7 +2,7 @@
 /** @class_declaration fluxEcommerce */
 /////////////////////////////////////////////////////////////////
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
-class fluxEcommerce extends traducciones {
+class fluxEcommerce extends traducciones /** %from: traducciones */ {
     function fluxEcommerce( context ) { traducciones ( context ); }
 
 	function beforeCommit_formaspago(cursor:FLSqlCursor):Boolean {

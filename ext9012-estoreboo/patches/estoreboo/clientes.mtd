@@ -2,6 +2,16 @@
   <xupdate:update select="/TMD[TMD,1]/field[contacto]/alias[alias,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","Nombre eStoreQ")</xupdate:update>
   <xupdate:delete select="/TMD[TMD,1]/field[contacto]/editable[editable,1]"/>
   <xupdate:delete select="/TMD[TMD,1]/field[contacto]/visiblegrid[visiblegrid,1]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codcliente]">
+    <field>
+      <name>personafisica</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Persona Física")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
   <xupdate:insert-after select="/TMD[TMD,1]/field[debaja]">
     <field>
       <name>clienteweb</name>
@@ -57,7 +67,7 @@
       <visiblegrid>false</visiblegrid>
     </field>
   </xupdate:insert-after>
-    <xupdate:insert-after select="/TMD[TMD,1]/field[esempresa]">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[esempresa]">
     <field>
       <name>fechaaltaweb</name>
       <alias>QT_TRANSLATE_NOOP("MetaData","Fecha de alta")</alias>
@@ -65,16 +75,6 @@
       <pk>false</pk>
       <type>date</type>
       <default>null</default>
-    </field>
-  </xupdate:insert-after>
-    <xupdate:insert-after select="/TMD[TMD,1]/field[codcliente]">
-    <field>
-      <name>personafisica</name>
-      <alias>QT_TRANSLATE_NOOP("MetaData","Persona Física")</alias>
-      <null>true</null>
-      <pk>false</pk>
-      <type>bool</type>
-      <default>false</default>
     </field>
   </xupdate:insert-after>
   <xupdate:insert-after select="/TMD[TMD,1]/field[fechaaltaweb]">

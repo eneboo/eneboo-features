@@ -2,8 +2,8 @@
 /** @class_declaration fluxEcommerce */
 /////////////////////////////////////////////////////////////////
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
-class fluxEcommerce extends oficial {
-    function fluxEcommerce( context ) { oficial ( context ); }
+class fluxEcommerce extends traducciones /** %from: oficial */ {
+    function fluxEcommerce( context ) { traducciones ( context ); }
 	function init() {
 		this.ctx.fluxEcommerce_init();
 	}

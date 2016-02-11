@@ -1,5 +1,5 @@
 <xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
-  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/formrecord[formrecord,1]">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[familias]/scriptformrecord[scriptformrecord,2]">
     <scriptformrecord>familias</scriptformrecord>
   </xupdate:insert-after>
   <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tarifas]">
@@ -145,7 +145,6 @@
       <name>idiomas</name>
       <alias>QT_TRANSLATE_NOOP("MetaData","Idimoas")</alias>
       <description>QT_TRANSLATE_NOOP("MetaData","idiomas")</description>
-
       <table>idiomas</table>
       <form>master_copy</form>
       <formrecord>idiomas</formrecord>
@@ -216,7 +215,7 @@
       <scriptformrecord>galeriasimagenes</scriptformrecord>
     </action>
   </xupdate:insert-after>
-    <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[galeriasimagenes]">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[galeriasimagenes]">
     <action>
       <name>pasarelaspago</name>
       <description>QT_TRANSLATE_NOOP("MetaData","Pasarelas de pago")</description>
@@ -279,7 +278,7 @@
       <formrecord>zonasformaspago</formrecord>
     </action>
   </xupdate:insert-after>
-    <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[zonasformaspago]">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[zonasformaspago]">
     <action>
       <name>intervalospesos</name>
       <description>QT_TRANSLATE_NOOP("MetaData","Intervalos de pesos")</description>

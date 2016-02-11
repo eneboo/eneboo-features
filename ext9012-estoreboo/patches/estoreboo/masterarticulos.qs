@@ -2,7 +2,7 @@
 /** @class_declaration fluxEcommerce */
 /////////////////////////////////////////////////////////////////
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
-class fluxEcommerce extends ivaIncluido {
+class fluxEcommerce extends ivaIncluido /** %from: ivaIncluido */ {
 	var curAtributoArticulo:FLSqlCursor;
 	var curAccesorioArticulo:FLSqlCursor;
     function fluxEcommerce( context ) { ivaIncluido ( context ); }

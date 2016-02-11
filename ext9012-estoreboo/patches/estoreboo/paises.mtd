@@ -9,7 +9,7 @@
       <default>false</default>
     </field>
   </xupdate:insert-after>
-    <xupdate:insert-after select="/TMD[TMD,1]/field[codidioma]">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codidioma]">
     <field>
       <name>codzona</name>
       <alias>QT_TRANSLATE_NOOP("MetaData","Zona")</alias>

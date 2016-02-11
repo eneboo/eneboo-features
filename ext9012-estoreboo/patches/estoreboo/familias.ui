@@ -310,6 +310,55 @@
             </spacer>
           </hbox>
         </widget>
+        <widget class="QLayoutWidget">
+          <property name="name">
+            <cstring>layout9_2</cstring>
+          </property>
+          <hbox>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="FLFieldDB">
+              <property name="name">
+                <cstring>fdbDescripcionDeepLink</cstring>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy>
+                  <hsizetype>1</hsizetype>
+                  <vsizetype>0</vsizetype>
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>172</width>
+                  <height>24</height>
+                </size>
+              </property>
+              <property name="fieldName">
+                <string>descripciondeeplink</string>
+              </property>
+            </widget>
+            <spacer>
+              <property name="name">
+                <cstring>spacer8_2</cstring>
+              </property>
+              <property name="orientation">
+                <enum>Horizontal</enum>
+              </property>
+              <property name="sizeType">
+                <enum>Expanding</enum>
+              </property>
+              <property name="sizeHint">
+                <size>
+                  <width>51</width>
+                  <height>20</height>
+                </size>
+              </property>
+            </spacer>
+          </hbox>
+        </widget>
       </vbox>
     </widget>
   </xupdate:insert-after>
@@ -343,20 +392,28 @@
       <data format="PNG" length="1677">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000065449444154789cad575f6c5b5719ff35bb6d4eba145c60c14c5d7147b7ced5f21008a84620cd5d242a23044ad587b6da4bf3805a5350e445225808455d85aa104d1176a74cbe8085af848abb87caebc3502a51485a52e287a066281b565422d798cca9fa27b55caf3f1ecef96e7c6f923224be979fef39e77edff97edfef7ce7fa29f84c298566b3e91f5e9bb75457f371f3512010d8050b9d9ddb3adbd536f5ad6057e0c19ee75ff8c19de53bd7baf7777fad52abdc411b9aaa4da1f978737f4ff9079a68026d001eaf8fad2cf52928ecb3daac239665ad5a6dd6a1c067d4bd2fefef3efdccb3bb5fb02cebbbcf75edd8aab6075eab2c574add2f77bfb25459faa0677f4f57a55ab9bfe92efc0cf86c0b004b596abb52eac74aa9af865f0a5fe602cfe79ddc0cc9ea31fb6693e4c73d236c907c7ce6ece86d36f861a437e2440e44be1f7e39fc934067e06965a98e8d9c7bcd72a968b5a8b2d4ce837d07bf12fb4eecd5f8a9f8be87f756021d3b7662cfdbc0ce4e406d056eaf008b8bb7d1a3be805f44a771f09b5f6fa4cfa7b7d8bfb67fa72cf5eff7fffefedbf566fdc3fafdfac7ff0b0300f06936f82796e9b19eacc67c49e3b1cb1a719ae42ae9ae9f2659e39de82bd137d9cb134f2c01ac16165aecd4c953c3a4714cb2b0b0cab04d66e6cae43019fd4684e1be7e9eb85463788c5447739ecd9616f42e7b7a7b6c001b66b9c68085adca52edb0d0ae2cd50ea02d180ceece5fc8ffa3d569d826d92013274f9024637d51b241f667c9c01c99710a7a6155436a3cf520b42bf423004f4bbcb6d6e091dec8ab89a1c46ff988d3996ce62fccf27a269bb94e87b36f9c7de3e2e1478777146f140100effe6d050fef03077f398fe207150c1c3b0ca89d38fed6bb401dc0cf6d0c1cfb36565656806700e7570e8a7f2d562bcb9579000fd665ce39fe8c253ed90cfd9c311a38779324191d2123453236ac690f0d92911239f9de24493297cd910d32f9d3247997ff0c85427d9ee0b1bed8d15249475fbdaba3d46a35cfb33b5ed5e35357b5f3c0e014832364e86c89e1113270b2c0e0513239324a92ccd819728ccc4c64f4f344861c624929b55fd7dc526da9f1d49fb57793a1e09c869b733a53ce6b989d992549e6b33ae3c8e91443f364f0b51423f364623849921c1d1b25ef92a9744abfb860b43096220ff01c0020180c3e4b87f7cab7ca9e0c25c86c71d6b3093fe62fe4c809f2ccd933e408796624c9d173a33a789acc5fc89b75f9357f36d9ffbdfe3f00e802f7725fc6ce687e8d5a2553de3258fd2f68329bba3aa57f5c31cccd1be68c66dccd38797286d7003c8f5028f42227b8ea6656342f19f36b419cbada58dd5823e5b26654ceffe415ad191166ff91fe6b00be84f0def08b9909c380647c975e13f51b6db89a301a917249e6ae866e79d77bca51a4de80cb80c95c6abece1a5e67726a24b830230c080a03529ec2a5829701eee51a03d2072403bfc9bc9c0e29d7550d53d34603c2a0dc05450d79e7090cf855ef37a9f5bae7c6c6eb5c06e65b34e06cc08047030b9b30d0d804fd26e3f2be614c92cb39ba6f3c9981994d18302a9779391da2895ad9db3fa4afc8fce4e54932bb26c40d35e09e5b39dffecc842173aedd9abfa741e8756b2ffdc46824673a67ded9800151e9660c48c672be65bd6cda9fb9a85fc60b970aa46dcae0f83590361a306af57ff9b8aaf6df1582b25efa888f29693e7221e59cdc7a06a453b9edd46792999c127fc72b97ca1b32227ef317f2e484b91db37e0d1806dc9afa1930b57435324def66fd1a30f312bcf08e1e975b31976d65606f681f27b82a34c94bfe4e2799cb3ab7b35d2eaca1b3362f28c13376861c3765b0c9fe23fdd7f506768576a7c653f749babd5c5e96e7a92bde36eaa2712e474b542ef3fef1d131f39132912167f847007b000bedc9a1e40d118804cfbf93f7a03fb83befbbef45e5b96c8eb44db034ddef036122d21bf90d80cfea8fd1039153eece5a82783ea33e014a8d53e35ef4644e323198a8053a03c7016c937f46db628762e7a3d1e840476707e29d71d84d1b0318d0680dc08646070e8ee3f83af4af4fd7d388238e74338db815471a69c49b71bcbef4fac38bbfbff8e6e2e2e25b0096d6fe0f586a7bf8a5f00f39c71b89c1c4bf58e54789a1c4326b5c164c0e273f11268612cbacb6e060e223dee252ec506c32f8b9601cc017e52fc1faff86c0e795a59eaba3dea1a050471dff07dc526fd61f01a800a80258054000f80f3bb2d2151136c91f0000000049454e44ae426082</data>
     </image>
   </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonInsert,clicked(),tdbArticulos,insertRecord()]">
+    <connection>
+      <sender>toolButtonZoom</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbArticulos</receiver>
+      <slot>browseRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonDelete,clicked(),tdbArticulos,deleteRecord()]">
+    <connection>
+      <sender>toolButtonDelete</sender>
+      <signal>clicked()</signal>
+      <receiver>tdbArticulos</receiver>
+      <slot>deleteRecord()</slot>
+    </connection>
+  </xupdate:insert-after>
   <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonDelete,clicked(),tdbArticulos,deleteRecord()]">
     <connection>
       <sender>toolButtonEdit</sender>
       <signal>clicked()</signal>
       <receiver>tdbArticulos</receiver>
       <slot>editRecord()</slot>
-    </connection>
-  </xupdate:insert-after>
-  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonEdit,clicked(),tdbArticulos,editRecord()]">
-    <connection>
-      <sender>toolButtonDelete</sender>
-      <signal>clicked()</signal>
-      <receiver>tdbArticulos</receiver>
-      <slot>deleteRecord()</slot>
     </connection>
   </xupdate:insert-after>
   <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonZoom,clicked(),tdbArticulos,browseRecord()]">
@@ -366,64 +423,5 @@
       <receiver>tdbArticulos</receiver>
       <slot>insertRecord()</slot>
     </connection>
-  </xupdate:insert-after>
-  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[toolButtonInsert,clicked(),tdbArticulos,insertRecord()]">
-    <connection>
-      <sender>toolButtonZoom</sender>
-      <signal>clicked()</signal>
-      <receiver>tdbArticulos</receiver>
-      <slot>browseRecord()</slot>
-    </connection>
-  </xupdate:insert-after>
-  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFamilias]/vbox[vbox,1]/widget[QFrame,frmDatosFamilia]/vbox[vbox,1]/widget[QLayoutWidget,layout9]">
-    <widget class="QLayoutWidget">
-      <property name="name">
-        <cstring>layout9_2</cstring>
-      </property>
-      <hbox>
-        <property name="name">
-          <cstring>unnamed</cstring>
-        </property>
-        <widget class="FLFieldDB">
-          <property name="name">
-            <cstring>fdbDescripcionDeepLink</cstring>
-          </property>
-          <property name="sizePolicy">
-            <sizepolicy>
-              <hsizetype>1</hsizetype>
-              <vsizetype>0</vsizetype>
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-            </sizepolicy>
-          </property>
-          <property name="minimumSize">
-            <size>
-              <width>172</width>
-              <height>24</height>
-            </size>
-          </property>
-          <property name="fieldName">
-            <string>descripciondeeplink</string>
-          </property>
-        </widget>
-        <spacer>
-          <property name="name">
-            <cstring>spacer8_2</cstring>
-          </property>
-          <property name="orientation">
-            <enum>Horizontal</enum>
-          </property>
-          <property name="sizeType">
-            <enum>Expanding</enum>
-          </property>
-          <property name="sizeHint">
-            <size>
-              <width>51</width>
-              <height>20</height>
-            </size>
-          </property>
-        </spacer>
-      </hbox>
-    </widget>
   </xupdate:insert-after>
 </xupdate:modifications>

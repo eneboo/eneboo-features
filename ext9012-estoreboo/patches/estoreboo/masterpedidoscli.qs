@@ -2,7 +2,7 @@
 /** @class_declaration fluxEcommerce */
 /////////////////////////////////////////////////////////////////
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
-class fluxEcommerce extends ivaIncluido {
+class fluxEcommerce extends ivaIncluido /** %from: ivaIncluido */ {
     function fluxEcommerce( context ) { ivaIncluido ( context ); }
 	function datosAlbaran(curPedido:FLSqlCursor, where:String, datosAgrupacion:Array):Boolean {
 		return this.ctx.fluxEcommerce_datosAlbaran(curPedido, where, datosAgrupacion);

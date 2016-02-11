@@ -240,7 +240,6 @@ function oficial_cambiarPassword()
 function fluxecPro_init()
 {
 	this.iface.__init();
-	connect(this.child("pbnCambiarPassword"), "clicked()", this, "iface.cambiarPassword");
 	connect(this.child("pbnTradTituloSEO"), "clicked()", this, "iface.traducirTituloSEO");
 	connect(this.child("pbnTradDescripcionSEO"), "clicked()", this, "iface.traducirDescripcionSEO");
 	connect( this.child( "pbnTradKeywordsSEO" ), "clicked()", this, "iface.pbnTradKeywordsSEO" );

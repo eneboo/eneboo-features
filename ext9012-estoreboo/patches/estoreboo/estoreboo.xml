@@ -1,127 +1,127 @@
 <flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="estoreboo">
-  <flpatch:patchXml path="facturacion/almacen/" name="flfactalma.xml"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="accesoriosart.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="codigosdescuento.ui"/>
-  <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="articulosatr.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="atributos.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="atributosart.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="datostv.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="fabricantes.ui"/>
-  <flpatch:patchXml path="facturacion/almacen/forms/" name="familias.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="faqs.ui"/>
-  <flpatch:patchXml path="facturacion/almacen/forms/" name="flfactalma.ui"/>
-    <flpatch:patchXml path="facturacion/almacen/forms/" name="factalma_general.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="formasenvio.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="galeriasimagenes.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="gruposatributos.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="idiomas.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="imagenes.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="infogeneral.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="masterfamilias.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="modulosweb.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="noticias.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="opcionestv.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="plazosenvio.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="traducciones.ui"/>
-  <flpatch:patchScript path="facturacion/almacen/scripts/" name="articulos.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="atributos.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="atributosart.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="datostv.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="familias.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="faqs.qs"/>
-  <flpatch:patchScript path="facturacion/almacen/scripts/" name="flfactalma.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="formasenvio.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="galeriasimagenes.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="imagenes.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="infogeneral.qs"/>
-  <flpatch:patchScript path="facturacion/almacen/scripts/" name="masterarticulos.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="masterfamilias.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="mastertraducciones.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="modulosweb.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="noticias.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="opcionestv.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="traducciones.qs"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="accesoriosart.mtd"/>
-  <flpatch:patchXml path="facturacion/almacen/tables/" name="almacenes.mtd"/>
-  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd"/>
-  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulostarifas.mtd"/>
-  <flpatch:patchXml path="facturacion/almacen/tables/" name="factalma_general.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="atributos.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="atributosart.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="costesenvio.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="codigosdescuento.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="datostv.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="fabricantes.mtd"/>
-  <flpatch:patchXml path="facturacion/almacen/tables/" name="familias.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="faqs.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="familiasfotos.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="favoritos.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="formasenvio.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="galeriasimagenes.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="gruposatributos.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="modificadossql.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="idiomas.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="imagenes.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="infogeneral.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="modulosweb.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="noticias.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="opcionestv.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="plazosenvio.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="recordarcontras.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="registrosdel.mtd"/>
-  <flpatch:patchXml path="facturacion/almacen/tables/" name="stocks.mtd"/>
-  <flpatch:patchXml path="facturacion/almacen/tables/" name="tarifas.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="traducciones.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="articulosfotos.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="visitasweb.mtd"/>
-  <flpatch:patchXml path="facturacion/facturacion/" name="flfacturac.xml"/>
-  <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranescli.ui"/>
-  <flpatch:patchXml path="facturacion/facturacion/forms/" name="facturascli.ui"/>
-  <flpatch:patchXml path="facturacion/facturacion/forms/" name="pedidoscli.ui"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs"/>
-  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs"/>
-  <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranescli.mtd"/>
-  <flpatch:patchXml path="facturacion/facturacion/tables/" name="facturascli.mtd"/>
-  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineaspedidoscli.mtd"/>
-  <flpatch:addFile path="facturacion/facturacion/tables/" name="pagospedidos.mtd"/>
-  <flpatch:patchXml path="facturacion/facturacion/tables/" name="pedidoscli.mtd"/>
-  <flpatch:addFile path="facturacion/facturacion/tables/" name="pedidoscli_mod.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="intervalospesos.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="zonasformasenvio.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="zonasformaspago.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="statsweb.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="parametrospasarela.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="pasarelaspago.ui"/>
-  <flpatch:addFile path="facturacion/almacen/forms/" name="zonasventa.ui"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="intervalospesos.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="pasarelaspago.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="statsweb.qs"/>
-  <flpatch:addFile path="facturacion/almacen/scripts/" name="zonasventa.qs"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="intervalospesos.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="zonasformasenvio.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="zonasformaspago.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="zonasventa.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="parametrospasarela.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="pasarelaspago.mtd"/>
-  <flpatch:addFile path="facturacion/almacen/tables/" name="statsweb.mtd"/>
-  <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml"/>
-  <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui"/>
-  <flpatch:patchXml path="facturacion/principal/forms/" name="flfactppal.ui"/>
-  <flpatch:patchXml path="facturacion/principal/forms/" name="paises.ui"/>
-  <flpatch:patchXml path="facturacion/principal/forms/" name="provincias.ui"/>
-  <flpatch:patchXml path="facturacion/principal/forms/" name="contactos.ui"/>
-  <flpatch:patchXml path="facturacion/principal/forms/" name="dirclientes.ui"/>
-  <flpatch:patchXml path="facturacion/principal/forms/" name="formaspago.ui"/>
-  <flpatch:patchScript path="facturacion/principal/scripts/" name="clientes.qs"/>
-  <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs"/>
-  <flpatch:patchScript path="facturacion/principal/scripts/" name="formaspago.qs"/>
-  <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd"/>
-  <flpatch:patchXml path="facturacion/principal/tables/" name="dirclientes.mtd"/>
-  <flpatch:patchXml path="facturacion/principal/tables/" name="empresa.mtd"/>
-  <flpatch:patchXml path="facturacion/principal/tables/" name="formaspago.mtd"/>
-  <flpatch:patchXml path="facturacion/principal/tables/" name="gruposclientes.mtd"/>
-  <flpatch:patchXml path="facturacion/principal/tables/" name="paises.mtd"/>
-  <flpatch:patchXml path="facturacion/principal/tables/" name="provincias.mtd"/>
+  <flpatch:patchXml name="flfactalma.xml" path="facturacion/almacen/" style="legacy1"/>
+  <flpatch:addFile name="accesoriosart.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:patchXml name="articulos.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:addFile name="articulosatr.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="atributos.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="atributosart.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="codigosdescuento.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="datostv.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="fabricantes.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:patchXml name="factalma_general.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:patchXml name="familias.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:addFile name="faqs.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:patchXml name="flfactalma.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:addFile name="formasenvio.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="galeriasimagenes.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="gruposatributos.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="idiomas.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="imagenes.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="infogeneral.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="intervalospesos.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="masterfamilias.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="modulosweb.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="noticias.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="opcionestv.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="parametrospasarela.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="pasarelaspago.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="plazosenvio.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="statsweb.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="traducciones.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="zonasformasenvio.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="zonasformaspago.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:addFile name="zonasventa.ui" path="facturacion/almacen/forms/"/>
+  <flpatch:patchScript name="articulos.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:addFile name="atributos.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="atributosart.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="datostv.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:patchScript name="familias.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:addFile name="faqs.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:patchScript name="flfactalma.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:addFile name="formasenvio.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="galeriasimagenes.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="imagenes.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="infogeneral.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="intervalospesos.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:patchScript name="masterarticulos.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+  <flpatch:addFile name="masterfamilias.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="mastertraducciones.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="modulosweb.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="noticias.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="opcionestv.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="pasarelaspago.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="statsweb.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="traducciones.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="zonasventa.qs" path="facturacion/almacen/scripts/"/>
+  <flpatch:addFile name="accesoriosart.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:patchXml name="almacenes.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="articulos.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:addFile name="articulosfotos.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:patchXml name="articulostarifas.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:addFile name="atributos.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="atributosart.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="codigosdescuento.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="costesenvio.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="datostv.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="fabricantes.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:patchXml name="factalma_general.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="familias.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:addFile name="familiasfotos.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="faqs.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="favoritos.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="formasenvio.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="galeriasimagenes.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="gruposatributos.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="idiomas.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="imagenes.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="infogeneral.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="intervalospesos.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="modificadossql.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="modulosweb.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="noticias.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="opcionestv.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="parametrospasarela.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="pasarelaspago.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="plazosenvio.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="recordarcontras.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="registrosdel.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="statsweb.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:patchXml name="stocks.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="tarifas.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:addFile name="traducciones.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="visitasweb.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="zonasformasenvio.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="zonasformaspago.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:addFile name="zonasventa.mtd" path="facturacion/almacen/tables/"/>
+  <flpatch:patchXml name="flfacturac.xml" path="facturacion/facturacion/" style="legacy1"/>
+  <flpatch:patchXml name="albaranescli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="facturascli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="pedidoscli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchScript name="flfacturac.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masteralbaranescli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterpedidoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchXml name="albaranescli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:patchXml name="facturascli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:patchXml name="lineaspedidoscli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:addFile name="pagospedidos.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:patchXml name="pedidoscli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:addFile name="pedidoscli_mod.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:patchXml name="flfactppal.xml" path="facturacion/principal/" style="legacy1"/>
+  <flpatch:patchXml name="clientes.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:patchXml name="contactos.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:patchXml name="dirclientes.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:patchXml name="flfactppal.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:patchXml name="formaspago.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:patchXml name="paises.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:patchXml name="provincias.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:patchScript name="clientes.qs" path="facturacion/principal/scripts/" style="legacy"/>
+  <flpatch:patchScript name="flfactppal.qs" path="facturacion/principal/scripts/" style="legacy"/>
+  <flpatch:patchScript name="formaspago.qs" path="facturacion/principal/scripts/" style="legacy"/>
+  <flpatch:patchXml name="clientes.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="dirclientes.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="empresa.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="formaspago.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="gruposclientes.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="paises.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="provincias.mtd" path="facturacion/principal/tables/" style="legacy1"/>
 </flpatch:modifications>

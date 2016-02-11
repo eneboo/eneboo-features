@@ -2,7 +2,7 @@
 /** @class_declaration fluxEcommerce */
 /////////////////////////////////////////////////////////////////
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
-class fluxEcommerce extends traducciones {
+class fluxEcommerce extends traducciones /** %from: traducciones */ {
 	var valoresTradActual:Array;
     function fluxEcommerce( context ) { traducciones ( context ); }
 
@@ -194,8 +194,8 @@ class fluxEcommerce extends traducciones {
 /** @class_declaration fluxecPro */
 /////////////////////////////////////////////////////////////////
 //// FLUX EC PRO /////////////////////////////////////////////////
-class fluxecPro extends traducciones /** %from: fluxEcommerce */ {
-    function fluxecPro( context ) { traducciones ( context ); }
+class fluxecPro extends fluxEcommerce /** %from: fluxEcommerce */ {
+    function fluxecPro( context ) { fluxEcommerce ( context ); }
 	function setModificado(cursor:FLSqlCursor)  {
 		return this.ctx.fluxecPro_setModificado(cursor);
 	}
@@ -206,7 +206,7 @@ class fluxecPro extends traducciones /** %from: fluxEcommerce */ {
 /** @class_declaration pubFluxEcommerce */
 /////////////////////////////////////////////////////////////////
 //// PUB FLUX ECOMMERCE //////////////////////////////////////////////////////
-class pubFluxEcommerce extends ifaceCtx {
+class pubFluxEcommerce extends ifaceCtx /** %from: ifaceCtx */ {
     function pubFluxEcommerce( context ) { ifaceCtx ( context ); }
 	function pub_traducir(tabla:String, campo:String, idCampo:String) {
 		return this.traducir(tabla, campo, idCampo);
@@ -231,7 +231,7 @@ function fluxEcommerce_init()
 	if (!cursor.first()) {
 		var util:FLUtil = new FLUtil();
 		MessageBox.information(util.translate("scripts",
-			"Se insertar\E1n algunos datos de la tienda virtual para empezar a trabajar"),
+			"Se insertarán algunos datos de la tienda virtual para empezar a trabajar"),
 			MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton);
 
 		util.createProgressDialog( util.translate( "scripts", "Introduciendo datos" ), 100);
@@ -248,7 +248,7 @@ function fluxEcommerce_init()
 		util.destroyProgressDialog();
 
 		MessageBox.information(util.translate("scripts",
-			"Los datos fueron introducidos.\nEstablezca a continuaci\F3n las Opciones de configuraci\F3n"),
+			"Los datos fueron introducidos.\nEstablezca a continuación las Opciones de configuración"),
 			MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton);
 
 		this.iface.lanzarOpciones();
@@ -263,15 +263,15 @@ function fluxEcommerce_introducirModulosWeb()
 
 	var util:FLUtil = new FLUtil();
 	var datos =	[
-			["modFamilias",util.translate("scripts", "Categor\EDas"),0,1,true,false],
+			["modFamilias",util.translate("scripts", "Categorías"),0,1,true,false],
 			["modBuscar",util.translate("scripts", "Buscar"),0,2,true,true],
-			["modInfogeneral",util.translate("scripts", "Informaci\F3n general"),0,3,true,false],
+			["modInfogeneral",util.translate("scripts", "Información general"),0,3,true,false],
 			["modNoticias",util.translate("scripts", "Noticias"),0,4,true,false],
 			["modIdiomas",util.translate("scripts", "Idiomas"),0,5,false,false],
 			["modCesta",util.translate("scripts", "Mi cesta"),1,1,true,false],
 			["modOfertas",util.translate("scripts", "Ofertas"),1,2,true,false],
 			["modNovedad",util.translate("scripts", "Novedad"),1,3,true,false],
-			["modGalerias",util.translate("scripts", "Galer\EDas de im\E1genes"),1,4,true,false],
+			["modGalerias",util.translate("scripts", "Galerías de imágenes"),1,4,true,false],
 			["modFabricantes",util.translate("scripts", "Fabricantes"),1,5,true,true]];
 
 	var cursor:FLSqlCursor = new FLSqlCursor("modulosweb");
@@ -667,8 +667,8 @@ function fluxEcommerce_introducirIdiomas()
 
 	var util:FLUtil = new FLUtil();
 	var datos =	[
-			["esp","Espa\F1ol", 1],
-			["eng","Ingl\E9s", 2]];
+			["esp","Español", 1],
+			["eng","Inglés", 2]];
 
 	var cursor:FLSqlCursor = new FLSqlCursor("idiomas");
 

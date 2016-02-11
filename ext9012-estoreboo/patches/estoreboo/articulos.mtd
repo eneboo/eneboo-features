@@ -28,25 +28,6 @@
       </relation>
     </field>
   </xupdate:insert-after>
-  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]">
-    <field>
-      <name>descripciondeeplink</name>
-      <alias>QT_TRANSLATE_NOOP("MetaData","Descripción Deep Link")</alias>
-      <null>true</null>
-      <pk>false</pk>
-      <type>string</type>
-      <length>100</length>
-    </field>
-  </xupdate:insert-after>
-  <xupdate:insert-after select="/TMD[TMD,1]/field[descripciondeeplink]">
-    <field>
-      <name>descripcionseo</name>
-      <alias>QT_TRANSLATE_NOOP("MetaData","Descripcion")</alias>
-      <null>true</null>
-      <pk>false</pk>
-      <type>stringlist</type>
-    </field>
-  </xupdate:insert-after>
   <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentacom]">
     <field>
       <name>publico</name>
@@ -115,6 +96,24 @@
   </xupdate:insert-after>
   <xupdate:insert-after select="/TMD[TMD,1]/field[enportada]">
     <field>
+      <name>superenportada</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Destacado en portada")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[superenportada]">
+    <field>
+      <name>peso</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Peso (gr)")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>uint</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[peso]">
+    <field>
       <name>ordenportada</name>
       <alias>QT_TRANSLATE_NOOP("MetaData","Orden")</alias>
       <null>true</null>
@@ -159,15 +158,6 @@
       <default>0</default>
     </field>
   </xupdate:insert-after>
-    <xupdate:insert-after select="/TMD[TMD,1]/field[enportada]">
-    <field>
-      <name>superenportada</name>
-      <alias>QT_TRANSLATE_NOOP("MetaData","Destacado en portada")</alias>
-      <null>true</null>
-      <pk>false</pk>
-      <type>bool</type>
-    </field>
-  </xupdate:insert-after>
   <xupdate:insert-after select="/TMD[TMD,1]/field[ivaincluido]">
     <field>
       <name>tipoimagen</name>
@@ -182,15 +172,6 @@
       <visiblegrid>false</visiblegrid>
     </field>
   </xupdate:insert-after>
-    <xupdate:insert-after select="/TMD[TMD,1]/field[superenportada]">
-    <field>
-      <name>peso</name>
-      <alias>QT_TRANSLATE_NOOP("MetaData","Peso (gr)")</alias>
-      <null>true</null>
-      <pk>false</pk>
-      <type>uint</type>
-    </field>
-  </xupdate:insert-after>
   <xupdate:insert-after select="/TMD[TMD,1]/field[tipoimagen]">
     <field>
       <name>modificado</name>
@@ -200,6 +181,25 @@
       <type>bool</type>
       <default>true</default>
       <visiblegrid>false</visiblegrid>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentairpfcom]">
+    <field>
+      <name>descripciondeeplink</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Descripción Deep Link")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>100</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[descripciondeeplink]">
+    <field>
+      <name>descripcionseo</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Descripcion")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>stringlist</type>
     </field>
   </xupdate:insert-after>
 </xupdate:modifications>

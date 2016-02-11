@@ -1,9 +1,24 @@
 
+/** @class_declaration fluxecPro */
+/////////////////////////////////////////////////////////////////
+//// FLUX EC PRO /////////////////////////////////////////////////
+class fluxecPro extends traducciones /** %from: traducciones */ {
+    function fluxecPro( context ) { traducciones ( context ); }
+	function init() {
+		this.ctx.fluxecPro_init();
+	}
+	function traducirDescripcionSEO() {
+		return this.ctx.fluxecPro_traducirDescripcionSEO();
+	}
+}
+//// FLUX EC PRO /////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
 /** @class_declaration fluxEcommerce */
 /////////////////////////////////////////////////////////////////
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
-class fluxEcommerce extends oficial {
-    function fluxEcommerce( context ) { oficial ( context ); }
+class fluxEcommerce extends ivaIncluido /** %from: oficial */ {
+    function fluxEcommerce( context ) { ivaIncluido ( context ); }
 	function init() {
 		this.ctx.fluxEcommerce_init();
 	}
@@ -38,21 +53,21 @@ class fluxEcommerce extends oficial {
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
-
-/** @class_declaration fluxecPro */
-/////////////////////////////////////////////////////////////////
-//// FLUX EC PRO /////////////////////////////////////////////////
-class fluxecPro extends traducciones /** %from: traducciones */ {
-    function fluxecPro( context ) { traducciones ( context ); }
-	function init() {
-		this.ctx.fluxecPro_init();
-	}
-	function traducirDescripcionSEO() {
-		return this.ctx.fluxecPro_traducirDescripcionSEO();
-	}
+/** @class_definition fluxecPro */
+//////////////////////////////////////////////////////////////////
+//// FLUX EC PRO //////////////////////////////////////////////////
+function fluxecPro_init()
+{
+	this.iface.__init();
+	connect(this.child("pbnTradDescripcionSEO"), "clicked()", this, "iface.traducirDescripcionSEO");
 }
-//// FLUX EC PRO /////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////
+
+function fluxecPro_traducirDescripcionSEO()
+{
+	return flfactppal.iface.pub_traducir("articulos", "descripcionseo", this.cursor().valueBuffer("referencia"));
+}
+//// FLUX EC PRO //////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
 
 /** @class_definition fluxEcommerce */
 /////////////////////////////////////////////////////////////////
@@ -323,21 +338,4 @@ function fluxEcommerce_traducirDescPublica()
 
 //// FLUX ECOMMERCE //////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
-
-/** @class_definition fluxecPro */
-//////////////////////////////////////////////////////////////////
-//// FLUX EC PRO //////////////////////////////////////////////////
-function fluxecPro_init()
-{
-	this.iface.__init();
-	connect(this.child("pbnTradDescripcionSEO"), "clicked()", this, "iface.traducirDescripcionSEO");
-}
-
-function fluxecPro_traducirDescripcionSEO()
-{
-	return flfactppal.iface.pub_traducir("articulos", "descripcionseo", this.cursor().valueBuffer("referencia"));
-}
-//// FLUX EC PRO //////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////
 
