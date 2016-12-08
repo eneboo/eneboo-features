@@ -235,6 +235,14 @@ function jasperPlugin_lanzarInforme(cursor:FLSqlCursor, nombreInforme:String, or
                             					parametrosJasper = "GROUPBY\n" + groupBy+"\n" + parametrosJasper;
                             					cantidadParametrosJasper++;
                             					} else debug("JASPER_PLUGIN :: PELIGRO :: El parámetro GROUPBY no es el automático");
+				if ( parametrosJasper.lastIndexOf("DESCRIPTION\n") == -1)
+                            					{
+								if (cursor.valueBuffer("descripcion"))
+									{
+                            						parametrosJasper = "DESCRIPTION\n" + cursor.valueBuffer("descripcion") +"\n" + parametrosJasper;
+                            						cantidadParametrosJasper++;
+									}
+                            					} else debug("JASPER_PLUGIN :: ATENCION :: El parámetro DESCRIPTION no es el automático");
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////  MODO X2CANVAS  ///////////////////////////////////////
 
