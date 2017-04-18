@@ -46,4 +46,6 @@
   <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_mastercomandas.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_masterpuntosventa.qs" style="legacy"/>
   <flpatch:patchScript path="facturacion/tpv/scripts/" name="tpv_mastervales.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterreciboscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterrecibosprov.qs" style="legacy"/>
 </flpatch:modifications>

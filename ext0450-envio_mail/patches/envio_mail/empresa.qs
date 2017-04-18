@@ -106,7 +106,7 @@ function envioMail_cambiarClienteCorreo()
 function envioMail_cambiarNombreCorreo()
 {
 	var util:FLUtil = new FLUtil();
-	var texto:String = "Debe escribir la ruta al programa de correo. A continuaciÃ³n se detallan algunos ejemplos: \n\n - MAC:  /Applications/Thunderbird.app/Contents/MacOS/Thunedrbird.app/Contents/MacOS/thunderbird \n\n - WINDOWS:  C:'\\Program Files (x86)\\Mozilla Thunderbird\\thunderbird.exe \n\n - LINUX:  thunderbird \n\n\n Escriba su ruta para el programa de correo:";
+	var texto:String = "Debe escribir la ruta al programa de correo. A continuación se detallan algunos ejemplos: \n\n - MAC:  /Applications/Thunderbird.app/Contents/MacOS/Thunedrbird.app/Contents/MacOS/thunderbird \n\n - WINDOWS:  C:'\\Program Files (x86)\\Mozilla Thunderbird\\thunderbird.exe \n\n - LINUX:  thunderbird \n\n\n Escriba su ruta para el programa de correo:";
 	var nombreCorreo:String = Input.getText( util.translate( "scripts", texto ) );
 
 	if (!nombreCorreo) {
@@ -123,7 +123,7 @@ function envioMail_cambiarDirIntermedia()
 	var ruta:String = FileDialog.getExistingDirectory(util.translate("scripts", ""), util.translate("scripts", "RUTA INTERMEDIA"));
 
 	if (!File.isDir(ruta)) {
-		MessageBox.information(util.translate("scripts", "Ruta errÃ³nea"),MessageBox.Ok, MessageBox.NoButton);
+		MessageBox.information(util.translate("scripts", "Ruta errónea"),MessageBox.Ok, MessageBox.NoButton);
 		return;
 	}
 	this.child("lblDirIntermedia").text = ruta;

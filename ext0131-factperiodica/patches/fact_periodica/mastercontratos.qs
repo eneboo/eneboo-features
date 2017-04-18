@@ -136,7 +136,8 @@ function interna_init()
 	connect(this.iface.chkVigentes, "clicked()", this, "iface.cambiochkVigentes");
 	connect(this.child("toolButtonGenerarContrato"), "clicked()", this, "iface.generarContrato");
 	connect(this.child("toolButtonPrintContrato"), "clicked()", this, "iface.imprimirContrato");
-	this.iface.chkVigentes.checked = false;
+	this.iface.chkVigentes.checked = true;
+	this.iface.cambiochkVigentes();
 }
 
 //// INTERNA /////////////////////////////////////////////////////

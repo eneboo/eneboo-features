@@ -26,6 +26,7 @@ function ivaIncluido_datosLineaFactura(curLineaComanda:FLSqlCursor):Boolean
 	with (this.iface.curLineaFactura) {
 		setValueBuffer("ivaincluido", curLineaComanda.valueBuffer("ivaincluido"));
 		setValueBuffer("pvpunitarioiva", curLineaComanda.valueBuffer("pvpunitarioiva"));
+		setValueBuffer("pvptotalivainc", curLineaComanda.valueBuffer("cantidad") * curLineaComanda.valueBuffer("pvpunitarioiva"));
 	}
 	return true;
 }

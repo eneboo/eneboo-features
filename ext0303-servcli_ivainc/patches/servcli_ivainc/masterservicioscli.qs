@@ -25,6 +25,7 @@ function servIvaInc_datosLineaServicio(curLineaServicio: FLSqlCursor, curLineaAl
     setValueBuffer("pvpunitarioiva", curLineaServicio.valueBuffer("pvpunitarioiva"));
     setValueBuffer("pvpsindtoiva", curLineaServicio.valueBuffer("pvpsindtoiva"));
     setValueBuffer("pvptotaliva", curLineaServicio.valueBuffer("pvptotaliva"));
+    setValueBuffer("pvptotalivainc", curLineaServicio.valueBuffer("pvptotalivainc"));
   }
 
   return this.iface.__datosLineaServicio(curLineaServicio, curLineaAlbaran, idAlbaran);

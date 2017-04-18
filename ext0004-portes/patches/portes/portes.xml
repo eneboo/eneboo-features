@@ -9,6 +9,7 @@
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs"/>
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterfacturascli.qs"/>
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpresupuestoscli.qs"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masterpedidoscli.qs"/>
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="pedidoscli.qs"/>
   <flpatch:patchScript path="facturacion/facturacion/scripts/" name="presupuestoscli.qs"/>
   <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranescli.mtd"/>

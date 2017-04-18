@@ -126,7 +126,11 @@ function eFactura_generarEFactura()
 {
 	var cursor:FLSqlCursor = this.cursor();
 	var util:FLUtil = new FLUtil;
-	var cadenaXML:String = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+	var cadenaXML:String;
+	if (sys.osName() == "WIN32")
+		cadenaXML = "<?xml version=\"1.0\" encoding=\"ISO-8859-15\"?>\n";
+	else 
+		cadenaXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 	var versionFacturae:String = flfactppal.iface.pub_valorDefectoEmpresa("facturaever"); // Compatible multiempresa
 	var cadenaFun:String = this.iface.nodoFacturae("Facturae", versionFacturae);
 	var extFichero:String;

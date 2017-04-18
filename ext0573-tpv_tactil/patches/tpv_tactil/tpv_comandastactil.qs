@@ -327,6 +327,7 @@ function interna_init()
 			break;
 		}
 	}
+	this.iface.modificarCantidad(11); // Ponemos a 1.
 }
 
 function interna_calculateField(fN:String):String
@@ -400,6 +401,11 @@ function interna_calculateField(fN:String):String
 //// OFICIAL /////////////////////////////////////////////////////
 function oficial_modificarCantidad(numero:Number)
 {
+	if(numero == 11) {
+		this.iface.tlbCantidad.text = 1;
+		return;
+	}
+
 	if(numero == 10) {
 		this.iface.tlbCantidad.text = 0;
 		return;
@@ -597,7 +603,7 @@ function oficial_clickedTabla(fil:Number,col:Number)
 				break;
 
 			this.iface.insertarLinea(referencia, cantidad);
-			this.iface.modificarCantidad(10);
+			this.iface.modificarCantidad(11); //Esto pone a 1
 			break;
 		}
 	}
@@ -762,6 +768,16 @@ function oficial_imprimir()
 {
 	if (!this.cursor().isValid())
 		return;
+
+        if (this.cursor().modeAccess()==this.cursor().Insert || this.cursor().modeAccess()==this.cursor().Edit) {
+            if (!this.cursor().commitBuffer()) {
+                MessageBox.warning(util.translate("scripts", "No se ha podido guardar los datos del cursor"), MessageBox.Ok, MessageBox.NoButton);
+                return false;
+            }
+
+            this.cursor().setModeAccess(this.cursor().Edit);
+            this.cursor().refreshBuffer();
+        }
 	
 	var util:FLUtil = new FLUtil();
 	var pv:String = util.readSettingEntry( "scripts/fltpv_ppal/codTerminal" );
@@ -868,8 +884,12 @@ function oficial_sumarUno(idLinea:Number):Boolean
 	curLinea.setModeAccess(curLinea.Edit);
 	curLinea.refreshBuffer();
 	curLinea.setValueBuffer("cantidad",parseFloat(curLinea.valueBuffer("cantidad")) + 1);
-	curLinea.setValueBuffer("pvpsindto",formRecordtpv_comandas.iface.calcularTotalesLinea("pvpsindto",curLinea));
-	curLinea.setValueBuffer("pvptotal",formRecordtpv_comandas.iface.calcularTotalesLinea("pvptotal",curLinea));
+	//curLinea.setValueBuffer("pvpsindto",formRecordtpv_comandas.iface.calcularTotalesLinea("pvpsindto",curLinea));
+	//curLinea.setValueBuffer("pvptotal",formRecordtpv_comandas.iface.calcularTotalesLinea("pvptotal",curLinea));
+	curLinea.setValueBuffer("pvpsindto", formRecordtpv_lineascomanda.iface.pub_commonCalculateField("pvpsindto", curLinea));
+	curLinea.setValueBuffer("pvptotal", formRecordtpv_lineascomanda.iface.pub_commonCalculateField("pvptotal", curLinea));
+	debug("Importe pvpsindto = " + curLinea.valueBuffer("pvpsindto"));
+	debug("Importe pvptotal = " + curLinea.valueBuffer("pvptotal"));
 	if (!curLinea.commitBuffer())
 		return false;
 
@@ -897,8 +917,8 @@ function oficial_restarUno(idLinea:Number):Boolean
 		curLinea.setModeAccess(curLinea.Edit);
 		curLinea.refreshBuffer();
 		curLinea.setValueBuffer("cantidad",cantidad);
-		curLinea.setValueBuffer("pvpsindto",formRecordtpv_comandas.iface.calcularTotalesLinea("pvpsindto",curLinea));
-		curLinea.setValueBuffer("pvptotal",formRecordtpv_comandas.iface.calcularTotalesLinea("pvptotal",curLinea));
+		curLinea.setValueBuffer("pvpsindto",formRecordtpv_lineascomanda.iface.pub_commonCalculateField("pvpsindto", curLinea));
+		curLinea.setValueBuffer("pvptotal",formRecordtpv_lineascomanda.iface.pub_commonCalculateField("pvptotal", curLinea));
 	}
 	if(!curLinea.commitBuffer())
 		return false;
@@ -1172,6 +1192,7 @@ function oficial_productoGenerico_clicked()
 function oficial_comandas_clicked()
 {
 	var util:FLUtil;
+	this.cursor().commitBuffer();
 	
 	var idUsuario:String = sys.nameUser();
 	var f:Object = new FLFormSearchDB("tpv_comandastactil");
