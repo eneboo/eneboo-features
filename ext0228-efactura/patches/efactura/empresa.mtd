@@ -11,4 +11,62 @@
       <default>QT_TRANSLATE_NOOP("MetaData","3.2")</default>
     </field>
   </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[facturaever]">
+    <field>
+      <name>cuentaefactura</name>
+      <!--Cuenta donde se abonarán las facturas electrónicas -->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Cuenta para factura electrónica")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <relation>
+        <table>cuentasbanco</table>
+        <field>codcuenta</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[cuentaefactura]">
+    <field>
+      <name>facturaepersona</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Entidad")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>8</length>
+      <optionslist>QT_TRANSLATE_NOOP("MetaData","Física");QT_TRANSLATE_NOOP("MetaData","Jurídica")</optionslist>
+      <default>QT_TRANSLATE_NOOP("MetaData","Jurídica")</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[facturaepersona]">
+    <field>
+      <name>nombrepf</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Nombre persona Física")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>50</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[nombrepf]">
+    <field>
+      <name>apellido1pf</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Apellido persona Física")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>50</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[apellido1pf]">
+    <field>
+      <name>apellido2pf</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Apellido persona Física")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>50</length>
+    </field>
+  </xupdate:insert-after>
 </xupdate:modifications>
