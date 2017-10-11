@@ -7,240 +7,348 @@
       <attribute name="title">
         <string>E-Factura</string>
       </attribute>
- <widget class="QGroupBox">
-      <property name="name">
-        <cstring>gbxEFactura</cstring>
-      </property>
-      <property name="geometry">
-        <rect>
-          <x>11</x>
-          <y>11</y>
-          <width>796</width>
-          <height>450</height>
-        </rect>
-      </property>
-      <property name="font">
-        <font>
-          <bold>0</bold>
-        </font>
-      </property>
-      <property name="title">
-        <string/>
-      </property>
-      <spacer>
+      <vbox>
         <property name="name">
-          <cstring>spcEFactura</cstring>
+          <cstring>unnamed</cstring>
         </property>
-        <property name="orientation">
-          <enum>Vertical</enum>
-        </property>
-        <property name="sizeType">
-          <enum>Expanding</enum>
-        </property>
-        <property name="sizeHint">
-          <size>
-            <width>20</width>
-            <height>190</height>
-          </size>
-        </property>
-        <property name="geometry">
-          <rect>
-            <x>388</x>
-            <y>249</y>
-            <width>20</width>
-            <height>190</height>
-          </rect>
-        </property>
-      </spacer>
-      <widget class="QGroupBox">
-        <property name="name">
-          <cstring>groupBox6</cstring>
-        </property>
-        <property name="geometry">
-          <rect>
-            <x>11</x>
-            <y>133</y>
-            <width>774</width>
-            <height>60</height>
-          </rect>
-        </property>
-        <property name="title">
-          <string>Facturae</string>
-        </property>
-        <widget class="QLayoutWidget">
+        <widget class="QGroupBox">
           <property name="name">
-            <cstring>layout19</cstring>
+            <cstring>gbxEFactura</cstring>
           </property>
-          <property name="geometry">
-            <rect>
-              <x>12</x>
-              <y>20</y>
-              <width>750</width>
-              <height>26</height>
-            </rect>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
           </property>
-          <hbox>
+          <property name="title">
+            <string/>
+          </property>
+          <vbox>
             <property name="name">
               <cstring>unnamed</cstring>
             </property>
-            <widget class="FLFieldDB">
+            <widget class="QGroupBox">
               <property name="name">
-                <cstring>fdbFormatoFacturae</cstring>
+                <cstring>gbxConfLocalFe</cstring>
               </property>
-              <property name="maximumSize">
-                <size>
-                  <width>300</width>
-                  <height>32767</height>
-                </size>
+              <property name="font">
+                <font>
+                                    </font>
               </property>
-              <property name="fieldName">
-                <string>facturaever</string>
+              <property name="title">
+                <string/>
               </property>
-              <property name="fieldAlias">
-                <string>facturaever</string>
+              <vbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox">
+                  <property name="name">
+                    <cstring>gbxRutaClave</cstring>
+                  </property>
+                  <property name="title">
+                    <string>Ruta a la librería EnebooSignature</string>
+                  </property>
+                  <hbox>
+                    <property name="name">
+                      <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel">
+                      <property name="name">
+                        <cstring>lblRutaLib</cstring>
+                      </property>
+                      <property name="minimumSize">
+                        <size>
+                          <width>400</width>
+                          <height>0</height>
+                        </size>
+                      </property>
+                      <property name="font">
+                        <font>
+                          <italic>1</italic>
+                        </font>
+                      </property>
+                      <property name="text">
+                        <string>NO ESTABLECIDO</string>
+                      </property>
+                    </widget>
+                    <widget class="QPushButton">
+                      <property name="name">
+                        <cstring>pbnCambiarRutaLib</cstring>
+                      </property>
+                      <property name="maximumSize">
+                        <size>
+                          <width>100</width>
+                          <height>32767</height>
+                        </size>
+                      </property>
+                      <property name="text">
+                        <string>Cambiar</string>
+                      </property>
+                      <property name="toolTip" stdset="0">
+                        <string>Cambiar la ruta al fichero de clave</string>
+                      </property>
+                      <property name="whatsThis" stdset="0">
+                        <string>Cambiar la ruta al fichero de clave</string>
+                      </property>
+                    </widget>
+                  </hbox>
+                </widget>
+                <widget class="QGroupBox">
+                  <property name="name">
+                    <cstring>gbxRutaCertificado</cstring>
+                  </property>
+                  <property name="title">
+                    <string>Ruta al fichero de certificado PFX(.p12)</string>
+                  </property>
+                  <hbox>
+                    <property name="name">
+                      <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel">
+                      <property name="name">
+                        <cstring>lblRutaCertificado</cstring>
+                      </property>
+                      <property name="minimumSize">
+                        <size>
+                          <width>400</width>
+                          <height>0</height>
+                        </size>
+                      </property>
+                      <property name="font">
+                        <font>
+                          <italic>1</italic>
+                        </font>
+                      </property>
+                      <property name="text">
+                        <string>NO ESTABLECIDO</string>
+                      </property>
+                    </widget>
+                    <widget class="QPushButton">
+                      <property name="name">
+                        <cstring>pbnCambiarRutaCert</cstring>
+                      </property>
+                      <property name="maximumSize">
+                        <size>
+                          <width>100</width>
+                          <height>32767</height>
+                        </size>
+                      </property>
+                      <property name="text">
+                        <string>Cambiar</string>
+                      </property>
+                      <property name="toolTip" stdset="0">
+                        <string>Ruta al fichero de certificado</string>
+                      </property>
+                      <property name="whatsThis" stdset="0">
+                        <string>Ruta al fichero de certificado</string>
+                      </property>
+                    </widget>
+                  </hbox>
+                </widget>
+              </vbox>
+            </widget>
+            <widget class="QGroupBox">
+              <property name="name">
+                <cstring>gbxEFactura</cstring>
               </property>
+              <property name="font">
+                <font>
+                                    </font>
+              </property>
+              <property name="title">
+                <string/>
+              </property>
+              <vbox>
+                <property name="name">
+                  <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                  <property name="name">
+                    <cstring>layout43</cstring>
+                  </property>
+                  <hbox>
+                    <property name="name">
+                      <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLFieldDB">
+                      <property name="name">
+                        <cstring>fdbCodCuentaFacturae</cstring>
+                      </property>
+                      <property name="sizePolicy">
+                        <sizepolicy>
+                          <hsizetype>1</hsizetype>
+                          <vsizetype>0</vsizetype>
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                        </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                        <size>
+                          <width>26</width>
+                          <height>22</height>
+                        </size>
+                      </property>
+                      <property name="maximumSize">
+                        <size>
+                          <width>270</width>
+                          <height>32767</height>
+                        </size>
+                      </property>
+                      <property name="font">
+                        <font>
+                                                    </font>
+                      </property>
+                      <property name="fieldName">
+                        <string>cuentaefactura</string>
+                      </property>
+                    </widget>
+                    <widget class="FLFieldDB">
+                      <property name="name">
+                        <cstring>fLFieldDB85</cstring>
+                      </property>
+                      <property name="fieldName">
+                        <string>codigocuenta</string>
+                      </property>
+                      <property name="tableName">
+                        <string>cuentasbanco</string>
+                      </property>
+                      <property name="foreignField">
+                        <string>cuentaefactura</string>
+                      </property>
+                      <property name="fieldRelation">
+                        <string>codcuenta</string>
+                      </property>
+                      <property name="showAlias">
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                  <property name="name">
+                    <cstring>layout44</cstring>
+                  </property>
+                  <hbox>
+                    <property name="name">
+                      <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="FLFieldDB">
+                      <property name="name">
+                        <cstring>fdbFormatoFacturae</cstring>
+                      </property>
+                      <property name="maximumSize">
+                        <size>
+                          <width>300</width>
+                          <height>32767</height>
+                        </size>
+                      </property>
+                      <property name="fieldName">
+                        <string>facturaever</string>
+                      </property>
+                      <property name="fieldAlias">
+                        <string>facturaever</string>
+                      </property>
+                    </widget>
+                    <widget class="FLFieldDB">
+                      <property name="name">
+                        <cstring>fLFieldDB78</cstring>
+                      </property>
+                      <property name="fieldName">
+                        <string>facturaepersona</string>
+                      </property>
+                    </widget>
+                    <spacer>
+                      <property name="name">
+                        <cstring>spacer14_2</cstring>
+                      </property>
+                      <property name="orientation">
+                        <enum>Horizontal</enum>
+                      </property>
+                      <property name="sizeType">
+                        <enum>Expanding</enum>
+                      </property>
+                      <property name="sizeHint">
+                        <size>
+                          <width>120</width>
+                          <height>21</height>
+                        </size>
+                      </property>
+                    </spacer>
+                  </hbox>
+                </widget>
+              </vbox>
+            </widget>
+            <widget class="QGroupBox">
+              <property name="name">
+                <cstring>groupBox13</cstring>
+              </property>
+              <property name="title">
+                <string>Persona Física (Opcional)</string>
+              </property>
+              <widget class="QLayoutWidget">
+                <property name="name">
+                  <cstring>layout45</cstring>
+                </property>
+                <property name="geometry">
+                  <rect>
+                    <x>11</x>
+                    <y>19</y>
+                    <width>752</width>
+                    <height>24</height>
+                  </rect>
+                </property>
+                <hbox>
+                  <property name="name">
+                    <cstring>unnamed</cstring>
+                  </property>
+                  <widget class="FLFieldDB">
+                    <property name="name">
+                      <cstring>fLFieldDB82</cstring>
+                    </property>
+                    <property name="fieldName">
+                      <string>nombrepf</string>
+                    </property>
+                  </widget>
+                  <widget class="FLFieldDB">
+                    <property name="name">
+                      <cstring>fLFieldDB83</cstring>
+                    </property>
+                    <property name="fieldName">
+                      <string>apellido1pf</string>
+                    </property>
+                  </widget>
+                  <widget class="FLFieldDB">
+                    <property name="name">
+                      <cstring>fLFieldDB84</cstring>
+                    </property>
+                    <property name="fieldName">
+                      <string>apellido2pf</string>
+                    </property>
+                  </widget>
+                </hbox>
+              </widget>
             </widget>
             <spacer>
               <property name="name">
-                <cstring>spacer14_2</cstring>
+                <cstring>spcEFactura</cstring>
               </property>
               <property name="orientation">
-                <enum>Horizontal</enum>
+                <enum>Vertical</enum>
               </property>
               <property name="sizeType">
                 <enum>Expanding</enum>
               </property>
               <property name="sizeHint">
                 <size>
-                  <width>170</width>
-                  <height>21</height>
+                  <width>20</width>
+                  <height>90</height>
                 </size>
               </property>
             </spacer>
-          </hbox>
+          </vbox>
         </widget>
-      </widget>
-      <widget class="QGroupBox">
-        <property name="name">
-          <cstring>gbxRutaClave</cstring>
-        </property>
-        <property name="geometry">
-          <rect>
-            <x>10</x>
-            <y>10</y>
-            <width>774</width>
-            <height>55</height>
-          </rect>
-        </property>
-        <property name="title">
-          <string>Ruta a la librería EnebooSignature</string>
-        </property>
-        <hbox>
-          <property name="name">
-            <cstring>unnamed</cstring>
-          </property>
-          <widget class="QLabel">
-            <property name="name">
-              <cstring>lblRutaLib</cstring>
-            </property>
-            <property name="minimumSize">
-              <size>
-                <width>400</width>
-                <height>0</height>
-              </size>
-            </property>
-            <property name="font">
-              <font>
-                <italic>1</italic>
-              </font>
-            </property>
-            <property name="text">
-              <string>NO ESTABLECIDO</string>
-            </property>
-          </widget>
-          <widget class="QPushButton">
-            <property name="name">
-              <cstring>pbnCambiarRutaLib</cstring>
-            </property>
-            <property name="maximumSize">
-              <size>
-                <width>100</width>
-                <height>32767</height>
-              </size>
-            </property>
-            <property name="text">
-              <string>Cambiar</string>
-            </property>
-            <property name="toolTip" stdset="0">
-              <string>Cambiar la ruta al fichero de clave</string>
-            </property>
-            <property name="whatsThis" stdset="0">
-              <string>Cambiar la ruta al fichero de clave</string>
-            </property>
-          </widget>
-        </hbox>
-      </widget>
-      <widget class="QGroupBox">
-        <property name="name">
-          <cstring>gbxRutaCertificado</cstring>
-        </property>
-        <property name="geometry">
-          <rect>
-            <x>11</x>
-            <y>72</y>
-            <width>774</width>
-            <height>55</height>
-          </rect>
-        </property>
-        <property name="title">
-          <string>Ruta al fichero de certificado PFX(.p12)</string>
-        </property>
-        <hbox>
-          <property name="name">
-            <cstring>unnamed</cstring>
-          </property>
-          <widget class="QLabel">
-            <property name="name">
-              <cstring>lblRutaCertificado</cstring>
-            </property>
-            <property name="minimumSize">
-              <size>
-                <width>400</width>
-                <height>0</height>
-              </size>
-            </property>
-            <property name="font">
-              <font>
-                <italic>1</italic>
-              </font>
-            </property>
-            <property name="text">
-              <string>NO ESTABLECIDO</string>
-            </property>
-          </widget>
-          <widget class="QPushButton">
-            <property name="name">
-              <cstring>pbnCambiarRutaCert</cstring>
-            </property>
-            <property name="maximumSize">
-              <size>
-                <width>100</width>
-                <height>32767</height>
-              </size>
-            </property>
-            <property name="text">
-              <string>Cambiar</string>
-            </property>
-            <property name="toolTip" stdset="0">
-              <string>Ruta al fichero de certificado</string>
-            </property>
-            <property name="whatsThis" stdset="0">
-              <string>Ruta al fichero de certificado</string>
-            </property>
-          </widget>
-        </hbox>
-      </widget>
-    </widget>
+      </vbox>
     </widget>
   </xupdate:insert-after>
 </xupdate:modifications>

@@ -107,6 +107,15 @@ class eFactura extends oficial /** %from: oficial */ {
 	function nodoDiscountTypeFacturae(nombreNodo:String, version:String, descuento:Array):String {
 		return this.ctx.eFactura_nodoDiscountTypeFacturae(nombreNodo, version, descuento);
 	}
+	function nodoDeliveryNotesReferences(nombreNodo, version, curLinea) {
+		return this.ctx.eFactura_nodoDeliveryNotesReferences(nombreNodo, version, curLinea);
+	}
+  	function nodoPaymentDetails(cursor, version) {
+    		return this.ctx.eFactura_nodoPaymentDetails(cursor, version);
+  	}
+  	function dameCuentaIBAN() {
+    		return this.ctx.eFactura_dameCuentaIBAN();
+  	}
 }
 //// EFACTURA ///////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
@@ -129,7 +138,7 @@ function eFactura_generarEFactura()
 	var cadenaXML:String;
 	if (sys.osName() == "WIN32")
 		cadenaXML = "<?xml version=\"1.0\" encoding=\"ISO-8859-15\"?>\n";
-	else 
+	else
 		cadenaXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 	var versionFacturae:String = flfactppal.iface.pub_valorDefectoEmpresa("facturaever"); // Compatible multiempresa
 	var cadenaFun:String = this.iface.nodoFacturae("Facturae", versionFacturae);
@@ -167,6 +176,11 @@ function eFactura_generarEFactura()
 	var contenido:String = xml.toString(2);
 
 	// File.write(nombreFichero, sys.fromUnicode( contenido, "UTF-8" )); // el sys.fromUnicode genera errores con tildes
+	    if (sys.osName() == "WIN32")
+	        {
+	        //MessageBox.information(util.translate("scripts", "Convirtiendo fichero a ISO-8859-15"), MessageBox.Ok, MessageBox.NoButton);
+	        contenido = sys.fromUnicode( contenido, "ISO-8859-15" )
+	        }
 	File.write(nombreFichero, contenido);
 	//MessageBox.information(util.translate("scripts", "Documento creado en %1").arg(nombreFichero), MessageBox.Ok, MessageBox.NoButton);
 
@@ -200,6 +214,7 @@ function eFactura_generarEFactura()
 
 function eFactura_nodoFacturae(nombreNodo:String, version:String):String
 {
+	var _i = this.iface;
 	var util:FLUtil = new FLUtil;
 	var cursor:FLSqlCursor = this.cursor();
 
@@ -1361,15 +1376,12 @@ function eFactura_nodoFacturae(nombreNodo:String, version:String):String
 			break;
 		}
 		case "PaymentDetails": {
-			switch (version) {
-				case "3.0":
-				case "3.2":
-				case "3.2.1": {
-					cadenaXML += "";
-					break;
-				}
-			}
-			break;
+			var xmlPaymentDetails  = _i.nodoPaymentDetails(cursor, version);
+      if (xmlPaymentDetails.startsWith("ERROR")) {
+        return xmlPaymentDetails;
+      }
+      cadenaXML += xmlPaymentDetails;
+      break;
 		}
 		case "LegalLiterals": {
 			switch (version) {
@@ -2060,7 +2072,7 @@ function eFactura_nodoDiscountTypeFacturae(nombreNodo:String, version:String, de
 }
 
 function eFactura_nodoDoubleSixDecimalTypeFacturae(nombreNodo:String, version:String, numero:Number):String
-{debug("precio unitario " + numero);
+{//debug("precio unitario " + numero);
 	var cadenaXML:String = "";
 	switch (version) {
 		case "3.0":
@@ -2077,9 +2089,9 @@ function eFactura_nodoDoubleSixDecimalTypeFacturae(nombreNodo:String, version:St
 //debug(numeroAux);
 
 			var cadena:String = util.buildNumber(numeroAux, "f", 6);
-debug(cadena);
+//debug(cadena);
 			var iPunto:String = cadena.find(".");
-debug(iPunto);
+//debug(iPunto);
 			if (iPunto == -1) {
 				cadena += ".000000";
 			} else {
@@ -2087,19 +2099,19 @@ debug(iPunto);
 					cadena += "0";
 				}
 			}
-debug(cadena);
+//debug(cadena);
 			cadenaXML = "<" + nombreNodo + ">";
 			cadenaXML += cadena;
 			cadenaXML += "</" + nombreNodo + ">";
 			break;
 		}
-debug(cadenaXML);
+//debug(cadenaXML);
 	}
 	return cadenaXML;
 }
 
 function eFactura_nodoDoubleUpToEightDecimalTypeFacturae(nombreNodo:String, version:String, numero:Number):String
-{debug("precio unitario " + numero);
+{//debug("precio unitario " + numero);
 	var cadenaXML:String = "";
 	switch (version) {
 		case "3.0":
@@ -2116,9 +2128,9 @@ function eFactura_nodoDoubleUpToEightDecimalTypeFacturae(nombreNodo:String, vers
 //debug(numeroAux);
 
 			var cadena:String = util.buildNumber(numeroAux, "f", 8);
-debug(cadena);
+//debug(cadena);
 			var iPunto:String = cadena.find(".");
-debug(iPunto);
+//debug(iPunto);
 			if (iPunto == -1) {
 				cadena += ".00000000";
 			} else {
@@ -2126,13 +2138,13 @@ debug(iPunto);
 					cadena += "0";
 				}
 			}
-debug(cadena);
+//debug(cadena);
 			cadenaXML = "<" + nombreNodo + ">";
 			cadenaXML += cadena;
 			cadenaXML += "</" + nombreNodo + ">";
 			break;
 		}
-debug(cadenaXML);
+//debug(cadenaXML);
 	}
 	return cadenaXML;
 }
@@ -2315,7 +2327,14 @@ function eFactura_nodoEmpresaTypeFacturae(nombreNodo:String, version:String, val
 			if (!codPais || codPais == "") {
 				return util.translate("scripts", "ERROR: Nodo %1: Debe especificar el paí­s del vendedor en el formulario de empresa").arg(nombreNodo);
 			}
-			datosEmpresa["tipopersona"] = "J"; // XXX Nuevo campo Clientes
+			if (util.sqlSelect("empresa","facturaepersona","1 = 1") == "Jurídica")
+				{
+				datosEmpresa["tipopersona"] = "J"; // XXX Nuevo campo Clientes
+				}
+			else
+				{
+				datosEmpresa["tipopersona"] = "F"; // XXX Nuevo campo Clientes
+				}
 			datosEmpresa["codpais"] = codPais;
 			datosEmpresa["codisoalpha3"] = util.sqlSelect("paises", "codisoalpha3", "codpais = '" + codPais + "'");
 			if (!datosEmpresa["codisoalpha3"]) {
@@ -2333,16 +2352,16 @@ function eFactura_nodoEmpresaTypeFacturae(nombreNodo:String, version:String, val
 			datosEmpresa["ciudad"] = flfactppal.iface.pub_valorDefectoEmpresa("ciudad");
 			datosEmpresa["cifnif"] = flfactppal.iface.pub_valorDefectoEmpresa("cifnif");
 
-			if (datosEmpresa["tipopersona"] = "J") {
+			if (datosEmpresa["tipopersona"] == "J") {
 				datosEmpresa["nombre"] = flfactppal.iface.pub_valorDefectoEmpresa("nombre");
 				datosEmpresa["nombrecomercial"] = ""; // XXX Nombre comercial
 														// en empresa
 			} else {
-				datosEmpresa["nombrepf"] = ""; // XXX Nombre persona fí­sica en
+				datosEmpresa["nombrepf"] = util.sqlSelect("empresa","nombrepf","1 = 1");
 												// empresa
-				datosEmpresa["apellido1pf"] = ""; // XXX Apellido 1 persona
+				datosEmpresa["apellido1pf"] = util.sqlSelect("empresa","apellido1pf","1 = 1");
 													// fí­sica en empresa
-				datosEmpresa["apellido2pf"] = ""; // XXX Apellido 2 persona
+				datosEmpresa["apellido2pf"] = util.sqlSelect("empresa","apellido2pf","1 = 1");
 													// fí­sica en empresa
 			}
 			break;
@@ -2377,7 +2396,7 @@ function eFactura_nodoEmpresaTypeFacturae(nombreNodo:String, version:String, val
 			datosEmpresa["ciudad"] = cursor.valueBuffer("ciudad");
 			datosEmpresa["cifnif"] = cursor.valueBuffer("cifnif");
 
-			if (datosEmpresa["tipopersona"] = "J") {
+			if (datosEmpresa["tipopersona"] == "J") {
 				datosEmpresa["nombre"] = cursor.valueBuffer("nombrecliente");
 				datosEmpresa["nombrecomercial"] = util.sqlSelect("clientes", "nombrecomercial", "codcliente = '" + codCliente + "'");
 				if (!datosEmpresa["nombrecomercial"])
@@ -2909,6 +2928,108 @@ function eFactura_nodoOverseasAddressTypeFacturae(nombreNodo:String, version:Str
 	cadenaXML += "</" + nombreNodo + ">";
 
 	return cadenaXML;
+}
+
+function eFactura_nodoDeliveryNotesReferences(nombreNodo, version, curLinea)
+{
+	var idAlbaran = curLinea.valueBuffer("idalbaran");
+	var cadenaXML = "";
+
+	if(idAlbaran && idAlbaran != "" && idAlbaran != 0 && idAlbaran != "undefined"){
+		var idFactura = curLinea.valueBuffer("idfactura");
+		var informarAlbaran = AQUtil.sqlSelect("clientes INNER JOIN facturascli ON clientes.codcliente = facturascli.codcliente","clientes.informaralbaran","facturascli.idfactura = '" + idFactura + "'", "clientes,facturascli");
+
+		if(informarAlbaran){
+			var codAlbaran = AQUtil.sqlSelect("albaranescli","codigo","idalbaran = " + idAlbaran);
+			var fecha = AQUtil.sqlSelect("albaranescli","fecha","idalbaran = " + idAlbaran);
+			cadenaXML += "<" + nombreNodo + ">";
+			cadenaXML += "<DeliveryNote>";
+			cadenaXML += "<DeliveryNoteNumber>";
+			cadenaXML += codAlbaran;
+			cadenaXML += "</DeliveryNoteNumber>";
+			cadenaXML += "<DeliveryNoteDate>";
+			cadenaXML += fecha.toString().left(10);
+			cadenaXML += "</DeliveryNoteDate>";
+			cadenaXML += "</DeliveryNote>";
+			cadenaXML += "</" + nombreNodo + ">";
+		}
+	}
+
+	return cadenaXML;
+}
+
+function eFactura_nodoPaymentDetails(cursor, version)
+{
+  var _i = this.iface;
+  var xml = "";
+  switch (version) {
+    case "3.2":
+    case "3.2.1": {
+      var datosCuenta = _i.dameCuentaIBAN();
+      if(!datosCuenta){
+        xml = "ERROR " + sys.translate("No hay una cuenta asociada para cobros por factura-e.\nIntroduzca una cuenta en el campo Facturación -> Principal -> Empresa -> Valores por defecto -> Cuenta para factura electrónica.");
+        return xml;
+      }
+      var q = new FLSqlQuery();
+      q.setSelect("r.importe, r.fechav, fp.tipopagofacturae");
+      q.setFrom("reciboscli r INNER JOIN facturascli f ON r.idfactura = f.idfactura INNER JOIN formaspago fp ON f.codpago = fp.codpago");
+      q.setWhere("r.idfactura = " + cursor.valueBuffer("idfactura") + " ORDER BY r.fechav");
+      if (!q.exec()) {
+        xml = "ERROR " + sys.translate("Falló la consulta de recibos para emitir el nodo PaymentDetails");
+        return xml;
+      }
+      xml += "<PaymentDetails>";
+      while(q.next()){
+        if(!q.value("fp.tipopagofacturae" || q.value("fp.tipopagofacturae") == " ")){
+          xml = "ERROR " + sys.translate("No se ha establecido una método de pago para la factura-e.\nIntroduzca un método de pago en Facturación -> Principal -> Formas de pago -> Pago factura-e.");
+          return xml;
+        }
+        xml += "<Installment>";
+        xml += "<InstallmentDueDate>";
+        xml += q.value("r.fechav").toString().left(10);
+        xml += "</InstallmentDueDate>";
+        xml += this.iface.nodoDoubleTwoDecimalTypeFacturae("InstallmentAmount", version, q.value("r.importe"));
+        xml += "<PaymentMeans>";
+        xml += q.value("fp.tipopagofacturae").left(2);
+        xml += "</PaymentMeans>";
+        if(q.value("fp.tipopagofacturae").left(2) == "04"){
+          xml += "<AccountToBeCredited>";
+          xml += "<IBAN>";
+          xml += datosCuenta["iban"];
+          xml += "</IBAN>";
+          xml += "</AccountToBeCredited>";
+        }
+        xml += "</Installment>";
+      }
+      xml += "</PaymentDetails>";
+      break;
+    }
+  }
+  return xml;
+}
+
+function eFactura_dameCuentaIBAN(){
+
+  var codCuenta = flfactppal.iface.pub_valorDefectoEmpresa("cuentaefactura");
+  if(!codCuenta){
+    return false;
+  }
+
+  var curCuenta = new FLSqlCursor("cuentasbanco");
+  var datosCuenta = [];
+  curCuenta.select("codcuenta = '" + codCuenta + "'");
+
+  if(!curCuenta.first()){
+    return false;
+  }
+
+  if(curCuenta.valueBuffer("iban") == "" || !curCuenta.valueBuffer("iban") || curCuenta.valueBuffer("codigocuenta") == "" || !curCuenta.valueBuffer("codigocuenta")){
+    return false;
+  }
+  datosCuenta["iban"] = curCuenta.valueBuffer("iban");
+  datosCuenta["cuentabancaria"] = curCuenta.valueBuffer("codigocuenta");
+
+  return datosCuenta;
 }
 
 //// EFACTURA ///////////////////////////////////////////////////
