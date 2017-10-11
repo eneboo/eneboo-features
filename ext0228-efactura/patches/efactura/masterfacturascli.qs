@@ -141,7 +141,7 @@ function eFactura_generarEFactura()
 	}
 	cadenaXML += cadenaFun;
 
-	var nombreFichero:String = FileDialog.getSaveFileName();
+	var nombreFichero:String = FileDialog.getSaveFileName("*.xml *.xsig","Guarda E-Factura");
 	if (!nombreFichero)
 		return;
 	//////////////////////// EXTENSIÓN DEL FICHERO //////////////////////////////
@@ -175,7 +175,7 @@ function eFactura_generarEFactura()
 
 	if (!certFile || certFile == ""){
 		MessageBox.warning(util.translate("scripts", "No se ha podido firmar el fichero debido a que no se ha informado la ruta del certificado para ésta empresa.\
-			\nPuede definirla en Facturación -> Principal -> Empresa -> Configuración Local"), MessageBox.Ok, MessageBox.NoButton);
+			\nPuede definirla en Facturación -> Principal -> Empresa -> E-Factura"), MessageBox.Ok, MessageBox.NoButton);
 		return;
 	}
 
@@ -183,7 +183,7 @@ function eFactura_generarEFactura()
 
 	if (!rutaLib || rutaLib == ""){
 		MessageBox.warning(util.translate("scripts", "No se ha podido firmar el fichero debido a que no se ha informado la ruta de la libreria.\
-			\nPuede definirla en Facturación -> Principal -> Empresa -> Configuración Local"), MessageBox.Ok, MessageBox.NoButton);
+			\nPuede definirla en Facturación -> Principal -> Empresa -> E-Factura"), MessageBox.Ok, MessageBox.NoButton);
 		return;
 	}
 
