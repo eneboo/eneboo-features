@@ -43,7 +43,7 @@
     <field>
       <name>nombrepf</name>
       <alias>QT_TRANSLATE_NOOP("MetaData","Nombre persona Física")</alias>
-      <null>false</null>
+      <null>true</null>
       <pk>false</pk>
       <type>string</type>
       <length>50</length>
@@ -53,7 +53,7 @@
     <field>
       <name>apellido1pf</name>
       <alias>QT_TRANSLATE_NOOP("MetaData","Apellido persona Física")</alias>
-      <null>false</null>
+      <null>true</null>
       <pk>false</pk>
       <type>string</type>
       <length>50</length>
@@ -63,7 +63,7 @@
     <field>
       <name>apellido2pf</name>
       <alias>QT_TRANSLATE_NOOP("MetaData","Apellido persona Física")</alias>
-      <null>false</null>
+      <null>true</null>
       <pk>false</pk>
       <type>string</type>
       <length>50</length>
