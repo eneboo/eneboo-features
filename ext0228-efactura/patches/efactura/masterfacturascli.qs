@@ -2981,7 +2981,7 @@ function eFactura_nodoPaymentDetails(cursor, version)
       xml += "<PaymentDetails>";
       while(q.next()){
         if(!q.value("fp.tipopagofacturae" || q.value("fp.tipopagofacturae") == " ")){
-          xml = "ERROR " + sys.translate("No se ha establecido una método de pago para la factura-e.\nIntroduzca un método de pago en Facturación -> Principal -> Formas de pago -> Pago factura-e.");
+          xml = "ERROR " + sys.translate("No se ha establecido un método de pago para la factura-e.\nIntroduzca un método de pago en Facturación -> Principal -> Formas de pago -> Pago factura-e.");
           return xml;
         }
         xml += "<Installment>";
