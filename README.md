@@ -149,6 +149,8 @@
 * [ext0709-inf_diariomes](./ext0709-inf_diariomes) Informe de Libro Diario de contabilidad agrupado por meses
 * [ext0721-distri_alb_ejer](./ext0721-distri_alb_ejer) Distribución de albaranes entre ejercicios
 * [ext0732-iva_nav](./ext0732-iva_nav) Gestión contable de IVA Navision Style
+* [ext0732-iva_nav](./ext0732-iva_nav) Gestión contable de IVA Navision Style
+* [extS016-cifconta](./extS016-cifconta) Esta extensión añade un campo nifcif a las subcuentas contables que tengan el tipo especial CLIENT o PROVEE
 
 [volver al sub-índice Contabilidad](#subindice-contabilidad)
 
@@ -338,6 +340,11 @@
 * [ext0692-contratos_memp](./ext0692-contratos_memp) Contratos multiempresa
 * [ext0715-alquileres](./ext0715-alquileres) Alquileres de artículos
 * [ext0748-rx_pedidosprov](./ext0748-rx_pedidosprov) Control de recepción de líneas de pedidos de proveedor. Se busca un pedido y se indican las cantidades recibidas de cada línea para poder albaranar lo recibido.
+* [extS018-tallermec](./extS018-tallermec) Extensión vertical para talleres mecánicos.
+* [extS019-parche_pmcp](./extS019-parche_pmcp) Arregla problema de que entraba en cálculo de PMCP cuando se convierte un albarán de proveedor en factura (si al hacer la factura directamente)
+
+
+
 
 [volver al sub-índice-Facturación](#subindice-facturacion)
 
