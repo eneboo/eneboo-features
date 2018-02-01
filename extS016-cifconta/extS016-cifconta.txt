@@ -1,3 +1,6 @@
+extS016-cifconta
+================
+
 Esta extensión añade un campo nifcif a las subcuentas contables que tengan el tipo especial CLIENT o PROVEE
 Así mismo arrastra de facturación el cif a la cuenta.
 En el master de las subcuentas se añaden dos botones:
