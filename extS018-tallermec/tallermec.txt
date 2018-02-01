@@ -1,0 +1,9 @@
+Extensión vertical para talleres mecánicos.
+Separa la parte de taller en un módulo aparte.
+Modifica la facturación standard lo mínimo imprescindible.
+Permite llevar historial completo de vehículos.
+Funcionan los descuentos en servicios.
+Funcionan los descuentos en mano de obra.
+Servicios a clientes.
+Arrastra a facturación todos los datos.
+Con muchas modificaciones en lo que respecta a las originales.

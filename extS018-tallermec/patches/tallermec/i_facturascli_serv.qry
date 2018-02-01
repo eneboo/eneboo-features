@@ -1,0 +1,47 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>facturascli_auto</name>
+
+	<tables>empresa,facturascli,albaranescli,lineasalbaobra,formaspago</tables>
+	<group>
+		<level>0</level>
+		<field>facturascli.idfactura</field>
+	</group>
+	<group>
+		<level>1</level>
+		<field>albaranescli.idalbaran</field>
+	</group>
+	
+	<select>
+		facturascli.idfactura, facturascli.codigo, facturascli.codserie, facturascli.fecha,
+		facturascli.total, facturascli.coddivisa, facturascli.codejercicio, facturascli.codpago, facturascli.codalmacen,
+		facturascli.codcliente, facturascli.nombrecliente, facturascli.cifnif, facturascli.tasaconv, facturascli.coddir, facturascli.observaciones, facturascli.totaliva,facturascli.totalrecargo,
+		facturascli.direccion, facturascli.codpostal, facturascli.ciudad, facturascli.provincia, facturascli.apartado,
+		facturascli.codpais, facturascli.neto,
+		lineasalbaobra.referencia, lineasalbaobra.descripcion,
+		lineasalbaobra.cantidad,facturascli.irpf, facturascli.totalirpf, lineasalbaobra.dtolineal,
+		lineasalbaobra.pvpunitario, lineasalbaobra.pvptotal, lineasalbaobra.codimpuesto, lineasalbaobra.iva, lineasalbaobra.dtolineal, lineasalbaobra.dtopor, lineasalbaobra.proximocambio,
+		albaranescli.codigo, albaranescli.fecha, albaranescli.idalbaran, vld_vehiculos.matricula,
+vld_marcas.marca, vld_modelos.modelo, albaranescli.combustible, albaranescli.manod, albaranescli.manoc, albaranescli.manop, albaranescli.manoi, albaranescli.descp, albaranescli.descl, albaranescli.totalrepuestos, albaranescli.totalalbaran,
+		albaranescli.kilometros,
+		formaspago.descripcion,
+		empresa.nombre, empresa.cifnif, empresa.direccion, empresa.logo, empresa.codpostal, empresa.ciudad, empresa.provincia,
+		empresa.apartado, empresa.codpais
+	</select>
+
+	<from>
+		empresa,facturascli INNER JOIN albaranescli ON albaranescli.idfactura = facturascli.idfactura
+		INNER JOIN lineasalbaobra ON lineasalbaobra.idalbaran = albaranescli.idalbaran
+		INNER JOIN formaspago ON formaspago.codpago = facturascli.codpago
+		LEFT JOIN vld_vehiculos ON vld_vehiculos.codvehiculo = albaranescli.codvehiculo
+		LEFT JOIN vld_marcas ON vld_vehiculos.codmarca = vld_marcas.codmarca
+		LEFT JOIN vld_modelos ON vld_vehiculos.codmodelo = vld_modelos.codmodelo
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+		 lineasalbaobra.idlinea
+	</order>
+</QRY>

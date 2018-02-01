@@ -1,0 +1,116 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[ctaentidad]/null[null,1]/text()[1]">true</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ctaagencia]/null[null,1]/text()[1]">true</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[cuenta]/null[null,1]/text()[1]">true</xupdate:update>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[iban]/length[length,1]">
+    <editable>false</editable>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[ctaagencia]">
+    <field>
+      <name>ctadc</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","D.C.")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>2</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:delete select="/TMD[TMD,1]/field[swift]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[iban]">
+    <field>
+      <name>bic</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","BIC")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>11</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codcliente]">
+    <field>
+      <name>idusuarioalta</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","U.Alta")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>50</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idusuarioalta]">
+    <field>
+      <name>fechaalta</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","F.Alta")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>date</type>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[fechaalta]">
+    <field>
+      <name>horaalta</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","H.Alta")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>time</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[horaalta]">
+    <field>
+      <name>idusuariomod</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","U.Mod.")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>50</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idusuariomod]">
+    <field>
+      <name>fechamod</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","F.Mod.")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>date</type>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[fechamod]">
+    <field>
+      <name>horamod</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","H.Mod")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>time</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[horamod]">
+    <field>
+      <name>codpais</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","País")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>20</length>
+      <default>ES</default>
+      <relation>
+        <table>paises</table>
+        <field>codpais</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codpais]">
+    <field>
+      <name>codigocuenta</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Código Cuenta")</alias>
+      <null>false</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>30</length>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

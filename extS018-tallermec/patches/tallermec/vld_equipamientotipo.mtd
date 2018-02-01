@@ -1,0 +1,28 @@
+<!DOCTYPE TMD> <TMD>
+<name>vld_equipamientotipo</name>
+<alias>QT_TRANSLATE_NOOP("MetaData","Equipamientos")</alias>
+<field>
+	<name>codequiptipo</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+	<null>false</null>
+	<pk>true</pk>
+	<type>string</type>
+	<length>50</length>
+</field>
+<field>
+	<name>equipamiento</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Tipo equipamiento")</alias>
+	<null>false</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>26</length>
+</field>
+<field>
+	<name>tipo</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Tipo de vehículo")</alias>
+	<null>false</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>25</length>
+</field>
+</TMD>

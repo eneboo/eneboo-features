@@ -1,0 +1,16 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>clientes</name>
+
+	<tables>clientes</tables>
+	<select>
+		clientes.codcliente, clientes.nombre, clientes.cifnif
+	</select>
+
+	<from>
+		clientes
+	</from>
+
+	<where>
+	</where>
+</QRY> 

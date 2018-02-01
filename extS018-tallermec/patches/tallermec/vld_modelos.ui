@@ -1,0 +1,122 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Form1</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>Form1</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>516</width>
+            <height>142</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QFrame">
+            <property name="name">
+                <cstring>frame3</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>GroupBoxPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="FLFieldDB" row="0" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>fdbcodigo</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>codmodelo</string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB" row="2" column="0">
+                    <property name="name">
+                        <cstring>fdbmodelo</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>modelo</string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB" row="1" column="0">
+                    <property name="name">
+                        <cstring>fdbcodmarca</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>codmarca</string>
+                    </property>
+                </widget>
+                <widget class="FLFieldDB" row="1" column="1" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>fdbmarca</cstring>
+                    </property>
+                    <property name="fieldName">
+                        <string>marca</string>
+                    </property>
+                    <property name="tableName">
+                        <string>vld_marcas</string>
+                    </property>
+                    <property name="foreignField">
+                        <string>codmarca</string>
+                    </property>
+                    <property name="fieldRelation">
+                        <string>codmarca</string>
+                    </property>
+                </widget>
+                <spacer row="0" column="2">
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>210</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <spacer row="2" column="2">
+                    <property name="name">
+                        <cstring>spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>200</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </grid>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
+</UI>

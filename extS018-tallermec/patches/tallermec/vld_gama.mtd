@@ -1,0 +1,41 @@
+<!DOCTYPE TMD> <TMD>
+<name>vld_gama</name>
+<alias>QT_TRANSLATE_NOOP("MetaData","Gamas de vehículos")</alias>
+<field>
+	<name>codgama</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+        	<null>false</null>
+       	 <pk>true</pk>
+      	 <type>string</type>
+     	 <length>6</length>
+       	 <counter>true</counter>
+	<relation>
+		<table>vld_vehiculos</table>
+		<field>codgama</field>
+		<card>1M</card>
+	</relation>
+</field>
+<field>
+	<name>gama</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Gama")</alias>
+	<null>false</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>20</length>
+</field>
+<field>
+	<name>codmodelo</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Modelo")</alias>
+	<null>false</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>20</length>
+	<visiblegrid>false</visiblegrid>
+	<relation>
+		<table>vld_modelos</table>
+		<field>codmodelo</field>
+		<card>M1</card>
+		<delC>true</delC>
+	</relation>
+</field>
+</TMD>

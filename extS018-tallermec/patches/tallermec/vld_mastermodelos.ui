@@ -1,0 +1,380 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>vld_mastermodelos</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>vld_mastermodelos</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>508</width>
+            <height>427</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QFrame">
+            <property name="name">
+                <cstring>barraBotones</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>40</height>
+                </size>
+            </property>
+            <property name="focusPolicy">
+                <enum>NoFocus</enum>
+            </property>
+            <property name="frameShape">
+                <enum>Box</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Raised</enum>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>5</number>
+                </property>
+                <property name="spacing">
+                    <number>2</number>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout12</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="spacing">
+                            <number>2</number>
+                        </property>
+                        <widget class="QToolButton">
+                            <property name="name">
+                                <cstring>toolButtomInsert</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="focusPolicy">
+                                <enum>NoFocus</enum>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image35040</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Insertar registro (A)</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Para crear un nuevo registro en la tabla</string>
+                            </property>
+                        </widget>
+                        <widget class="QToolButton">
+                            <property name="name">
+                                <cstring>toolButtonEdit</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="focusPolicy">
+                                <enum>NoFocus</enum>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image2599</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Modificar registro (M)</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Para modificar el registro activo de la tabla</string>
+                            </property>
+                        </widget>
+                        <widget class="QToolButton">
+                            <property name="name">
+                                <cstring>toolButtonDelete</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="focusPolicy">
+                                <enum>NoFocus</enum>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image6798</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Eliminar registro (E)</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Elimina el registro actual de la tabla</string>
+                            </property>
+                        </widget>
+                        <widget class="QToolButton">
+                            <property name="name">
+                                <cstring>toolButtonZoom</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="focusPolicy">
+                                <enum>NoFocus</enum>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image10551</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Ver registro (V)</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Para ver registro, sin permitir editar</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer2_2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Fixed</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>16</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>toolButtonPrint</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32</width>
+                                    <height>32</height>
+                                </size>
+                            </property>
+                            <property name="focusPolicy">
+                                <enum>NoFocus</enum>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="accel">
+                                <string>I</string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image28408</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Imprimir tabla (I)</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Para imprimir los registros de la tabla</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>Spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>141</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="FLTableDB">
+            <property name="name">
+                <cstring>tableDBRecords</cstring>
+            </property>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image35040">
+        <data format="PNG" length="1825">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006e849444154789cc5975f6c1c571587bf35eb66b64caad9689dec446bb3376c85afd34add6d2ab04525eca882aedc17933c2411a2288248443c40d3c73e15a92014898704f1d04628a87da06a400236120187aa95b78866a79030379223dfade3668666f04c9b557642362c0fe3bf741d3714892badae66e6ee9cdff9e6fcce9d81fff3486d70ee01e053ff713db5f4eb02f7013b807781c5ffb580075ef8e10b3347f61d292ceac53bb9edb9d4c50f2e22322245441f39d0914ec5ad9d9963a77fff8ff9c55d6f87b3a7dee6dd3f9e03ef4f40e7930802d876ee17e7debff9e1cd6eb7dbeddebc99ccdde569e9f8dafc5cf75ae35a77eabb2f768b07fed62d3efde69dc2bebffc19f30b4748087eacd1d7eba4fb9edbcda433701d32990cdc0032407be938043b27b0cd9017bf39c5a1871c32fdb7fa0607d37bbe7dbcfed3a1037fbd40dfb7be4ef218ef5d80e88a9417793000edb00d5ba1dd6e27226e0359085b215823a84871f4a909aa458d9ef5a95f9a61cf230f97a67ef4e39f65f7d7ce028fddb380264dec9c0d2164b299d5cc6f03fd8988ec40165a202d89f21547c74719139a303650cd19f2e90c07269f7ce21bcf777f775fe92bfbef494091225ee04116da37d664debfb4a07fe9bc052a52084be0068a83250991828ee0fca5199c77daa476b6adbd4f9f3d0d9ffdda7f47606b426025f8d2c86ccd4004322721026149624b53c90bda9d182c1bbd5063fa2d45fc776d7cee99d77f027ce96309109f16a99e04d68c150281020b74a090b6c46b29e2d083d91ad234a8a4a7b171d9fdcf5f9985b1effc00d8bef63ee91ef153d7b8c6646e72b506d6e25f4b4027049ca6c348be4263a141753811f1d57299b0ed2107abf8b18f30abbc56e4f3cfcef065e0e77725b0939deb6ba07f030279d02d8d2c48744b53295628cb90634f4dd036422aa2826e69444ee0753c2a8604d8b636f19e02e63e9c4bd9d69a1ad88040c387fa82c008a05c2a137642c64a63181d83b1e2181e1e63a531acd842e6250ab51c73a503f714b08b5d9b1200f03a70ecbc6666d6238a3d2aa50a1e1e76d1c6eb78940b65bc96879137d09146a6e5f25fbb7715a050eb5dd08300c0a9cb201ea9f0ec258db0040023c511e8247326ce30921f4982e7241afd91983d054824dad760421886d0012f6caf5bf3b202ab04a336a8788297deaac3c0728784c6824768801bb8084be0f80e02f19198bd5c80db755393d6244449c73b7abacd2b41061b181710b5c1cbc2a13d8001b57c96e3ba4ced55b0cc2cf5ab10b62c8e5abfe599c7c788a3186949ce7086a1a1a1bef9f9f9bb131861041d2c11b81ef2fdf10c46d0c0eb40cd83691fe210ca03a022a89400cb405ba0632002fbf229aa461627506026fd4220b871e3c6ba5780de047099b42621806c2e0b69f8c301c9be5fc3b884380d320fb559281792bb1ccc67f02260014e5d7999e7bf28114260e4ad04bf25a851230cc3cd5db0dbdc9d7203174c123798200a11279e68537392671cc5609ba023b00ae0456077e095b3d3540b16d94156839b02e5ab9e35d053c03cf308534000b669830f19d3c630324cc82cd55c42404720724bc84d38f906682ccac5887269141528a42589fd1861097447f368dfa3a94d050c3194f47813dc2537b84dcdf100261e026181b3008605da0769826e4179146223cb4b9705ce953ac2b4717c67e93e2e222db8f0af0b9b1248b91fb8296949da419b114be0fa2e27af08688111c373bf01a305710032076a01a226f85760b42c381fc18c3288171a085324563413025bb66cd9dc8682c4b7e5bcc4f51527558553efb8e4c93273ae41161b376750dd3f82f2410750fbe56b180862341692e7deac938d0579d1405872c5057df4ad2bc29e02349abdd65e54a01196c4ee684e947cbca846b950218e1d9451a57e39b1e09937420ee5415a75f296c469d6a02068440d0e1b1349704b50bf5e47a665aa71ab71f7565cde564e39be836ddaa8c0e1e86306f24138fce421b28306d5c7a710594d18c2997a88b7a0b00ccdc468958c0d53e355e483318787c750a142dc16284f2191a88e5afebed858c05c3887b4240424160a34325fc66819c9ae1668a68a02d169d3f041a66b541f1e831649b547c97addef210724aaa31059814251da515af7a6dc7b37ccee5a71810a14c24c6a2236639c85848c13280e8a08c33fc344c1c08b3d30a0b1d048c85d5dcd5c745609cc2dce6dee0267d149094bac048f83c4c7ca5ff5b56d0a881b9c189788828dc8495cdf455a121de824e3e5cc3b0a31901018be6f78f3562c3a82e98bd3c9cc34322d5157930c6a576bc8b4447b1a8140771402497db68e4452bf5e47b05470489cc8a14891866e200d49b3db5c17b3d7b7e1fddbb76fffdef0e0f067f47bba4b1ae880488be5fd3c11c93d1eef10a9e6fbcdbef9abf3e78157815b1b0958aed2fb37b8fe494797e445ff0ec0bf01331b40424d9950a60000000049454e44ae426082</data>
+    </image>
+    <image name="image2599">
+        <data format="PNG" length="2017">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000007a849444154789cc5977f8c1c6519c73f7bccb533b0d7ccb47bd71dd81efbc235de7b85c82e94d20d8952409bb39ad8963f6ca941049b582b89c53f4c480ca8410dc69060ff3298f8a3449a36f60f0e4ce32201f608a53b35ad3b955efa6eeecece48379d81db76469d63fd63ee8ebb72c72f4d7c92cd937967b2cff7f9bceffbbccf0bff67cb2c31b602b8e2b2f799995f075806ac06ce012d60fa7f2960c5e33f79bcb67bfbeec20575613ad797cb9c7cfb24c2101942bac8810a55c6b878b5feaddfffe9e2dfa2f2a9e0d8fe9768be3002e75e07924f2a66d6561e7df6e85b97deb9d4e9743a9d397f69a13f377eb673e1cd0b9d6f3efadb4e71d75f3bc5fb5e992e6cffcb31b2b7ed2625f891ec8a45c68c5b2ab7ecb9fdd6dbaf22846eab1ba6a0fbaa6e88a0dbe886007a565818ef186c2aad210e5fc679d3c85c73ed8aabbfb4f37b5bfc15dbb65fb16c45127baf9e01fef94102ba161b141d91f1420f7a210802e881288ac000fe0d5810b403c881db527cfdee4d6c5baf50677c464fd558ffe91bd7def1d5efef2fdcf3fa9f815b3fb680264dec9c0d015896051118869106ef4e4558bd16b441e424aeefb2e78e8d5484228875dc668d7c62f0b9cdeb6ffada0f3a7f5c36b0f99e8f25a04811afe58105d1d4bcccbb673ee89e193741852ec214345a2e3b0624842e2482174fd7704e0564ae8ecc3bef7bfed770fdae4f44c0e831209a177cc68c1e034290a684108429894d45392f8892184c41e057a9bee612ff43e99fdaf7d27ee0b31f4980b84a64162530cf6609b82d3725d17291b6c46bbbc4814774e630b6a653d6aad83458f7af3f640b95bd3f06fae6ff8fb648fccc39ceb125b705a666329d8f7f3e81099079c9e8d82843f932f5c93ac383a9886da51241a4906b86f1631f911de650910ddfadf179e0371f4420b12fda1dcff74003cff3e616de020251c44c5142e625aaad2817cb9464c0c35fdc44a407944505d556889cc04b3ccaba0458393ff1c504f49db878428f5b31b5376ae86d9d6034206806d49d3a04a4640c0312182a0e612626a5628920f1a80c54d0139d4ab18247fa6cc626322f71716763661615b06ad5aa5d8f3ef668f5de3befed694c3630351367cc21cec6a8769a69bd59c76b7a545fac12b522bcd0c318300809290fa441eda28d9778940a25bcd843cfeb29294dce86eacccdf7ac90bddfd8fbd30d1b36ec33759391d746b0b1717d179113a8505119a810652386d70f13ea21a57c09ffb48f0a14e65a93f2fa329c07b2a4c7d33cdff01b085370e0e8011ed8fdc0c3c093cc9c191ac05d9fb9ebe7fdd7f77ffbc80b47a64f3827c66f2add748d35682ddb51dc41536b62c6268dc906e158887bda4514044ece41f7756a7e8dade14e1ada730c152d82a68b95df8a0a6344ce9e0beef80e02f13eea1a30d0dbd7fbe09967cfb40e1e3ff82470f2feedf7ffeaa1071f5a6660401e08d38f0fbd7208754c317a72948d6b37523d53e5a9c77e89cd01481e86311d6b602b8cfd0ca16da5de1a46162ac47e80342587394c7f7f7fd7f8f8f80201ea9983cf7c05d0815781e91b56ddf0ae1ffb888220680558b6453415b1edcbdb680c3410cf0b0e8c1e40ca12415cc5d61f8138868280b60feb3782aa520e6bd44eef43162ae97422989a9aca5c4e601a38427a324e032b1b9d46668bb9055a60e52c380f466f5a11876e1c62a83844e5ee0a55b78ed51a052d84621efc00f211387518dc095a0dd91aa13666502e4846182108822577c16c579359975d9769b41a9005e52bc842703e0063a602f6803d68b373c71750894e340151d3871cd036a02861b20e7a4cd83e8c759e390297af81454bf138e388ac80160833f5567686448f91d602039882cae64788d73c859198e08790df98ae1933045f2172214eab86c80a148a9bbb6ece7ca8807efa715b2e5136a2e12f24e179de7b447408c200ebb63dd4b53da0c5e05721ebc3a40b7a889a807c22a8fb0d0482e3ef1eff500299c6db8d8c34e51c8186df4889f860676df0c1d2adf77c08e5c13d9014c1042655ea7d803c0a0f690a54a258be7cf9874f8120ddb771364ee72e9b8a4087c664ea95af669e1591069eff0b2800ad18f498e0540c9acec89840662bb8ad740d74d1b574299e3585429a12e52b445610fbf14cd39192882615793d4fc34f09c5cde7b0b5df413b0dce69b072264c82a90f136615c214b8b8484dceb6f64b0b28ad2c65dc968b6da6e518335dc5b66ee3fa0ae227506fdccc50b20735f643acecd310fb90c4a86321e44d8230a47a52a062909ac4f55c2412377167ef174b0b381b9c5db00b66a721256133dade06d1468297f733d4fe118c1d863026783944f4eae087b86e91917898ca8d15dcc44558298181d5030b3af1c51a12aeb3aec36db9c89c4cbd29717c07999338934e7a2ac63b09db5b719ca729c61e4eac53ca5a846d856ad98494182e6ec29b528844cc11387be1ecfbce82cb2de35c7032db4bdbd385630ae2568cc8a524644e12fb314305494373b963ed13385e9d4d96409d57d8864d98556c5a2350814a33f75c446fea07970d668e73fc83098844503d594d3dd5740e27d20c462646909a44792add2dd41008d47937cd3470919ac0997090489cd0a14891baaa237549b3d35c1073b1bbe1957d7d7ddf195c3378adfabbeaa00109082dad647322f998cfab45a6f956b36b7c62fc45e0203337a6a56ec719e0ca25deffb7d6216df4a701fe037bbda49cca42023e0000000049454e44ae426082</data>
+    </image>
+    <image name="image6798">
+        <data format="PNG" length="2174">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000084549444154789ca5975f6c1c5715c67fdeccda77ed9d78c6f13a9e242e9e3636d96dbdc4969290484da8a53c10b520825a8956b4120545c250f2101012424a519f10ad5444d42a28e5012a046ac39f360e24226e8b9a5415d8222edea82e59136f99893df2deae6fbdd7f6f59687b18949dd2681238d46579ab9e73bf77cf79cefd4716b96003603dd8007d8c0223003bc0d1481f76f65c3ba9bfcee76e001e000b0bdbdb5ddd6688425d046830129e53c3009bc02bc00fc0930ff2f000ff836f0c881ad075aca4e1921041a4d962c055300401b8d6f7c86e5305249a494607805f82170fa7f05701ff054eff6deadbdbdbd0821c04028435804ad3500555325458aaaa9022095444b4d312ca2955e029e01be0fc8b59cacfb08e78f3534343c77e82b875a8f7ee328769b4d97d345312ad2b5be8bb01ad2b3b107fd81a69b6e222b22df984722e969ec41d76b6cc7861a09a3cd4e5333bb8021e0bd9b01f058e7d6cea71f3ffa78e2e8378f52ac146102cebc7d065dd18432c460b0d216030f0d30be300ef3102e84589685b214a9fa140076da462f6894523ef069e08f40e5e3001c686e6afed991ef1c491cbeff30e52b65c68be30c5d1c226365082b217e8b4f3417f140ff03ecdbbf8fdd77ee8666e869eb61727612bfc927d211399143a1108d02a30d6a4e750077002f030b6b01d808fcf6c8778fb40cdc3fc0b98be750938a936f9ea41496082b2156c2426a49ba31cd9efd7be8b8a303b5a0e8bbbd0f6d6bf666f732393789593294e64b58589884c116365125c22c986dcb27f0fa5a007e70cf67eef9ecb34f3c8b2a29fab6f7d1d1d541df27fb086602dc9a4ba8427ada7a70db5c1e7af82100524d29b0c0dbec91a965e8bdb317abd9a277532fc17c40b7dd4da003922489640435f2cba9985a0da01338fee8d71e15ee6617b3605042e16e76b15b6cf6f6ef857a50738af1709c435f3844c6cf7c38912e28adc8df96c7341bf29bf30c0e0fb2a496a09e38154a3501f3c059e083955f0f1ddc7ef0debe7d7d78eb3c26e726d999df090a680216c1eff2e9bfab9fec27b2e436e560c31af40552760a9a20b33ec3895f9d60f46fa3241b9364ad2ca109511585316623700a98492ce3bf4fb76bda553be746cfb167db1ecaba0c2e5467ab908c419081dcdd39e85a5e7f8c9dfac329464646c002c7760845889376e27a022bb78204d00e7c2a2bb20c95867071911312d775af45b4480c62b55dbf5e6d45080b216555a63fdb8f1082ac9745a4058ee3202c01b00b48ae03763434357cd5de6cd759498bd1f1515e7beb35c2ab213bb7ed84063eba5cad6555387ffa3cc74f1d27b32183a937589645a84296cc12aaa2d0731abda025f07202d8e4b95e5da7e9449625bef109a603c67e33c6c0f706084602a8de0200e07c749ede8eb87ce7da736041b6358b40c429b0006803ec75c06ea7c5b957d52b925692a81661d7db4456848c2467de3c433a4c936c4de26e706f7c00a6cabe1dfba826ab78c663786a180c4432421b4d18c544d45abf07fc7a1db0dd493b9fb3d7db0074595da884a2c7eb41afd374b57471f6ef67319121dd9226b331137362adb42c42b221090aba73dd581b2cf21bf34c4c4d90a9cf30114ee0cd79146511adf534f0cb0410c1b5eeb6d2620bd3f13b50018eed509445725b73713ad622e03251abe52aa4a1582a92db9243740a06be3480b7cda3b3ab9322c5953f2ac04202189f0826167d7cb489fbbc369a6c260b80dfea83050fee7f30ce5d8a6b5770f5554c026548b92988c0777caaa52abef00974c0c17b0ed27f773f07ef3eb8126c00cc25800996f867c114c07cf8040a61012104628b802494a7cb71a42bf5613510178220000163e1183830128ee03b3e23ef8ca00b9a132f9d58d14997009d00e68057d080011f3f8e7cf9447cc7c7dfe293ebc9c134b88e0bd3abeac3221c7be618c343c31080e77920c14ffb144a05b2ad597449539daef2e44b4f22238936ba0afc05985ba152d524ccc376da4622495929a25a8495b088e6230e7ff930a24590ac25096602ecb41dbf9b6d4e0d9e62f0e5414efff934c5a888d106ff369ff1689c8ec60e0a5305e43f244fbdf814a36f8da28dc62c983780e780e9c432805765245f5d2db33ae9446b4dff5dfdf8ad3e2993a25aaae2090fc2e5480b71c50bca01bbfddd142f15191e1ae6d8cf8f91d22974a4115af0fc1bcf33f6d618005ae91af03b6201fb9fcb5403de9d2dcf3e986a4e25ac7a0b599324ad24b375b3d8ca66ac3c86d7ea519829e0b579043301a3af8f72fca5e3d88d3634417e7d9ed16894e29522c3ef0c93a965181c1b64e8ec10e14c081af4827e0df809f0ee6a000097973e586a4dd7a77725451291109884c1531ea72f9f2693c8305e1927e7e6100b02ad35c75e38869812084f90df92674c8d916fcb333d378d7dd5e6cce4194cc13072650453334829a78127800b2bd4bdbe9c9c9715b943d48bdbeb1275888420aa45246b492e5ebe48341d11cc05781b3c4ebe7e920b172e309f9e27dd9c26a80458c662524ec6ea7921a43c5566e4ca084a29e48cd4c08f801759a590af07300f0c4929770a4bdc5667d5212c81c19015598ab2883be352982b4008852b05f6dcb107a515bee353aa94e868eca074b5845371b83475092515d14ca481a79789f7afd50e3f6a2ed804fcd86975bee8b57a388e0316b8c28de70091a2accab8c245a4c535bd60a0acca482509c2002d3552c9abcb39ff057065996f370400d0087c1df8567b6bfb16d7899d65459622c5b8a75b90b5e209496b8d5492aaaa22a5444ab904bc0afc94782698bedef98d00acd85dc023c0e785105d42881555139766133f524b30a0b59e05fe0afc9e58f75d262e766bdacd0ea775c49a7e17b083783ade48dc196ac48d2500c6969d5f024ac4aaf2861bdfaa2589c7729bffee06ef039ab85f2eddec66ff064e7bc4ec4d6cc0080000000049454e44ae426082</data>
+    </image>
+    <image name="image10551">
+        <data format="PNG" length="2280">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000008af49444154789cad975d6c1cd515c77fdeec86bbb04e669c35dd090e649c3a785624aa4da3366e910a88b682aa085080b60241282f95a85a403cb40fa5120f9456a9f8501141a1428250208aaa94586ac297f8d84de36626c5cd8e9bddee187bc92cf6b07782379ec12c9e3e8cbd71522b05a9571a1d1dcd9d73cfff7ffee78c2e7cf17521b012b804b808c8023700eb566556fd0248025f07324002e83857b0155fe06001ac022e05b601b3c0778199c17ee39eb5975cd2b726bbe6fac4271fa77a2efaf26d5ec3aba62e4f7d6bde9d2f2f24dd5c2ee839b35bb2670531ea9f02af75295dbf7ee0e607c6571b2bbf7ad957b6ad7fecc8fb5d1e7a8753f33fbbb14726e74fbcf2a1b15a3fb573dfcebf55cbd5b74eb54ead999b9d7b149807822f9a00c095809aefcf5fbeed966d573fb8edc14b838ba5e2a332f402a819102970258c8fbb0c08f8dd950eeb13b9b9dd6feeee78e20f4ffc291925a73f703fd8095480cf3ee7b9edb5faa5875f7a3b3a119db1069e8da2e726a2684f358aeedbdb887e381c45db0f4411f7cc463f79f458149d88a268368a1a8546f4d4c34ff91bf40dbfdf7cdee6ed4b03273e67022777bdb66b980c6d02f79703c21684be4bfde95d983baec3da71138412637d9a670e59b8be8434a85b55aeb9f19ad5fb9edff7b37a57fd1bc47a3a670229e0bc254fe2f0df0f3fbffb2fbbab24e30d69d200986fbb387e81fbeefc253a1275d2c6c882c81a0c5b8578f3348850b0f7c0ded92977ea3d96883f79d6c157dfb1fd8e3b6ebdfad67e7bda4e1918d11863f4d38f1558ad0b1b17769a474d06b70c128492a0a962b70494eb48ff19102a6e4b4208781603ebae424a49e885bc3ef23a238747a68012706af1c0b608b77f6ffbaf763db6eb41f4731422005993e083daaf32f864095dcf236d97b03e8caa08b66ef911bbde76d184c94357a619e81960786418d11458758beecfba6b3b9edb71e7c4c4c4ab2c52a165b51f3cbbf7d9c7555d259809489d97424a493a9d6efbc14c40ea8214e17c4818868c8e8f7095b68edfbc368a2ff2848a4a33b18503ef1d00cfe5a69ccd56dde0e0e81b641a197ce173edd7ae65ead3a9551b566eb8e2cda36f1e04a65700897b7f7eef9337dc74c3c54848ad4e818c6b1c5462c59527caac4dae25a805749edf49d92b936c0adc0f46f87e2e8d5d19a6192669d60ed2b70aaecb5a7cbb7f88b72a05d2611a5ff8dcfe9ddb597bfe5a445a30d59a524ffef3e4a9c999c9575700dafd37dfff50a7d6b9b2b3ab13d990300ba313a37467bbb13d9bbeae3eca8d326a974a79aacce6dc666442b2b13bcfe4cc28d7adcad1cd08b7281addc246c928b8b32e8630486a49b66cd842f17811bd47a73e5fa7d3efc4f2ada05c2eff15e0d2477efbc8ececc46c144d45f1538aa2682e8aa289053bb5c44667d9b9288a8e4751e378237af7ad77a313e689a8fa7a356a1c6f44c74af12c681c6e44d54235daf3d29e68766236daf3fc9ee8eeebef2e02bd0920ea6df5e2f80e64a0542b81b1d088eb40362574431006d00d25bb14fb33b11fb402e80391130c5d3184e811e8dfd4093321f99e3c4ed341e4044ee8a02b3ac5b1227ab78e7dd206e8480054a9a22b3a78a0677598392d7c5555218074671a2468498dd26889b448138c06500773c4242dd2b86fb8e0034dd0b21af8713cc77718c80de0f80e7a26f68d35c6e941d44b2f8ee78002b66743e759ed97063e8da7861bba68490da7e6e0e3637b366a52a55429118a10144005e94bc882e3c5c86dcf4657744a5e29f63fb24f2750a51a23f7c0c81a2097990129c083fca63ca225504205d9920cae1f44340579258f8b8bdaadc20cb15d60000f7445c79976c867f3cb3360d7edd30ca8cbcca020607148a537a511eb05f9813c28a05da18106435b87e27d9d20a72564c0a99f6656e71c0c18592366405986814f219d4ec7659859e22f3273f63e09aaa2b635657b368662601397617906bc7330905a507d0acc31137c9052c23494464b4847225d893be6628e98a0825b77418152bd849ed1b1eb367a6bc12eab810581185903a69761a0330d6518ec19448e4bd4a44aa15240cfe8f8151f151573dc64f0b24170415334a8839ed109bd30468ed3d6c2b21ad0337a9b89b31990521264025c5c445650385ac0c81938a183c80acc9ac960cf20aee7b66b1f6482385e064a5e09ada5614fc75a58642009506d55195286da99e201da92046640cdc47549ab718d87f4a1b8d6aa1a23cec6885168239735899ed1b16a167a46a7e816195007b0a58db1c6e01dde596020d9dbce74b11bce5862a1a6024ccb04715ae5ae1b23766b6e7b920622c0ac999001ab6e91cbe4da5d60b956ac853334d0aac62af5ec5803fe99f5a7025a46a3345e426da9b8475d4428281c2a8007ce2107d112ec7f673f693f4d580b63e4f518b9538f27a0ddb2315403873335d0b1c8c0e247412bc0711c0237c03c6ac688c64dd4968ae33b848458e3160a0a66cd244806142a05b4190da7e9108a30a65de8946a25b48c86e55aac6fad8f35d0d219f3c63a0012aaaa06a5b0349f4be6e2becdc43f0ce10bea6375b4a486351e0733c7cd76b7282d05c773c82bf938791123d4333a66cd2427729835132da361bb367ae70203dd0676cba65fe9ff04984f48293f9c7c7fd22e968bc8a4c4f11d14140ae30502020ae30594a412b79ca2c77dade8d87edccf66cd6ccf7a4333283805d41915cbb1d066b4d83635cc49134318d8d22617e6306ba6037c9c003e79f9cf2fff31277214ed2239916bff708ae5221a1a45bb88da52cfb01a0bef93f1212a6a7bbfe5c5e5b19a56cc446862e40ceac93abad0d93fb65f1e3972e42030b302200cc37f1cfbf7b1b51b376e1cacf935f4791dbb6963248cd8260decd0c65869e0cc39f425fbfecb96c3329b929b288765fa441f95d90a46c2a0325b61f3cacd54c20a3d733dbc78e8c5e0e99d4f3f0eec01e4d2abd9f98944e2c7776dbbebb696685ddc9fed4f8ef96391b1c6c0fe28eedbaa5fa557e9fd9fd6fe6861f6fbb12d79a50efd023dd857dcf7af23d691bdc02bc02430bfdcddf04bc03a58b879fc7f56c74243d78129e29b7504f01f44d8d034e961ac130000000049454e44ae426082</data>
+    </image>
+    <image name="image28408">
+        <data format="PNG" length="1961">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000077049444154789cad975f6c14c71dc73fb60fbc17ceb00b7774d760872538651d20b52f406dda2068021585a8825a8a502b1e4af35089fe932a25555e2ab56a919af4a14d2b1aaaf605b5721b5011b8028cc35f3bfc390e707c4bb1736bd9d7bbf3f972bb98cddd611f4c1f6e4d0c84402de6e5abd999f97d7ff39dd999ef5431fdb202663d07131f03b7a61ba46adaf42ffdfa47ea0f3bde75b535db096c6c61b46a01a5d81dc001261e374cc5b41378ede2bb2d6bc33b25058a366833e0f079c4adb148943fb5fe12c60f00e251612aa79dc0504f480981df05ad0e2409b66da2a2e5f9da6676defa27f3db7603d58f0a33dd25a85276eefb7e9ddf5f6fa85074c1a805d78155a11afc4f5131b1be6d8de3f72d25f67e17507858a0e92a30736224119254b01c9054b05c90168155b25103051a4b9758b7ebcd6f557eb7fd3da0ee0927a0cc5cb674f93c1c3054c0856615fc45685ea220d5f8690a69682eb4ef6d5b5bff9b23078086279880ada472f8a5a0a74010620e18414815c1bf042cdb846081f4688197b66f08f3c65fff05343fa10450fdb554173d521c68f496c150412a82516790eaef2176c2c23960b1ae6587c16bed0780179e4002b521057c920c661690c1f2d0744097cb0a280989b419452a1550fabba9fee8d617282fc5ddcdef9b167f78f35ca30e9c2c180bc176405f08294f11330186d684597430ea9ab05c3f7ebbc0ad0f5f8f01434c397f1e5781ca3973e628c097f4fadacd2d7a608b346cb1e96681e2400ca504d6808dee03330d0421ed83d6953a8e0cca32e81a346124d205c481d2e32a307fdbda6d5bf566fd9557d7bcbad2bc35287f6df97a1f4e110245cc6c0feb659d58fa305a40277ab99b966033d1848cbe48c12a82b1d04ff41af48dc4b390ef0246a6123cec28ae7971fd8bbb7ef1e3b777cd7bdaafeac146ac6c0c5d6ec4ccc630823a66d6ba8bbaac63664df4808e9988a2fa547a864d6cad150789a8a5d0b1fbe5c3c43b7701d6e74e391c0e37b7b7b747851042e445b90c0921724288eb4288cc83d8e761feaa10f9a1bc889c8f88e4d59c38b4ff90387e3022b6fe74af40515e7fa4e2e17078c3b17f1ffb584c29c96452889c10f1f8141c13223e741f7aed7dd7e3e5a4aef689dcf5bc387ef4b888ec8b88cddfdcfc010f398c26c9571fed3c9d15f7b00b21c68410710f873c55324288710fc5947ad26bf714eb8b09918fe745f25452f49dea133bbebde30ab0f4417685397bf6fc2572efcc739fce2cefd5c785c865724208217263f97b31e761a6dc2f39e429128b8b5c3c2f8e779d1591a37da2adadad1b50efe1dff8f2c6371e3af3bc5717de3e105edbd43d92bfeffb643f2f4e5f4c88dcf5bc38d41117c7f79f150bb4056fe1fd009580ff27dffbd977269349a56c90c04a5b108454360541b0476d50a050006abccefefbb0c66b57c0b60be5f14e8ac62058ae45f342895421c557d76dd80eac00f085093f9d9908e88c020e68b242210dbaaa4316345503079490027699cbbe6ce3f81c62e9188db24e6cf217744c8ca081df4d212f6d85acbf3c3e0d4650273a18c5d00ccc674c150803577c11223e7d56a1a2eb5a3746d020356861a806b1749a465527954da1a91add3d97289a0e5d835d68451d0b8b824f623f83147d4d3898800ea528322ad2fbefa0f88aa8aacca695db707c365a40a7dbecc64007980bf87cc070df485f624bfd9667c816d1551d336d612c6cbcab406c00ccd351eca285b6682bfbdc66f420982ec875800b46b0d5bb985ab153a0f9bf418f05927389e81fdf64d30b9b48d559687e8dbdd69fc78124202a811b9d9d9d7fbf9436294a104d9868010d3371898204b1844563108a812256daa6c385f56d50ac01a30934098c658087ba04c6729064305a20550273b448c7c5fd604974f77671ddbc721ef810b85d05108bc57a57d635adbb13aaaa7d566ea0942ba1cc0d61e54c1ae6ea94b2259a9e6f22eb0fa1af5e454310420118cdc1aa7a705d58a1829387e6a0570f422a0e4a49a374e302db96b512cdf592bb9c891f3c797037700e189fbc97f347ce1c39a3cdabfdb26ff6ed5a7976083363523f5ba73f63a2c80afde95e7a7cadd4a85027c38524f883e0b8d0540bfd2e0482901d8386b970355956a577d0828ccbf07fdebb73f6c4c9d3472f1efd15d009dc807b5d71b6e7dc99c3b22dfb075cf3b9d54b5a675819136df662063226d2cc06badc1ab686a12b0e7a004a63d0a442bf03cb65c866a14186e10c3c3b1b861390f529448ffdde1938f98fb7ed1bf65bc0f949f2fb1300b81989478e9c397be644c7a9a313f6cd903c9c3e2f2fae585cf1ce508917d76aa4c720e142365d763e661a4a014827a1ee29e84d4231504e86d99018b049f79e4b91fce0e7c065607c2ae1e7bd8c7c403db062d6dc056b5ef96d62d79a16aa0b5988263ce7e3d92f330b7ab06ccb7419ac51304265c32afbe00f7b7e37c6911f7c1de8f92c9287951265f712ff245fef1f74edea6b7f838fcc4eb790979c897ccc26f7df31f2b99be4f3796edb2590c0575985d4544df5484dd5fc35c1590b02f5d434d7008b3f2b81c77b1b2ae1af6057ae860b19ca8ee626e0029f0045caafe3499b55e94dac9af2a1ad005f040681d353fafddf6506d335b19f8e7fc083fe0fac5c6673149be47e0000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>toolButtomInsert</sender>
+        <signal>clicked()</signal>
+        <receiver>tableDBRecords</receiver>
+        <slot>insertRecord()</slot>
+    </connection>
+    <connection>
+        <sender>toolButtonEdit</sender>
+        <signal>clicked()</signal>
+        <receiver>tableDBRecords</receiver>
+        <slot>editRecord()</slot>
+    </connection>
+    <connection>
+        <sender>toolButtonDelete</sender>
+        <signal>clicked()</signal>
+        <receiver>tableDBRecords</receiver>
+        <slot>deleteRecord()</slot>
+    </connection>
+    <connection>
+        <sender>toolButtonZoom</sender>
+        <signal>clicked()</signal>
+        <receiver>tableDBRecords</receiver>
+        <slot>browseRecord()</slot>
+    </connection>
+    <connection>
+        <sender>tableDBRecords</sender>
+        <signal>readOnlyChanged(bool)</signal>
+        <receiver>toolButtomInsert</receiver>
+        <slot>setDisabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>tableDBRecords</sender>
+        <signal>readOnlyChanged(bool)</signal>
+        <receiver>toolButtonEdit</receiver>
+        <slot>setDisabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>tableDBRecords</sender>
+        <signal>insertOnlyChanged(bool)</signal>
+        <receiver>toolButtonEdit</receiver>
+        <slot>setDisabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>tableDBRecords</sender>
+        <signal>readOnlyChanged(bool)</signal>
+        <receiver>toolButtonDelete</receiver>
+        <slot>setEnabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>tableDBRecords</sender>
+        <signal>insertOnlyChanged(bool)</signal>
+        <receiver>toolButtomInsert</receiver>
+        <slot>setDisabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>toolButtonPrint</sender>
+        <signal>clicked()</signal>
+        <receiver>vld_mastermodelos</receiver>
+        <slot>imprimir()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>imprimir()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>fltabledb.h</includehint>
+</includehints>
+</UI>
