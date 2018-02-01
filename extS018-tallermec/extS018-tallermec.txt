@@ -1,3 +1,6 @@
+extS018-tallermec
+=================
+
 Extensión vertical para talleres mecánicos.
 Separa la parte de taller en un módulo aparte.
 Modifica la facturación standard lo mínimo imprescindible.
