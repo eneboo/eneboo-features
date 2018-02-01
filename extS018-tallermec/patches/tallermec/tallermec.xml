@@ -1,0 +1,115 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="tallermec">
+  <flpatch:replaceFile path="contabilidad/informes/translations/" name="flcontinfo.ca.ts"/>
+  <flpatch:replaceFile path="contabilidad/informes/translations/" name="flcontinfo.de.ts"/>
+  <flpatch:patchXml path="contabilidad/principal/forms/" name="co_masterasientos.ui" style="legacy1"/>
+  <flpatch:replaceFile path="contabilidad/principal/translations/" name="flcontppal.ca.ts"/>
+  <flpatch:replaceFile path="contabilidad/principal/translations/" name="flcontppal.de.ts"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="articulos.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="masterregstocks.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/forms/" name="regstocks.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/almacen/tables/" name="articulos.mtd" style="legacy1"/>
+  <flpatch:replaceFile path="facturacion/almacen/translations/" name="flfactalma.ca.ts"/>
+  <flpatch:replaceFile path="facturacion/almacen/translations/" name="flfactalma.de.ts"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="albaranescli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/forms/" name="masteralbaranescli.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="flfacturac.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="lineaspedidoscli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="masteralbaranescli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/facturacion/scripts/" name="trazadoc.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="albaranescli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/facturacion/tables/" name="lineasalbaranescli.mtd" style="legacy1"/>
+  <flpatch:replaceFile path="facturacion/facturacion/translations/" name="flfacturac.ca.ts"/>
+  <flpatch:replaceFile path="facturacion/facturacion/translations/" name="flfacturac.de.ts"/>
+  <flpatch:addFile path="facturacion/informes/forms/" name="i_servicioscli.ui"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_albaranescli_serv.qry"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_facturascli_serv.qry"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_resservicioscli.qry"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="i_servicioscli.qry"/>
+  <flpatch:addFile path="facturacion/informes/queries/" name="vld_iservicioscli.qry"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_albaranescli_serv.kut"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_facturascli_serv.kut"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_resservicioscli.kut"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="i_servicioscli.kut"/>
+  <flpatch:replaceFile path="facturacion/informes/reports/" name="i_vencimientos.kut"/>
+  <flpatch:addFile path="facturacion/informes/reports/" name="vld_iservicioscli.kut"/>
+  <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" style="legacy"/>
+  <flpatch:addFile path="facturacion/informes/scripts/" name="i_masterservicioscli.qs"/>
+  <flpatch:addFile path="facturacion/informes/tables/" name="i_servicioscli.mtd"/>
+  <flpatch:patchXml path="facturacion/informes/tables/" name="i_vencimientos_buffer.mtd" style="legacy1"/>
+  <flpatch:replaceFile path="facturacion/informes/translations/" name="flfactinfo.ca.ts"/>
+  <flpatch:replaceFile path="facturacion/informes/translations/" name="flfactinfo.de.ts"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="cuentasbanco.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="cuentasbcocli.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="cuentasbcoprov.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="cuentasbancocli.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="cuentasbancopro.qs" style="legacy"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" style="legacy"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="clientes.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbanco.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbcocli.mtd" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/tables/" name="cuentasbcopro.mtd" style="legacy1"/>
+  <flpatch:addFile path="facturacion/tallermec/" name="COPYING"/>
+  <flpatch:addFile path="facturacion/tallermec/" name="flfactvld.mod"/>
+  <flpatch:addFile path="facturacion/tallermec/" name="flfactvld.xml"/>
+  <flpatch:addFile path="facturacion/tallermec/" name="flfactvld.xpm"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="flfactvld.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="lineasservicioscli.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="master.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="masterservicioscli.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="servicioscli.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="tecnicos.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="vld_equipamiento.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="vld_gama.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="vld_marcas.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="vld_mastergamas.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="vld_mastermarcas.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="vld_mastermodelos.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="vld_mastertipo.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="vld_mastervehiculos.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="vld_modelos.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="vld_tipo.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/forms/" name="vld_vehiculos.ui"/>
+  <flpatch:addFile path="facturacion/tallermec/queries/" name="vld_clientes.qry"/>
+  <flpatch:addFile path="facturacion/tallermec/queries/" name="vld_historico.qry"/>
+  <flpatch:addFile path="facturacion/tallermec/queries/" name="vld_proveedores.qry"/>
+  <flpatch:addFile path="facturacion/tallermec/queries/" name="vld_vehiculos.qry"/>
+  <flpatch:addFile path="facturacion/tallermec/queries/" name="vld_vehiculoscli.qry"/>
+  <flpatch:addFile path="facturacion/tallermec/reports/" name="vld_clientes.kut"/>
+  <flpatch:addFile path="facturacion/tallermec/reports/" name="vld_historico.kut"/>
+  <flpatch:addFile path="facturacion/tallermec/reports/" name="vld_proveedores.kut"/>
+  <flpatch:addFile path="facturacion/tallermec/reports/" name="vld_vehiculos.kut"/>
+  <flpatch:addFile path="facturacion/tallermec/scripts/" name="flfactvld.qs"/>
+  <flpatch:addFile path="facturacion/tallermec/scripts/" name="lineasservicioscli.qs"/>
+  <flpatch:addFile path="facturacion/tallermec/scripts/" name="masterservicioscli.qs"/>
+  <flpatch:addFile path="facturacion/tallermec/scripts/" name="servicioscli.qs"/>
+  <flpatch:addFile path="facturacion/tallermec/scripts/" name="vld_equipamiento.qs"/>
+  <flpatch:addFile path="facturacion/tallermec/scripts/" name="vld_mastergamas.qs"/>
+  <flpatch:addFile path="facturacion/tallermec/scripts/" name="vld_mastervehiculos.qs"/>
+  <flpatch:addFile path="facturacion/tallermec/scripts/" name="vld_tipo.qs"/>
+  <flpatch:addFile path="facturacion/tallermec/scripts/" name="vld_vehiculos.qs"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="lineasalbaobra.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="lineasfactobra.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="lineasobra.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="lineasservicioscli.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="servicioscli.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="tecnicos.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="vld_equipamiento.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="vld_equipamientotipo.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="vld_equipamientovehiculo.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="vld_gama.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="vld_marcas.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="vld_modelos.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="vld_tipo.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/tables/" name="vld_vehiculos.mtd"/>
+  <flpatch:addFile path="facturacion/tallermec/translations/" name="flfactppal.ca.ts"/>
+  <flpatch:addFile path="facturacion/tallermec/translations/" name="flfactppal.de.ts"/>
+  <flpatch:addFile path="facturacion/tallermec/translations/" name="flfactppal.fr.ts"/>
+  <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="factteso_general.ui" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" style="legacy1"/>
+  <flpatch:addFile path="facturacion/tesoreria/forms/" name="mandatoscli.ui"/>
+  <flpatch:addFile path="facturacion/tesoreria/scripts/" name="mandatoscli.qs"/>
+  <flpatch:addFile path="facturacion/tesoreria/tables/" name="mandatoscli.mtd"/>
+  <flpatch:replaceFile path="facturacion/tesoreria/translations/" name="flfactteso.ca.ts"/>
+  <flpatch:replaceFile path="facturacion/tesoreria/translations/" name="flfactteso.de.ts"/>
+</flpatch:modifications>

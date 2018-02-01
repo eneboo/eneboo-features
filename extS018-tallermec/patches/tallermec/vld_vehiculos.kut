@@ -1,0 +1,101 @@
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd"><KugarTemplate BottomMargin="10" LeftMargin="10" PageOrientation="0" PageSize="0" RightMargin="10" TopMargin="10">
+	<ReportHeader Height="100">
+		<Label BackgroundColor="255,255,0" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="1" FontFamily="Times New Roman"
+		   FontItalic="0" FontSize="30" FontWeight="50"
+		   ForegroundColor="0,0,0" HAlignment="0" Height="92"
+		   Text="Listado de vehículos" VAlignment="1" Width="766"
+		   WordWrap="0" X="2" Y="4" />
+		<Line BackgroundColor="255,255,255" Style="1"
+		   X="0" X1="2" X2="766"
+		   Y="0" Y1="2" Y2="2" />
+		<Line BackgroundColor="255,255,255" Style="1"
+		   X="0" X1="2" X2="766"
+		   Y="0" Y1="96" Y2="96" />
+	</ReportHeader>
+
+	<DetailHeader Height="50" Level="0">
+		<Label BackgroundColor="220,220,220" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="0" FontFamily="Times New Roman"
+		   FontItalic="0" FontSize="12" FontWeight="50"
+		   ForegroundColor="0,0,0" HAlignment="0" Height="20"
+		   Text="Matrícula" VAlignment="1" Width="95"
+		   WordWrap="0" X="2" Y="18" />
+		<Label BackgroundColor="220,220,220" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="0" FontFamily="Times New Roman"
+		   FontItalic="0" FontSize="12" FontWeight="50"
+		   ForegroundColor="0,0,0" HAlignment="0" Height="20"
+		   Text="Marca" VAlignment="1" Width="116"
+		   WordWrap="0" X="94" Y="18" />
+		<Label BackgroundColor="220,220,220" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="0" FontFamily="Times New Roman"
+		   FontItalic="0" FontSize="12" FontWeight="50"
+		   ForegroundColor="0,0,0" HAlignment="0" Height="20"
+		   Text="Modelo" VAlignment="1" Width="110"
+		   WordWrap="0" X="210" Y="18" />
+		<Label BackgroundColor="220,220,220" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="0" FontFamily="Times New Roman"
+		   FontItalic="0" FontSize="12" FontWeight="50"
+		   ForegroundColor="0,0,0" HAlignment="0" Height="20"
+		   Text="Tipo de vehículo" VAlignment="1" Width="107"
+		   WordWrap="0" X="320" Y="18" />
+		<Line BackgroundColor="255,255,255" Style="1"
+		   X="0" X1="2" X2="628"
+		   Y="0" Y1="40" Y2="40" />
+		<Label BackgroundColor="220,220,220" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="1" FontFamily="Times New Roman"
+		   FontItalic="0" FontSize="12" FontWeight="50"
+		   ForegroundColor="0,0,0" HAlignment="0" Height="20"
+		   Text="Cliente" VAlignment="1" Width="228"
+		   WordWrap="0" X="427" Y="18" />
+	</DetailHeader>
+
+	<Detail Height="30" Level="0">
+		<Field BackgroundColor="255,255,255" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="0" CommaSeparator="44"
+		   Currency="32" DataType="0" DateFormat="11"
+		   Field="vld_vehiculos.matricula" FontFamily="Times New Roman" FontItalic="0"
+		   FontSize="10" FontWeight="50" ForegroundColor="0,0,0"
+		   HAlignment="0" Height="18" NegValueColor="0,0,0"
+		   Precision="2" Text="[vld_vehiculos.matricula]" VAlignment="1"
+		   Width="79" WordWrap="0" X="2"
+		   Y="3" />
+		<Field BackgroundColor="255,255,255" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="1" CommaSeparator="44"
+		   Currency="32" DataType="0" DateFormat="11"
+		   Field="vld_marcas.marca" FontFamily="Times New Roman" FontItalic="0"
+		   FontSize="10" FontWeight="50" ForegroundColor="0,0,0"
+		   HAlignment="0" Height="18" NegValueColor="0,0,0"
+		   Precision="2" Text="[vld_marcas.marca]" VAlignment="1"
+		   Width="80" WordWrap="0" X="91"
+		   Y="3" />
+		<Field BackgroundColor="255,255,255" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="1" CommaSeparator="44"
+		   Currency="32" DataType="0" DateFormat="11"
+		   Field="vld_modelos.modelo" FontFamily="Times New Roman" FontItalic="0"
+		   FontSize="10" FontWeight="50" ForegroundColor="0,0,0"
+		   HAlignment="0" Height="18" NegValueColor="0,0,0"
+		   Precision="2" Text="[vld_modelos.modelo]" VAlignment="1"
+		   Width="75" WordWrap="0" X="208"
+		   Y="2" />
+		<Field BackgroundColor="255,255,255" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="1" CommaSeparator="44"
+		   Currency="32" DataType="0" DateFormat="11"
+		   Field="vld_tipo.tipo" FontFamily="Times New Roman" FontItalic="0"
+		   FontSize="10" FontWeight="50" ForegroundColor="0,0,0"
+		   HAlignment="0" Height="18" NegValueColor="0,0,0"
+		   Precision="2" Text="[vld_tipo.tipo]" VAlignment="1"
+		   Width="84" WordWrap="0" X="324"
+		   Y="3" />
+		<Field BackgroundColor="255,255,255" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="1" CommaSeparator="44"
+		   Currency="32" DataType="0" DateFormat="11"
+		   Field="clientes.nombre" FontFamily="Times New Roman" FontItalic="0"
+		   FontSize="10" FontWeight="50" ForegroundColor="0,0,0"
+		   HAlignment="0" Height="18" NegValueColor="0,0,0"
+		   Precision="2" Text="[clientes.nombre]" VAlignment="1"
+		   Width="296" WordWrap="0" X="423"
+		   Y="3" />
+	</Detail>
+
+</KugarTemplate>

@@ -1,0 +1,96 @@
+<ACTIONS>
+    <action>
+        <name>tecnicos</name>
+        <description>QT_TRANSLATE_NOOP("MetaData","Mecánicos")</description>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Tecnicos)</alias>
+        <table>tecnicos</table>
+        <form>master</form>
+        <formrecord>tecnicos</formrecord>
+    </action>
+    <action>
+        <name>vld_vehiculos</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Vehículos")</alias>
+        <scriptform>vld_mastervehiculos</scriptform>
+        <scriptformrecord>vld_vehiculos</scriptformrecord>
+        <table>vld_vehiculos</table>
+        <form>vld_mastervehiculos</form>
+        <formrecord>vld_vehiculos</formrecord>
+    </action>
+    <action>
+        <name>vld_marcas</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Marcas")</alias>
+        <scriptform>vld_mastermarcas</scriptform>
+        <table>vld_marcas</table>
+        <form>vld_mastermarcas</form>
+        <formrecord>vld_marcas</formrecord>
+    </action>
+    <action>
+        <name>vld_modelos</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Modelos")</alias>
+        <scriptform>vld_mastermodelos</scriptform>
+        <table>vld_modelos</table>
+        <form>vld_mastermodelos</form>
+        <formrecord>vld_modelos</formrecord>
+    </action>
+    <action>
+        <name>vld_tipo</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Tipos")</alias>
+        <scriptform>vld_mastertipo</scriptform>
+        <table>vld_tipo</table>
+        <form>vld_mastertipo</form>
+        <formrecord>vld_tipo</formrecord>
+        <scriptformrecord>vld_tipo</scriptformrecord>
+    </action>
+    <action>
+        <name>vld_gama</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Gamas")</alias>
+        <scriptform>vld_mastergamas</scriptform>
+        <table>vld_gama</table>
+        <form>vld_mastergamas</form>
+        <formrecord>vld_gama</formrecord>
+    </action>
+    <action>
+        <name>vld_equipamiento</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Equipamientos")</alias>
+        <scriptformrecord>vld_equipamiento</scriptformrecord>
+        <scriptform>vld_masterequipamiento</scriptform>
+        <table>vld_equipamiento</table>
+        <form>master_print</form>
+        <formrecord>vld_equipamiento</formrecord>
+    </action>
+    <action>
+        <name>vld_equipamientovehiculo</name>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Equipamiento de vehículos")</alias>
+        <table>vld_equipamientovehiculo</table>
+        <form>master</form>
+        <formrecord>vld_equipamientovehiculo</formrecord>
+    </action>
+
+<action>
+        <name>servicioscli</name>
+        <description>QT_TRANSLATE_NOOP("MetaData","Servicios de mantenimiento o reparación llevados a cabo para un cliente")</description>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Servicios de cliente")</alias>
+        <table>servicioscli</table>
+        <form>masterservicioscli</form>
+        <formrecord>servicioscli</formrecord>
+        <scriptform>masterservicioscli</scriptform>
+        <scriptformrecord>servicioscli</scriptformrecord>
+    </action>
+    <action>
+        <name>lineasservicioscli</name>
+        <description>QT_TRANSLATE_NOOP("MetaData","Cada línea de servicio refleja la cantidad y precio de un determinado artículo incluido en el documento")</description>
+        <alias>QT_TRANSLATE_NOOP("MetaData","Lineas de servicios de cliente")</alias>
+        <table>lineasservicioscli</table>
+        <form>master</form>
+        <formrecord>lineasservicioscli</formrecord>
+        <scriptformrecord>lineasservicioscli</scriptformrecord>
+    </action>
+    <action>
+		<name>wg_widget</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Widget")</alias>
+		<table>empresa</table>
+		<scriptform>wg_masterwidget</scriptform>
+	</action>
+
+</ACTIONS>
+

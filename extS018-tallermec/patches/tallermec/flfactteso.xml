@@ -1,0 +1,23 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[vdisco58]">
+    <action>
+      <name>vdisco</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","El volcado a disco de una remesa genera un fichero con el listado de recibos de la remesa")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Volcado a disco de remesas")</alias>
+      <table>remesas</table>
+      <formrecord>vdisco</formrecord>
+      <scriptformrecord>vdisco</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[pagosdevolrem]">
+    <action>
+      <name>mandatoscli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Mandatos asociados a cuentas de domiciliación")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Mandatos")</alias>
+      <table>mandatoscli</table>
+      <form>master</form>
+      <formrecord>mandatoscli</formrecord>
+      <scriptformrecord>mandatoscli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,177 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[hora]">
+    <field>
+      <name>numservicio</name>
+      <!--Código identificativo del servicio-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Número")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>6</length>
+      <editable>false</editable>
+      <relation>
+        <table>servicioscli</table>
+        <field>numservicio</field>
+        <card>M1</card>
+      </relation>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[numservicio]">
+    <field>
+      <name>codvehiculo</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Código vehículo")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>8</length>
+      <editable>false</editable>
+      <relation>
+        <table>vld_vehiculos</table>
+        <field>codvehiculo</field>
+        <card>M1</card>
+        <delC>true</delC>
+      </relation>
+      <associated>
+        <with>codcliente</with>
+        <by>codcliente</by>
+      </associated>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codvehiculo]">
+    <field>
+      <name>cambioac</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Km")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <editable>false</editable>
+      <type>double</type>
+      <partI>8</partI>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[cambioac]">
+    <field>
+      <name>matricula</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Matrícula")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <editable>false</editable>
+      <type>string</type>
+      <length>10</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[matricula]">
+    <field>
+      <name>kilometros</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Kilómetros")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <editable>false</editable>
+      <type>double</type>
+      <partI>8</partI>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[kilometros]">
+    <field>
+      <name>combustible</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Combustible en depósitio")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <editable>false</editable>
+      <type>string</type>
+      <length>10</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[combustible]">
+    <field>
+      <name>manod</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Mano Obra Descripcion")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <visiblegrid>false</visiblegrid>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[manod]">
+    <field>
+      <name>manoc</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Mano Obra cantidad")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <visiblegrid>false</visiblegrid>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[manoc]">
+    <field>
+      <name>manop</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Mano Obra precio")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <visiblegrid>false</visiblegrid>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[manop]">
+    <field>
+      <name>manoi</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Mano Obra importe")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <visiblegrid>false</visiblegrid>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[manoi]">
+    <field>
+      <name>descl</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Descuento lineal Mano de Obra")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <visiblegrid>false</visiblegrid>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[descl]">
+    <field>
+      <name>descp</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Descuento porcentaje Mano de Obra")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <visiblegrid>false</visiblegrid>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[descp]">
+    <field>
+      <name>totalmano</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Total Mano Obra")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>8</partI>
+      <partD>2</partD>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[totalmano]">
+    <field>
+      <name>totalrepuestos</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Total Repuestos")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>8</partI>
+      <partD>2</partD>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[totalrepuestos]">
+    <field>
+      <name>totalalbaran</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Total Albaran")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>8</partI>
+      <partD>2</partD>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

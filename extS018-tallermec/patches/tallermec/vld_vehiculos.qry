@@ -1,0 +1,20 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>vld_vehiculos</name>
+
+	<tables>vld_vehiculos</tables>
+	<select>
+		vld_vehiculos.matricula, clientes.nombre, vld_marcas.marca, vld_modelos.modelo, vld_tipo.tipo
+	</select>
+
+	<from>
+		vld_vehiculos, vld_marcas, vld_modelos, vld_tipo, clientes 
+	</from>
+
+	<where>
+		vld_vehiculos.codmarca = vld_marcas.codmarca and
+		vld_vehiculos.codmodelo = vld_modelos.codmodelo and
+		vld_vehiculos.codtipo = vld_tipo.codtipo and 
+		clientes.codcliente = vld_vehiculos.codcliente
+	</where>
+</QRY> 

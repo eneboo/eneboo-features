@@ -1,0 +1,257 @@
+<!DOCTYPE TMD> <TMD>
+<name>vld_vehiculos</name>
+<alias>QT_TRANSLATE_NOOP("MetaData","Vehículos")</alias>
+<field>
+	<name>codvehiculo</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+        	<null>false</null>
+       	 <pk>true</pk>
+      	 <type>string</type>
+	<length>7</length>
+       	 <counter>true</counter>
+	<relation>
+		<table>servicioscli</table>
+		<field>codvehiculo</field>
+		<card>1M</card>
+	</relation>
+	<relation>
+		<table>presupuestoscli</table>
+		<field>codvehiculo</field>
+		<card>1M</card>
+	</relation>
+</field>
+<field>
+	<name>matricula</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Matrícula")</alias>
+	<null>false</null>
+	<pk>false</pk>
+	<unique>true</unique>
+	<type>string</type>
+	<length>8</length>	
+</field>
+<field>
+	<name>codmarca</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Marca")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>20</length>
+	
+	<relation>
+		<table>vld_marcas</table>
+		<field>codmarca</field>
+		<card>M1</card>
+		<delC>true</delC>
+	</relation>
+</field>
+<field>
+	<name>codmodelo</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Modelo")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>20</length>
+	<relation>
+		<table>vld_modelos</table>
+		<field>codmodelo</field>
+		<card>M1</card>
+	</relation>
+	<associated>
+		<with>codmarca</with>
+		<by>codmarca</by>
+	</associated>	
+</field>
+<field>	
+	<name>codgama</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Gama")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>20</length>
+	<relation>
+		<table>vld_gama</table>
+		<field>codgama</field>
+		<card>M1</card>
+	</relation>
+	<associated>
+		<with>codmodelo</with>
+		<by>codmodelo</by>
+	</associated>	
+</field>
+<field>
+	<name>anio</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Año")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>4</length>
+</field>
+<field>
+	<name>color</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Color")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>15</length>
+</field>
+<field>
+	<name>bastidor</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Nº Bastidor")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>17</length>
+</field>
+
+<field>
+	<name>anio_matriculacion</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Año de matriculación")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>4</length>
+</field>
+<field>
+	<name>anio_compra</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Año de compra")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>4</length>
+</field>
+<field>
+	<name>codtipo</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Tipo de vehículo")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>20</length>
+	<relation>
+		<table>vld_tipo</table>
+		<field>codtipo</field>
+		<card>M1</card>
+		<delC>true</delC>
+	</relation>
+</field>
+<field>
+	<name>cilindrada</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Cilindrada")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>int</type>
+</field>
+<field>
+	<name>observaciones</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Observaciones")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>stringlist</type>
+</field>
+<field>
+	<name>potencia</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Potencia")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>int</type>
+</field>
+<field>
+	<name>rueda1</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Tipo de rueda")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>20</length>
+</field>
+<field>
+	<name>rueda2</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Nº de motor")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>20</length>
+</field>
+<field>
+	<name>combustible</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Tipo de combustible")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>20</length>
+	<optionslist>DIESEL,GASOLINA</optionslist>
+	<default>DIESEL</default>
+</field>
+<field>
+	<name>codcliente</name>
+	<!-- Código del cliente	-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Cliente")</alias>
+	<null>false</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>6</length>
+
+	<relation>
+		<table>clientes</table>
+		<field>codcliente</field>
+		<card>M1</card>
+		<delC>true</delC>
+	</relation>
+</field>
+<field>
+	<name>puertas</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Nº Puertas")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>int</type>
+</field>
+<field>
+	<name>uitv</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Última revisión ITV")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>date</type>
+</field>
+<field>
+	<name>pitv</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Próxima revisión ITV")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>date</type>
+</field>
+<field>
+	<name>preciomax</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Precio máximo")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>double</type>
+	<partI>8</partI>
+</field>
+<field>
+	<name>preciomin</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Precio mínimo")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>double</type>
+	<partI>8</partI>
+</field>
+<field>
+	<name>garantia</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Garantía (años)")</alias>
+	<null>true</null>
+	<pk>false</pk>
+	<type>int</type>
+</field>
+<field>
+	<name>codpago</name>
+        	<alias>QT_TRANSLATE_NOOP("MetaData","Forma de pago")</alias>
+        	<null>true</null>
+        	<pk>false</pk>
+        	<type>string</type>
+        	<length>10</length>
+<relation>
+            	<table>formaspago</table>
+            	<field>codpago</field>
+            	<card>M1</card>
+</relation>
+</field>
+
+</TMD>
