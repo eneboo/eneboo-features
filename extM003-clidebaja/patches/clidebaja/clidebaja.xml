@@ -1,0 +1,5 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="clidebaja">
+  <flpatch:patchXml path="facturacion/principal/" name="flfactppal.xml" style="legacy1"/>
+  <flpatch:patchXml path="facturacion/principal/forms/" name="masterclientes.ui" style="legacy1"/>
+  <flpatch:patchScript path="facturacion/principal/scripts/" name="masterclientes.qs" style="legacy"/>
+</flpatch:modifications>
