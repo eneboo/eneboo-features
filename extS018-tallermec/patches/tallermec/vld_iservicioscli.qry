@@ -1,0 +1,42 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>i_servicioscli</name>
+
+	<tables>empresa,servicioscli</tables>
+
+	<group>
+		<level>0</level>
+		<field>servicioscli.numservicio</field>
+	</group>
+
+	<select>
+		servicioscli.numservicio, 
+		servicioscli.contratomant, servicioscli.fecha, 
+		servicioscli.codcliente, servicioscli.codtecnico, 
+		servicioscli.descripcion,
+		servicioscli.kilometros,
+		vld_vehiculos.matricula, vld_marcas.marca,
+		vld_modelos.modelo,
+		empresa.nombre, empresa.cifnif,
+		empresa.direccion, empresa.logo,
+		empresa.codpostal, empresa.ciudad,
+		empresa.provincia, empresa.apartado,
+		empresa.codpais,
+		clientes.nombre, clientes.telefono1
+		
+	</select>
+
+	<from>
+		empresa, servicioscli
+		LEFT JOIN vld_vehiculos ON vld_vehiculos.codvehiculo = servicioscli.codvehiculo
+		LEFT JOIN vld_marcas ON vld_vehiculos.codmarca = vld_marcas.codmarca
+		LEFT JOIN vld_modelos ON vld_vehiculos.codmodelo = vld_modelos.codmodelo
+		LEFT JOIN clientes on clientes.codcliente = servicioscli.codcliente
+	</from>
+
+	<where>
+	</where>
+	
+	<order>
+	</order>
+</QRY>

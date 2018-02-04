@@ -1,0 +1,34 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>vld_historico</name>
+
+	<tables>vld_vehiculos,empresa</tables>
+	<param>
+		<name>cod</name>
+		<type>string</type>
+	</param>
+	<select>
+		vld_vehiculos.codvehiculo, vld_vehiculos.matricula, lineasservicioscli.referencia, lineasservicioscli.descripcion,
+lineasservicioscli.pvpunitario, lineasservicioscli.cantidad, servicioscli.fecha, vld_marcas.marca, vld_modelos.modelo, empresa.nombre, empresa.cifnif, empresa.direccion, empresa.codpostal, empresa.ciudad,
+empresa.provincia, empresa.apartado, servicioscli.numservicio, servicioscli.kilometros, tecnicos.nombre, clientes.nombre, clientes.cifnif
+	</select>
+
+	<from>
+		vld_vehiculos, servicioscli, lineasservicioscli, vld_marcas, vld_modelos, empresa, clientes, tecnicos
+		
+	</from>
+
+	<where>
+		vld_vehiculos.codvehiculo = [cod] and
+		clientes.codcliente = vld_vehiculos.codcliente and
+		servicioscli.codvehiculo = vld_vehiculos.codvehiculo and
+		lineasservicioscli.idservicio = servicioscli.idservicio and
+		vld_vehiculos.codmarca = vld_marcas.codmarca and
+		vld_vehiculos.codmodelo = vld_modelos.codmodelo and
+		servicioscli.codtecnico = tecnicos.codtecnico 
+	</where>
+	
+	<orderby>
+		servicioscli.numservicio
+	</orderby>
+</QRY> 

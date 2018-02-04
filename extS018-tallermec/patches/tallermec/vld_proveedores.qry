@@ -1,0 +1,16 @@
+<!DOCTYPE QRY>
+<QRY>
+	<name>proveedores</name>
+
+	<tables>proveedores</tables>
+	<select>
+		proveedores.codproveedor, proveedores.nombre, proveedores.cifnif
+	</select>
+
+	<from>
+		proveedores
+	</from>
+
+	<where>
+	</where>
+</QRY> 

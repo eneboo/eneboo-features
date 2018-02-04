@@ -1,0 +1,62 @@
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd"><KugarTemplate BottomMargin="10" LeftMargin="10" PageOrientation="0" PageSize="0" RightMargin="10" TopMargin="10">
+	<ReportHeader Height="100">
+		<Label BackgroundColor="255,255,0" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="1" FontFamily="Times New Roman"
+		   FontItalic="0" FontSize="30" FontWeight="50"
+		   ForegroundColor="0,0,0" HAlignment="0" Height="92"
+		   Text="Listado de clientes" VAlignment="1" Width="766"
+		   WordWrap="0" X="3" Y="4" />
+	</ReportHeader>
+
+	<PageHeader Height="50">
+		<Label BackgroundColor="220,220,220" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="0" FontFamily="Times New Roman"
+		   FontItalic="0" FontSize="14" FontWeight="50"
+		   ForegroundColor="0,0,0" HAlignment="0" Height="20"
+		   Text="Código" VAlignment="1" Width="82"
+		   WordWrap="0" X="35" Y="18" />
+		<Label BackgroundColor="220,220,220" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="0" FontFamily="Times New Roman"
+		   FontItalic="0" FontSize="14" FontWeight="50"
+		   ForegroundColor="0,0,0" HAlignment="0" Height="20"
+		   Text="Nombre" VAlignment="1" Width="75"
+		   WordWrap="0" X="174" Y="18" />
+		<Label BackgroundColor="220,220,220" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="0" FontFamily="Times New Roman"
+		   FontItalic="0" FontSize="14" FontWeight="50"
+		   ForegroundColor="0,0,0" HAlignment="0" Height="20"
+		   Text="Cif/Nif" VAlignment="1" Width="64"
+		   WordWrap="0" X="320" Y="18" />
+	</PageHeader>
+
+	<Detail Height="50" Level="0">
+		<Field BackgroundColor="255,255,255" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="0" CommaSeparator="44"
+		   Currency="32" DataType="0" DateFormat="11"
+		   Field="clientes.codcliente" FontFamily="Times New Roman" FontItalic="0"
+		   FontSize="12" FontWeight="50" ForegroundColor="0,0,0"
+		   HAlignment="0" Height="20" NegValueColor="0,0,0"
+		   Precision="2" Text="[clientes.codcliente]" VAlignment="1"
+		   Width="109" WordWrap="0" X="31"
+		   Y="12" />
+		<Field BackgroundColor="255,255,255" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="1" CommaSeparator="44"
+		   Currency="32" DataType="0" DateFormat="11"
+		   Field="clientes.nombre" FontFamily="Times New Roman" FontItalic="0"
+		   FontSize="12" FontWeight="50" ForegroundColor="0,0,0"
+		   HAlignment="0" Height="20" NegValueColor="0,0,0"
+		   Precision="2" Text="[clientes.nombre]" VAlignment="1"
+		   Width="149" WordWrap="0" X="157"
+		   Y="12" />
+		<Field BackgroundColor="255,255,255" BorderColor="0,0,0"
+		   BorderStyle="0" BorderWidth="1" CommaSeparator="44"
+		   Currency="32" DataType="0" DateFormat="11"
+		   Field="clientes.cifnif" FontFamily="Times New Roman" FontItalic="0"
+		   FontSize="12" FontWeight="50" ForegroundColor="0,0,0"
+		   HAlignment="0" Height="19" NegValueColor="0,0,0"
+		   Precision="2" Text="[clientes.cifnif]" VAlignment="1"
+		   Width="150" WordWrap="0" X="315"
+		   Y="13" />
+	</Detail>
+
+</KugarTemplate>

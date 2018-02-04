@@ -1,0 +1,48 @@
+<!DOCTYPE TMD> <TMD>
+<name>vld_modelos</name>
+<alias>QT_TRANSLATE_NOOP("MetaData","Modelos de vehículos")</alias>
+<field>
+	<name>codmodelo</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+        	<null>false</null>
+       	 <pk>true</pk>
+      	 <type>string</type>
+     	 <length>6</length>
+       	 <counter>true</counter>
+	<relation>
+		<table>vld_vehiculos</table>
+		<field>codmodelo</field>
+		<card>1M</card>
+	</relation>
+	<relation>
+		<table>vld_gama</table>
+		<field>codmodelo</field>
+		<card>1M</card>
+	</relation>
+</field>
+<field>
+	<name>modelo</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Modelo")</alias>
+	<null>false</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>20</length>
+</field>
+<field>
+	<name>codmarca</name>
+	<!-- Marca de coche	-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Marca")</alias>
+	<null>false</null>
+	<pk>false</pk>
+	<type>string</type>
+	<length>20</length>
+	<visiblegrid>false</visiblegrid>
+
+	<relation>
+		<table>vld_marcas</table>
+		<field>codmarca</field>
+		<card>M1</card>
+		<delC>true</delC>
+	</relation>
+</field>
+</TMD>
