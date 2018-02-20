@@ -2,11 +2,16 @@
 /** @class_declaration numLinea */
 /////////////////////////////////////////////////////////////////
 //// NUMEROS DE LÍNEA ///////////////////////////////////////////
-class numLinea extends oficial /** %from: oficial */ {
-    function numLinea( context ) { oficial ( context ); }
-	function init() {
-		return this.ctx.numLinea_init();
-	}
+class numLinea extends oficial
+{
+  function numLinea(context)
+  {
+    oficial(context);
+  }
+  function init()
+  {
+    return this.ctx.numLinea_init();
+  }
 }
 //// NUMEROS DE LÍNEA ///////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
@@ -16,16 +21,15 @@ class numLinea extends oficial /** %from: oficial */ {
 //// NÚMEROS DE LÍNEA ///////////////////////////////////////////
 function numLinea_init()
 {
-	this.iface.__init();
+  this.iface.__init();
 
-	var cursor:FLSqlCursor = this.cursor();
-	switch (cursor.modeAccess()) {
-		case cursor.Insert: {
-			this.child("fdbNumLinea").setValue(this.iface.calculateField("numlinea"));
-			break;
-		}
-	}
+  var cursor: FLSqlCursor = this.cursor();
+  switch (cursor.modeAccess()) {
+    case cursor.Insert: {
+      this.child("fdbNumLinea").setValue(this.iface.calculateField("numlinea"));
+      break;
+    }
+  }
 }
 //// NÚMEROS DE LÍNEA ///////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-
