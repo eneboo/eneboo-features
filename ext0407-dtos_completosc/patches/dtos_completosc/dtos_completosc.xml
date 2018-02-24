@@ -7,7 +7,6 @@
   <flpatch:patchScript name="lineaspedidoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
   <flpatch:patchScript name="lineaspresupuestoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
   <flpatch:patchXml name="flfactppal.xml" path="facturacion/principal/" style="legacy1"/>
-  <flpatch:patchXml name="clientes.ui" path="facturacion/principal/forms/" style="legacy1"/>
   <flpatch:addFile name="dtoscompletoscli.ui" path="facturacion/principal/forms/"/>
   <flpatch:patchXml name="flfactppal.ui" path="facturacion/principal/forms/" style="legacy1"/>
   <flpatch:addFile name="dtoscompletoscli.qs" path="facturacion/principal/scripts/"/>

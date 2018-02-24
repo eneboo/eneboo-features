@@ -1,4 +1,4 @@
-<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="fullpatch">
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="trinanes">
   <flpatch:patchXml name="articulos.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
   <flpatch:patchXml name="articulosagen.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
   <flpatch:patchXml name="articuloscli.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
@@ -22,7 +22,8 @@
   <flpatch:patchXml name="i_articuloscomp_buffer.mtd" path="facturacion/informes/tables/" style="legacy1"/>
   <flpatch:patchXml name="i_etiquetas.mtd" path="facturacion/informes/tables/" style="legacy1"/>
   <flpatch:patchXml name="articulosclientes.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="dtoscompletoscli.mtd" path="facturacion/principal/tables/" style="legacy1"/>
   <flpatch:patchXml name="tpv_comandas.mtd" path="facturacion/tpv/tables/" style="legacy1"/>
   <flpatch:patchXml name="tpv_lineascomanda.mtd" path="facturacion/tpv/tables/" style="legacy1"/>
   <flpatch:patchXml name="tpv_lineasvale.mtd" path="facturacion/tpv/tables/" style="legacy1"/>
-rm</flpatch:modifications>
+  </flpatch:modifications>
