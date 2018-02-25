@@ -1,0 +1,79 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[apellido2pf]">
+    <field>
+      <name>bloqprecliimp</name>
+      <!--Indica si se bloquea el documento cuando se imprime-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Presupuestos cliente impresos")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[bloqprecliimp]">
+    <field>
+      <name>bloqpedcliimp</name>
+      <!--Indica si se bloquea el documento cuando se imprime-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pedidos cliente impresos")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[bloqpedcliimp]">
+    <field>
+      <name>bloqalbcliimp</name>
+      <!--Indica si se bloquea el documento cuando se imprime-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Albaranes cliente impresos")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[bloqalbcliimp]">
+    <field>
+      <name>bloqfaccliimp</name>
+      <!--Indica si se bloquea el documento cuando se imprime-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Facturas cliente impresos")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[bloqfaccliimp]">
+    <field>
+      <name>bloqpedproimp</name>
+      <!--Indica si se bloquea el documento cuando se imprime-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pedidos proveedor impresos")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[bloqpedproimp]">
+    <field>
+      <name>bloqalbproimp</name>
+      <!--Indica si se bloquea el documento cuando se imprime-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Albaranes proveedor impresos")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[bloqalbproimp]">
+    <field>
+      <name>bloqfacproimp</name>
+      <!--Indica si se bloquea el documento cuando se imprime-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Facturas proveedor impresos")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>
