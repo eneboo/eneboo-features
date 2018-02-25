@@ -9,8 +9,14 @@
             <x>0</x>
             <y>0</y>
             <width>450</width>
-            <height>78</height>
+            <height>75</height>
         </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>450</width>
+            <height>75</height>
+        </size>
     </property>
     <property name="caption">
         <string>Colores</string>
@@ -50,8 +56,8 @@
                     </property>
                     <property name="minimumSize">
                         <size>
-                            <width>150</width>
-                            <height>25</height>
+                            <width>26</width>
+                            <height>22</height>
                         </size>
                     </property>
                     <property name="font">
@@ -78,8 +84,8 @@
                     </property>
                     <property name="minimumSize">
                         <size>
-                            <width>250</width>
-                            <height>25</height>
+                            <width>26</width>
+                            <height>22</height>
                         </size>
                     </property>
                     <property name="font">
@@ -97,4 +103,8 @@
     </hbox>
 </widget>
 <layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
 </UI>

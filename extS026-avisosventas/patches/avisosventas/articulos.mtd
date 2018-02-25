@@ -1,0 +1,97 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codsubfamilia]">
+    <field>
+      <name>avisoventa</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Activar aviso genérico")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[avisoventa]">
+    <field>
+      <name>avisoventatexto</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Aviso genérico ventas")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>stringlist</type>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[avisoventatexto]">
+    <field>
+      <name>avisoventapre</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Activar en presupuestos")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[avisoventapre]">
+    <field>
+      <name>avisoventapretexto</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Presupuestos")</alias>
+      <pk>false</pk>
+      <type>string</type>
+      <length>120</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[avisoventapretexto]">
+    <field>
+      <name>avisoventaped</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Activar en pedidos")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[avisoventaped]">
+    <field>
+      <name>avisoventapedtexto</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Pedidos")</alias>
+      <pk>false</pk>
+      <type>string</type>
+      <length>120</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[avisoventapedtexto]">
+    <field>
+      <name>avisoventaalb</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Activar en albaranes")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[avisoventaalb]">
+    <field>
+      <name>avisoventaalbtexto</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Albaranes")</alias>
+      <pk>false</pk>
+      <type>string</type>
+      <length>120</length>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[avisoventaalbtexto]">
+    <field>
+      <name>avisoventafac</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Activar en facturas")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>bool</type>
+      <default>false</default>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[avisoventafac]">
+    <field>
+      <name>avisoventafactexto</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Facturas")</alias>
+      <pk>false</pk>
+      <type>string</type>
+      <length>120</length>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

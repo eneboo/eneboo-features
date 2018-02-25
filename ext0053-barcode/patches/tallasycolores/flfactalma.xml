@@ -34,8 +34,8 @@
   <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[colores]">
     <action>
       <name>grupostalla</name>
-      <description>QT_TRANSLATE_NOOP("Grupos de talla","")</description>
-      <alias>QT_TRANSLATE_NOOP("MetaData","Los grupos de talla identifican las distintas agrupaciones de talla (española, inglesa, etc). Cada talla de la tabla de tallas puede asociarse a un determinado grupo. Si un artículo tiene asociado un determinado grupo de tallas, sólo podrán asociarse a dicho artículo barcodes con tallas del grupo establecido")</alias>
+      <description>QT_TRANSLATE_NOOP("MetaData","Los grupos de talla identifican las distintas agrupaciones de talla (española, inglesa, etc). Cada talla de la tabla de tallas puede asociarse a un determinado grupo. Si un artículo tiene asociado un determinado grupo de tallas, sólo podrán asociarse a dicho artículo barcodes con tallas del grupo establecido")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Grupos de talla")</alias>
       <table>grupostalla</table>
       <form>master</form>
       <formrecord>grupostalla</formrecord>

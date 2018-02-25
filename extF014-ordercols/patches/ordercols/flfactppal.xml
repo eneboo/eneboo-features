@@ -1,5 +1,5 @@
 <xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
-  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[periodos]">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]">
     <action>
       <name>ordercols</name>
       <alias>QT_TRANSLATE_NOOP("MetaData","Orden de Columnas")</alias>

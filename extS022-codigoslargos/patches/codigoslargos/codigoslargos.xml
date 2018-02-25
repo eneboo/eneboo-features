@@ -1,0 +1,29 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="trinanes">
+  <flpatch:patchXml name="articulos.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="articulosagen.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="articuloscli.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="articuloscomp.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="articulosprov.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="articulostarifas.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="familias.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="lineastransstock.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="movistock.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="stocks.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="subfamilias.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="tiposopcionartcomp.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="tiposopcioncomp.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="lineasalbaranescli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:patchXml name="lineasalbaranesprov.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:patchXml name="lineasfacturascli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:patchXml name="lineasfacturasprov.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:patchXml name="lineaspedidoscli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:patchXml name="lineaspedidosprov.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:patchXml name="lineaspresupuestoscli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:patchXml name="i_articuloscomp_buffer.mtd" path="facturacion/informes/tables/" style="legacy1"/>
+  <flpatch:patchXml name="i_etiquetas.mtd" path="facturacion/informes/tables/" style="legacy1"/>
+  <flpatch:patchXml name="articulosclientes.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="dtoscompletoscli.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="tpv_comandas.mtd" path="facturacion/tpv/tables/" style="legacy1"/>
+  <flpatch:patchXml name="tpv_lineascomanda.mtd" path="facturacion/tpv/tables/" style="legacy1"/>
+  <flpatch:patchXml name="tpv_lineasvale.mtd" path="facturacion/tpv/tables/" style="legacy1"/>
+  </flpatch:modifications>

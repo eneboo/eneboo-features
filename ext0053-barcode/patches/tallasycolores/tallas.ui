@@ -8,9 +8,15 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>606</width>
-            <height>111</height>
+            <width>450</width>
+            <height>100</height>
         </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>450</width>
+            <height>100</height>
+        </size>
     </property>
     <property name="caption">
         <string>Tallas</string>
@@ -74,8 +80,8 @@
                             </property>
                             <property name="minimumSize">
                                 <size>
-                                    <width>400</width>
-                                    <height>25</height>
+                                    <width>26</width>
+                                    <height>22</height>
                                 </size>
                             </property>
                             <property name="fieldName">
@@ -131,8 +137,8 @@
                             </property>
                             <property name="minimumSize">
                                 <size>
-                                    <width>400</width>
-                                    <height>25</height>
+                                    <width>4</width>
+                                    <height>20</height>
                                 </size>
                             </property>
                             <property name="fieldName">
@@ -155,4 +161,10 @@
     </vbox>
 </widget>
 <layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
 </UI>
