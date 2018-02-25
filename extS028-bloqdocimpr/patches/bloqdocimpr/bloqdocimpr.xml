@@ -1,0 +1,12 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="bloqdocimpr">
+  <flpatch:patchScript name="albaranescli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="albaranesprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="facturascli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="facturasprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="flfacturac.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="pedidoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="pedidosprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="presupuestoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchXml name="empresa.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:patchXml name="empresa.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+</flpatch:modifications>
