@@ -1,0 +1,58 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">1066</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">623</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/widget[FLFieldDB,fdbAutomatica]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">135</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/widget[FLFieldDB,fdbAutomatica]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/widget[FLFieldDB,fdbTPV]/property[maximumSize]/size[size,1]/width[width,1]/text()[1]">80</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/widget[FLFieldDB,fdbTPV]/property[minimumSize]"/>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/widget[FLFieldDB,fdbDeAbono]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">117</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/widget[FLFieldDB,fdbDeAbono]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/widget[QLabel,lblDatosFacturaAbono]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">350</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/widget[QLabel,lblDatosFacturaAbono]/property[minimumSize]">
+    <property name="maximumSize">
+      <size>
+        <width>350</width>
+        <height>32767</height>
+      </size>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/spacer[spacer39_3]"/>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/spacer[spacer21]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]/hbox[hbox,1]/widget[QLabel,lblDatosFacturaAbono]">
+    <widget class="FLFieldDB">
+      <property name="name">
+        <cstring>fdbImpreso</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>90</width>
+          <height>32767</height>
+        </size>
+      </property>
+      <property name="font">
+        <font>
+          <bold>0</bold>
+        </font>
+      </property>
+      <property name="fieldName">
+        <string>impreso</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36_2]/hbox[hbox,1]/widget[FLFieldDB,fdbTotalRecargo]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">140</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QFrame,frame36_2]/hbox[hbox,1]/widget[FLFieldDB,fdbTotalRecargo]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">26</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:insert-after select="/UI[UI,1]/customwidgets[customwidgets,2]">
+    <customwidgets>
+</customwidgets>
+  </xupdate:insert-after>
+</xupdate:modifications>
