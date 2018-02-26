@@ -1,0 +1,704 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>formVolcarADisco_sepa19b2b</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>formVolcarADisco_sepa19b2b</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>499</width>
+            <height>348</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Vuelco a disco</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox8</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                    <italic>1</italic>
+                </font>
+            </property>
+            <property name="title">
+                <string>NORMA SEPA</string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout65</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbNumero</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>5</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>idremesa</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbFecha</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>5</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>26</width>
+                                    <height>22</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>fecha</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout64</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbDivisa</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>5</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>150</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>coddivisa</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fLFieldDB4</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>5</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>4</width>
+                                    <height>21</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>descripcion</string>
+                            </property>
+                            <property name="tableName">
+                                <string>divisas</string>
+                            </property>
+                            <property name="foreignField">
+                                <string>coddivisa</string>
+                            </property>
+                            <property name="fieldRelation">
+                                <string>coddivisa</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout63</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fdbCodCuenta</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>5</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>200</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>codcuenta</string>
+                            </property>
+                        </widget>
+                        <widget class="FLFieldDB">
+                            <property name="name">
+                                <cstring>fLFieldDB6_2</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>5</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>4</width>
+                                    <height>21</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="fieldName">
+                                <string>descripcion</string>
+                            </property>
+                            <property name="tableName">
+                                <string>cuentasbanco</string>
+                            </property>
+                            <property name="foreignField">
+                                <string>codcuenta</string>
+                            </property>
+                            <property name="fieldRelation">
+                                <string>codcuenta</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout26</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel2</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Fichero</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>leFichero</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>0</bold>
+                                    <italic>0</italic>
+                                </font>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbExaminar</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>30</width>
+                                    <height>30</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image12195</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Seleccionar archivo</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Selecciona un archivo en disco para guardar los datos de la remesa</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout15</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout15</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QButtonGroup">
+                                    <property name="name">
+                                        <cstring>bngFormatoFichero</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                        </font>
+                                    </property>
+                                    <property name="title">
+                                        <string>Formato del Fichero</string>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QRadioButton">
+                                            <property name="name">
+                                                <cstring>rbnXml</cstring>
+                                            </property>
+                                            <property name="font">
+                                                <font>
+                                                    <bold>0</bold>
+                                                    <italic>0</italic>
+                                                </font>
+                                            </property>
+                                            <property name="text">
+                                                <string>Fichero XML</string>
+                                            </property>
+                                            <property name="checked">
+                                                <bool>true</bool>
+                                            </property>
+                                            <property name="buttonGroupId">
+                                                <number>1</number>
+                                            </property>
+                                            <property name="whatsThis" stdset="0">
+                                                <string>Establece el fichero como .xml</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QRadioButton">
+                                            <property name="name">
+                                                <cstring>rbnTxt</cstring>
+                                            </property>
+                                            <property name="font">
+                                                <font>
+                                                    <bold>0</bold>
+                                                    <italic>0</italic>
+                                                </font>
+                                            </property>
+                                            <property name="text">
+                                                <string>Fichero Texto Plano</string>
+                                            </property>
+                                            <property name="checked">
+                                                <bool>false</bool>
+                                            </property>
+                                            <property name="buttonGroupId">
+                                                <number>0</number>
+                                            </property>
+                                            <property name="whatsThis" stdset="0">
+                                                <string>Establece el fichero como .txt</string>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer10</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>71</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>tbnExportarErroneos</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>30</width>
+                                    <height>30</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image61990</iconset>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Exportar cuentas con mandatos erróneos</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Exportar cuentas con mandatos erróneos</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>gbxTipoPago</cstring>
+                    </property>
+                    <property name="title">
+                        <string></string>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QButtonGroup">
+                            <property name="name">
+                                <cstring>bngTipoPago</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="title">
+                                <string>Tipo de Pago</string>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>rbnRecurrente</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>Pago Recurrente</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>0</number>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string>Establece el tipo de pago como recurrente.</string>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>rbnUnico</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>Pago Único</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>1</number>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string>Establece el tipo de pago como único.</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>bngNorma</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Tipo Norma</string>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QComboBox">
+                                    <item>
+                                        <property name="text">
+                                            <string>Adeudos SEPA (19)</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>Adeudos financiados (58)</string>
+                                        </property>
+                                    </item>
+                                    <property name="name">
+                                        <cstring>cmbNorma</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer10_2_2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>99</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout8</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QButtonGroup">
+                            <property name="name">
+                                <cstring>bngTipoFichero</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="title">
+                                <string>Tipo del Fichero</string>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>rbnCore</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>Fichero CORE</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>0</number>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string>Establece el fichero como .xml</string>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>rbnB2B</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>Fichero B2B</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>1</number>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string>Establece el fichero como .txt</string>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>rbnCore1</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>0</bold>
+                                            <italic>0</italic>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>Fichero CORE1*</string>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>2</number>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string>Establece el fichero como .xml</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer10_2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>201</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image12195">
+        <data format="PNG" length="2095">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000007f649444154789cb59741a8dcc619c77f725518810ca3b26935b0869de405acc586ec232df1831e624a21eea93639b950684e690339b43d94269092e698430feea5f5a5b5dd43f0cbc1e9bb98aea12ebb81d86f0335ab077d304bbc640411688845350491ed41eb673b4e9aa64de73212027dffeff77ddf7fa4408402bda111a1c0b71e1d6a4c6bba7b3c55d9509405b49effcf0ae1e6f8e6eafdf7de5fad3e5c3db4bff5d79baba79fffcb4a7ee7d555fad48f1172f0a5860f84105cb8746175e6fb67e00e7018688088ee3e84c98d09dbd761675f22fb0ab7b74d6af3a0687701b04b830835cecdc07b7c0bb4009f4f2df4ad470985b516e1057661d1a9c62c0c5a6af2658e12921383198d13ececcdd0c79e237ab25a696719f56748a131a5012f70b581166c69f0777ce08a82c657b8a5c195c5c3024428b0b5652bde62b7d825eb65e060980e695c83961ab774a8c39aad633984929dbdcbe863a7487a43a41c72e638e8e35b70a783e74bf0027617f35542c2f8ef135ce999bc3bc6e62e2816637ced00f84a4bcb8b3f7cf195f8eb318f7eed51ca8f4a925e82fda72549138aba408482bccc39f2b1a2fc78c1defb47f8e0c325fe23497bc833792fa2fed8f0f86309c5470dea1b5fa504bef5d82384bdc37cefa921b13cccf1c7be49d88b5e518f7ff7150eddf955b95cdc47406c61f72cb22f992fe768a969f61ba490ccca192a54e4754e2653a43034e204d5728759ad106d852f334c5991a509174b50028c031543e561d4d7640350a9e2fc9be7d171b6cab9161cf2ad47c50a5b57a881c2e118f687f8d0136d44381ca38d115e78467a04873d5aa6a8fa1a4a2aa4a8d0fd4d883dc91d4151578cfa40d8301a40d556b810b6dfb1bc7c155ef8e38cbcd04cf67682077b406e31df9f334c87e040848266d1f5c0fcdd393294e4b773d461854e2db2ff34c34c73fac9081902a166ba80b417410d6a23c238387934c138907dc56c09693862fbed31cef9fba6205698c2908804e30c699c52d405a94c9997739234212f73b22319d3db062b4ef2d36725c35ec4c5b72ba813f2ca600b813a22c80609760148c897a063983910123647b07dd543dd4dc4a1bb04744f235a411aa75083ee6b70a0a5a60a2bb234438904a22d4e7d5b3154112fbd01ce25980a74a21102b234c1b5a0d3ce06740fac072d210168138ae5f8600cefeb8175d7fb82288da8ea8aa8dff5c0301d8200d14f314dc5e6002e5eafd08f40d55a78842e895060ea8a3486a2ee82daba2361ea4eccc4ccc199e040800805b6b2a85031b9354122a91615c20b9aa24109455554482131a5213dac18ef831009b606152b70a0a4c260d032a1f090cab588de3d129507ef80d27c82000ae30cd920c3b50ed113385c47c257241b090ec7e6c61087030f85af1029586f513d30b5210a35a6ae18ac83a7ebcc9504e31b1209935bd383fa1f1030748d4709a948c99739329434458340d02c1b24128a8a133dc9ae992349f0ae2360d68ed9841edd4b58d430e841b1aebdf530ea45e44b70b7fd0327eb0181bcc8b1de9297394a28f2650e784c6970de33decb9938cff476cec245cc8a394a3418672006e3cc410f0c242cee23400c450b8d6f70cb9d4f390b5a4b168fc8cb1959acf1cee34938b7678942c5dc819219dec1e8f816da43d683d9a241c914e33a739a37395b7293c5dd1e705dedf312b23ebc766d068ee0010177095867c8fa19db0bc31c4d147a4e1d1b22c2861fa988a26a9071445e366422222f2b0669c274dfa0658aa90d245d0f8c06090b778f8096605c835902e5e453086049c38c97def16c1d1ff15c3f62f311b01f806923ce4d418988bc0415475dcd638129ab2eb833e89e665e38f4401de0bf3b8aa6844c46d8c5783d06f7d6215a8f6c15e716969f3ca3397d2c02e0d753cbf60276f60c5e40eeecda540c4282ad0b744f7499cb6e8a9002e33a1f3035c818f2b261b30fd385c1ddce1ffa1e382442c18eb39c3cb6c9a6849d3db874a32141625d831229be6c50b1242fe7a830c5971e194be62e27158ac67952a9a036a85ee7036a8dffd420621442550a284cf0900000d72a5c5b3171302b0c591a617d01126c5ba07a5dc6426aac2fd0a9a0f096486a8c37e89ea0a8ed9a44858c3b073c3b00ea8617ae587efb87d7a1309f8ccf21210422b4545e3029204b75e7dda946b411baa7a97cb7778eb67ebe3e3b86bd8cc25bd258e11de85e820ce16c1f2edf68f8c1efc65c7af56cc05be782fb0de8ee0a642c38fd8b0baba297f07496615c970977f7da42aca136e858af6bbd7e1e2b7c6d4068446b39f3c426226ca8ea88d7debcccf4cd6db8b11de03ffbe33410a140f435fef9dfafb23e9cd02316ce930a286ecf18a80c42895a635512ac5bd7d8757e908411270730de879deb1376ae9cc7df1807948bcf0c7c20e0e0eae71790cf9e654bb212b29b16e11a280d278e0e71be0119816b5032c2fa86936984f08087d7aefc99f1951dfcdfb603dcc3a83f6b85001c3d0169865bb0b24f11e896559682a92352a9c81d6ca6d13ae308019cd6111303d35b86f37f3a87bbbe1bb0bcf61f07be2720049ef925380324c1ac27114f24019e1503c86f589258607d3752a2ed32fed91b13c657738a6be702f6675f38f03d011ba741d2359adb85726b35db2710470954cbeaec1343640b9b0a26ff80d9bee1e2958bb8e9187f6b1afcafff8c012f5f0091416b000558186cadd2e332b87c2c5ae545c5ee12a6ef8cb1b772dc7407f66781ff379dfdc504fce666875fea0776b1b1b9121edc7237e08dd791a5c59705fe4bfe4b0e710642d5050fd7224285bf3509bc1cc1d54b706b8afbfc77fd57eb5fdb16444090e768fc0000000049454e44ae426082</data>
+    </image>
+    <image name="image61990">
+        <data format="PNG" length="1211">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000048249444154789cad974f681c551cc73f2f4ce02d6c6156aaec42842cf4d088821b0d98886223059b1421860a66db1c9a88d4d083b42789b77892e2412388cdc59078904628b688d1e0418da02422c10d18ba7b286ca08b3b90c00c74e079f8cd6466ff647793fae0f1e6fd99f7fbfebebfeffbbd19658ce148a5ea021e6c1560df8373c3477bbfaea88e00545df03db030f880d6b053808a03beabb01270f678400e07107a8a3641cb416b018e232c58804fd8aaa332d255d3db73e14115aa5583ef19d006df93393f30ee7b52b586a406df0d8cbbc2d0e686e14ce72004c0e010b818c06069a1c40a3cb6344dfb490db60d240206123276aa0fc6c63b1656c88061bfdae869abbee7c1c994183d69c3e93ea90057665852aa7300b77e5b57541c51b56ee3b915d382d6f0741f9cca066c206c7443fecabb1db1d005300df0c57ce4e55198f083f55e6c7ecf850fe798ed8005658c4129c5bf6052f7ee819da641f5c7695329c8f5c3e6464b1407a76014147f6cc0be2334b7f5bc4ddf7561e516c36d5838c8034a298c6d1bfefa5be2e9f3e84ca41290c928cae5f60c1863c83b8e626b43c408c7f33cde7f082c2f99a75ab0509309955298677386db770216fe1f2db84aa9c42119d7aa1f98fd7353cd6d17242f140ab05394899e0c3c9393b3de930def86a0d587f75d97c4f73f9aac52aad80444e35df06416ce0c19b45d2bc830df2735bc30046747e4b91d0396861309aa4aa9541300b577c1441ece0d1b4ee7a2587a0ea43370e10d09cb03077e58834f6ec0aed359c67c08a9dbdf9a6c132d440026f2a0b5e1f921a8ecca8b16b2896dc38571f860165e1a06d783fb65495ea1605bdd1d9e0baf8d32db603e0ec0f70cbd5979ae84f74230572a42b90c990c5c9d81c9cb32be5b86af169a7b1eef07e979ead2e58618440092b650ed79b52959235a280567b91b181b85abd7c4bbad02940aedef0e1798ff94b9ba30d49e02ada15216206f4d041753c0443a550b7db01fd273f0d11cac6fcac968751af6abf0788ad94b1326a1947203414600c2a710f9407f3d5b8da52703c9947c9ed5785ed75ac1fe2ef0f60cf6e2f2c11651083c4faa9d1281adaeb507f0f512fc5300a77a880674b4d6f3607181b5975f544e6c8b98081151256db0752d00d78542118ac568ac5886efd620118f3591e73a66fca73578e231fadf9956afcaec418942e0a328150d3d19e8ed83dfd7e1b30559b15d10e30383f0fe7559bfb8007b8e00b05351cc43daf71d61f2cd71c64b25b512331a4f7e11001d248d5259be704a6958bd0bdd410c135ad4ee02db1b02ea4490097bb2318fb57c31afdee5ced434e7a146f6f599b736154fe6c1475848da720fc4d50cd09b95985776c5a80fbc774d4003fcfc2bbc7e9e7e509b2d0c3707003039254929dcfc206201bd5ec05b48f72b23303602db4598bc487ea7a09663dbb5fbf1e96a18f972012c947ce31165c350d5e1910a8d0fe460729aeb43cf2915336e8c696bbc390361999ca2f6cf280093ce48187239f86685a58f6f70b14d9c5b961069bb0a300298cf6f1a337fd3fc02267dccbde2b5b39fd3a028a518041ca0705c8febf73c2a80787914c361f90f45c6977713c9c5eb0000000049454e44ae426082</data>
+    </image>
+</images>
+<layoutdefaults spacing="4" margin="4"/>
+<includehints>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+    <includehint>flfielddb.h</includehint>
+</includehints>
+</UI>

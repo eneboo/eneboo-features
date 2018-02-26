@@ -1,0 +1,28 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/ACTIONS[ACTIONS,1]/action[mandatoscli]/form[form,1]/text()[1]">master_print</xupdate:update>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[mandatoscli]/form[form,1]">
+    <scriptform>mastermandatoscli</scriptform>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[mandatoscli]">
+    <action>
+      <name>tradmandatoscli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Traducciones de textos de impresión de mandatos")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Traducciones de mandatos")</alias>
+      <table>tradmandatoscli</table>
+      <form>master_print</form>
+      <formrecord>tradmandatoscli</formrecord>
+      <scriptformrecord>tradmandatoscli</scriptformrecord>
+      <scriptform>mastertradmandatoscli</scriptform>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[tradmandatoscli]">
+    <action>
+      <name>vdisco_sepa19b2b</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","El volcado a disco de una remesa genera un fichero txt o xml con el estándar de este documento sepa")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Volcado a disco de remesas SEPA")</alias>
+      <table>remesas</table>
+      <formrecord>vdisco_sepa19b2b</formrecord>
+      <scriptformrecord>vdisco_sepa19b2b</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

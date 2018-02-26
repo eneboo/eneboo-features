@@ -1,0 +1,27 @@
+<flpatch:modifications name="sepa_19b2b" >
+    <flpatch:patchXml path="facturacion/tesoreria/" name="flfactteso.xml" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="masterremesas.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="vdisco_sepa19b2b.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="masterremesas.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="vdisco_sepa19b2b.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="mastermandatoscli.qs" />
+    <flpatch:addFile path="facturacion/informes/tables/" name="i_mandatoscli.mtd" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_mandatoscli_sepa.qry" />
+    <flpatch:addFile path="facturacion/informes/queries/" name="i_mandatoscli_sepab2b.qry" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_mandatoscli_sepa.ar" />
+    <flpatch:patchScript path="facturacion/informes/scripts/" name="flfactinfo.qs" />
+    <flpatch:addFile path="facturacion/informes/reports/" name="i_mandatoscli_sepab2b.ar" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="flfactteso.qs" />
+    <flpatch:patchXml path="facturacion/principal/forms/" name="clientes.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="clientes.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/tables/" name="tradmandatoscli.mtd" />
+    <flpatch:addFile path="facturacion/tesoreria/forms/" name="tradmandatoscli.ui" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="flfactteso.ui" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="tradmandatoscli.qs" />
+    <flpatch:addFile path="facturacion/tesoreria/scripts/" name="mastertradmandatoscli.qs" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="factteso_general.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/forms/" name="factteso_general.ui" />
+    <flpatch:patchScript path="facturacion/principal/scripts/" name="flfactppal.qs" />
+    <flpatch:patchXml path="facturacion/tesoreria/tables/" name="mandatoscli.mtd" />
+    <flpatch:patchScript path="facturacion/tesoreria/scripts/" name="mandatoscli.qs" />
+</flpatch:modifications>

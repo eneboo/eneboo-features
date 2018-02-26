@@ -1,0 +1,23 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>tradmandatoscli</name>
+	<alias>QT_TRANSLATE_NOOP("MetaData","Traducciones de mandatos")</alias>
+	<field>
+		<name>idcampo</name>
+		<!-- Identificador -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","ID Campo")</alias>
+		<null>false</null>
+		<pk>true</pk>
+    <type>string</type>
+    <length>200</length>
+    <visiblegrid>true</visiblegrid>
+	</field>	
+	<field>
+		<name>descripcion</name>
+		<!-- Descripción -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>stringlist</type>
+	</field>	
+</TMD>

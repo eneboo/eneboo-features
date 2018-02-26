@@ -1,0 +1,38 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tesorera]/action[mandatoscli]">
+    <action name="tradmandatoscli"/>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">158</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[mandatoscli]">
+    <action name="tradmandatoscli"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[mandatoscli]">
+    <action>
+      <property name="name">
+        <cstring>tradmandatoscli</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>sepa_19b2bimage29088</iconset>
+      </property>
+      <property name="text">
+        <string>Traducción mandatos</string>
+      </property>
+      <property name="menuText">
+        <string>Traducción mandatos</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="sepa_19b2bimage29088">
+      <data format="PNG" length="1827">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006ea49444154789ced97cf8f5c4711c73f55d5ddefcdacf7f7ae1d3b06c7c171108ab01409890b12121cf803f86ff80ff857382290e01291437284388a632b0212bc61edb5bdde9d5dcfcc9bd7ddc561de8e97086e481ce049a5d7af9fbaea5bd5d5dfaa1677e7bff9e87fd5faff010001e0f19d3bf7a639ff42e08394f3afdf3a3838f8770b4eefdd3389f1aa985daf57afbeed376fbe1377766e46b35dc9799b5276c8796fd1f7fbf3ae4bf3ae3b9b9d9ebe7af2e0c18bc9e1e11f99cd7eb39ef36f7fe43e031077e7cbdbb77f7edc75bf2ab5a2aa588ccf2da58934cdd4db7626318e428c9be3d16863bd6dd7c378acc4c8bc14166767b4b3196d08584a488cb819e77dcfe97c4eef8ea872f8d9679c1c1e22aa504abf56ca8f7f5aca470120e7fc8697422d85ea4e9ecff704f610a1aa52453033fa1048e331a4446fc62b772446466b6b4bc5ee2b8921d0c648007ac09a0607bc560c62557d1b5802f05af7b55642ad945aa9ee382c95d68a985145c8b5524ac1dd29b592cc88212c13e9927115a131c34598d54a3f9f2322a83bc19de84e2a657d950394b2176a8552f05ae9dc2940700733f2000877dc1d06e3a28a8bac40ebc0291700bbbee7bcebe8fa9e22820f3a9b5250d87e0d00766c5020a5906b454568dd5155a640714707e50e085080beef8966ace86cf83feb3a26f5846e6138822e130e734796ebafad00f43f9cbed74f9cd1a78ef40ea52066cb90d54a344344684408aab856e69b7316fb3db6ef846da1bfea94fd05b2b740f7e7b4db737617422d8a22d48770f481337be4f017b0c7726305207f3fbf556f382f7fd6234f14651da92dd393532cf7c876266e425dab9cec64641bac113482364edf566ae36814e208a47134416a95c544018706e25d61fa1de81ba1fd5a7eb202a03b6b6dd8d8a02cfe4e7e2393b647b49b77e94e3fa72e5e82558a163c4268153181611b1007754441cdb988af2858ac782e74e7465ec028195260ee851cbc8181096d636ccdc62ddacd3d2c296a054b81b4b68344c529883a1605334145100544f0aa7835dc9773178282b8508bb098433f0711301344c0c703809777ee68d8b8229646b4dbdf26ae35549f224cb1f1261a0c3147034bcf6d50ae20222c530a34f83f011081dc2b65a17433e83a70a02b0535885bc13e52553d79bfbb95b6aea33111465b8c766ea0e694fc9cd08c08a331a15134820441545073d4961e87e8c4a6a206629723205097e0e6af961198f51980ad36b2be619c5fe36628bb7e2fc404081613cdc6b7f0724a2d2f10d9a5d97c933cedc1676802b4a24196fb1e1d4d15098ea82c23638e18983a3495726abc9a2c8f6caeb07ec588269842ffddf07e6033bcab56402aee4ad031edf63b2cceff4cc94f68aedc268ed7f07c02b2c0cb0bc47a44e648ac58b3345e8b223d4853517324406ae0fcbc707aa24cbb424c1083220a2e9076ea7b41da7cab2c0ed1b08bd818098164db58ba4be98e703f25b47be8da165029794cedbe047542aa308b94498b9f35d4b33136d9a5995ec3cef690d916fd1f3e84cf3e652d0a655be9de77fc5d25de706ad1eb41ff347ad69d3ec76f3cc1de1c93aebf81b5db84764c686f21a2d42e538ea7e4e7e7f8d767c8d12ee9f836e5d988eedca8aa688c344d43bbb1815cb982340d2f1f7fc5e4f1632c576a553872badfc1fcf71505b4d497a11c6c36fae51ab91416ee747582eb291e1d37a714830ecc8c10234ddc63d4342cdc395b2c28142c469a18b1108829a121504be1f8abaf981e1fa31775c59d2a820c45c9603d7808572f1ad3b0e42cdc9d5a1cafb23c758d22aa981931255065913319705554153523360d212524048e1e3ee4e88b2f568415dcb13a783e7c67f79de06657833b7528382242ad7559018762e4aa24332c468a085d296477420860464a89d4b634a311162393c3439e3e7cc862365bf57c3218b65a57e30cd7829bedc950a94aad4bef812a828b208387bd087d29d45a972c23820ca0624a346d4b6a5bbaf3739e3c78c0c9c1013e946065c5d0af291cd0a6b91682d96e71a70c0d840f06f402800815e88788c8605887775025a444dbb6e4f99cc3fbf779faf9e7085c2ebd4bd097808808a969f64285ad3c34200359af1688c82a22e2be9c1b72414340cdb021fc9e335f3f78503ff9e493b343981cc0e95f61f202660e15f7e250ae42fb3d919dbb296ddd6e9a14428c5700c46cd552f96500035a44d0a10b42b54ee0ec59cea77f9b4c5ede7ff4e8f9c78787c7f7a7d3491ef218963b39880ffdcbf2dbbd329f9f339f7f1c3e984c7eb91bc20ff653bab5a97a3d8a8c878ec7c5cc7b91e9b39c8f1ecf66478f8e8f9f7efcecd9d1874f9fbe58d45a810e980153e0d5253907ce86f97239f297a4021301ae031b401c4e62bc24172ddb02985f92e960fcb557af3dadff62ee72ee5d8c9d252363df40c637c617cf85b28b70e2ff819badfccfdf8eff016346a02e0c3973c90000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[mandatoscli,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>tradmandatoscli</sender>
+      <signal>activated()</signal>
+      <receiver>flfactteso</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>
