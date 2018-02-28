@@ -1,0 +1,29 @@
+<flpatch:modifications xmlns:flpatch="sepa_19b2b" name="fullpatch">
+  <flpatch:addFile name="i_mandatoscli_sepa.qry" path="facturacion/informes/queries/"/>
+  <flpatch:addFile name="i_mandatoscli_sepab2b.qry" path="facturacion/informes/queries/"/>
+  <flpatch:addFile name="i_mandatoscli_sepa.ar" path="facturacion/informes/reports/"/>
+  <flpatch:addFile name="i_mandatoscli_sepa.kut" path="facturacion/informes/reports/"/>
+  <flpatch:addFile name="i_mandatoscli_sepab2b.ar" path="facturacion/informes/reports/"/>
+  <flpatch:addFile name="i_mandatoscli_sepab2b.kut" path="facturacion/informes/reports/"/>
+  <flpatch:patchScript name="flfactinfo.qs" path="facturacion/informes/scripts/" style="legacy"/>
+  <flpatch:addFile name="i_mandatoscli.mtd" path="facturacion/informes/tables/"/>
+  <flpatch:patchXml name="clientes.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:patchScript name="clientes.qs" path="facturacion/principal/scripts/" style="legacy"/>
+  <flpatch:patchScript name="flfactppal.qs" path="facturacion/principal/scripts/" style="legacy"/>
+  <flpatch:patchXml name="flfactteso.xml" path="facturacion/tesoreria/" style="legacy1"/>
+  <flpatch:patchXml name="factteso_general.ui" path="facturacion/tesoreria/forms/" style="legacy1"/>
+  <flpatch:patchXml name="flfactteso.ui" path="facturacion/tesoreria/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterremesas.ui" path="facturacion/tesoreria/forms/" style="legacy1"/>
+  <flpatch:addFile name="tradmandatoscli.ui" path="facturacion/tesoreria/forms/"/>
+  <flpatch:addFile name="vdisco_sepa19b2b.ui" path="facturacion/tesoreria/forms/"/>
+  <flpatch:patchScript name="factteso_general.qs" path="facturacion/tesoreria/scripts/" style="legacy"/>
+  <flpatch:patchScript name="flfactteso.qs" path="facturacion/tesoreria/scripts/" style="legacy"/>
+  <flpatch:patchScript name="mandatoscli.qs" path="facturacion/tesoreria/scripts/" style="legacy"/>
+  <flpatch:addFile name="mastermandatoscli.qs" path="facturacion/tesoreria/scripts/"/>
+  <flpatch:patchScript name="masterremesas.qs" path="facturacion/tesoreria/scripts/" style="legacy"/>
+  <flpatch:addFile name="mastertradmandatoscli.qs" path="facturacion/tesoreria/scripts/"/>
+  <flpatch:addFile name="tradmandatoscli.qs" path="facturacion/tesoreria/scripts/"/>
+  <flpatch:addFile name="vdisco_sepa19b2b.qs" path="facturacion/tesoreria/scripts/"/>
+  <flpatch:patchXml name="mandatoscli.mtd" path="facturacion/tesoreria/tables/" style="legacy1"/>
+  <flpatch:addFile name="tradmandatoscli.mtd" path="facturacion/tesoreria/tables/"/>
+</flpatch:modifications>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KugarTemplate SYSTEM "kugartemplate.dtd">
+<KugarTemplate PageSize="0" PageOrientation="0" TopMargin="20" BottomMargin="20" LeftMargin="20" RightMargin="30" >
+
+<Detail Level="0" Height="0">
+</Detail>
+
+<Detail Level="1" Height="831">
+<CalculatedField  X="14" Y="18" Width="131" Height="67" FontFamily="Arial" FontSize="11" FontWeight="65" Text ="Logo" HAlignment="2" VAlignment="0" WordWrap ="0" BackgroundColor="255255255" DataType="5" Field="facturascli.total" FunctionName="flfactinfo.pub_logo" CalculationType="6" Precision="2" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Line Style="1" X1="10" Y1="100" X2="585" Y2="100" Color = "10,44,117" Width="3"/>
+<Line Style="1" X1="10" Y1="284" X2="585" Y2="284" Color = "10,44,117" Width="3"/>
+<Line Style="1" X1="10" Y1="100" X2="10" Y2="284" Color = "10,44,117" Width="3"/>
+<Line Style="1" X1="585" Y1="100" X2="585" Y2="284" Color = "10,44,117" Width="3"/>
+<CalculatedField  X="220" Y="225" Width="360" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="CodPostal/Ciudad/Provincia" HAlignment="0" VAlignment="1" WordWrap ="0" DataType="0" Field="empresa.ciudad" CalculationType="6" FunctionName="flfactinfo.codpostalCiudadProvincia" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Field  X="220" Y="110" Width="360" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="RefMandato" HAlignment="0" VAlignment="2" WordWrap ="0" DataType="0" Field="mandatoscli.refmandato" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Line Style="1" X1="10" Y1="410" X2="585" Y2="410" Color = "10,44,117" Width="3"/>
+<Line Style="1" X1="10" Y1="718" X2="585" Y2="718" Color = "10,44,117" Width="3"/>
+<Line Style="1" X1="10" Y1="410" X2="10" Y2="718" Color = "10,44,117" Width="3"/>
+<Line Style="1" X1="585" Y1="410" X2="585" Y2="718" Color = "10,44,117" Width="3"/>
+<Label  X="153" Y="30" Width="370" Height="16" FontFamily="Arial" FontSize="13" FontWeight="65" Text ="00_lblorden_ES" HAlignment="1" VAlignment="1" WordWrap ="0" DataType="0" LabelFunction="flfactinfo.traducir" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="153" Y="50" Width="370" Height="16" FontFamily="Arial" FontSize="13" FontWeight="50" Text ="00_lblorden_TR" HAlignment="1" VAlignment="1" WordWrap ="0" DataType="0" LabelFunction="flfactinfo.traducir" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="122" Width="200" Height="12" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="01_lblrefmandato_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="110" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="01_lblrefmandato_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<CalculatedField  X="220" Y="138" Width="360" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="identificador" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="mandatoscli.refmandato" CalculationType="6" FunctionName="flfactinfo.dameIdentificadorAcreedor" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="150" Width="200" Height="16" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="02_lblidentacreedor_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="138" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="02_lblidentacreedor_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Field  X="220" Y="169" Width="360" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="nombre" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="empresa.nombre" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="181" Width="200" Height="16" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="03_lblnombreacreedor_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="169" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="03_lblnombreacreedor_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="209" Width="200" Height="12" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="04_lbldireccionacreedor_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Field  X="220" Y="197" Width="360" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="direccion" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="empresa.direccion" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="197" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="04_lbldireccionacreedor_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="237" Width="200" Height="12" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="05_lblcpciudadprovinciaacreedor_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="225" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="05_lblcpciudadprovinciaacreedor_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="253" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="06_lblpaisacreedor_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="265" Width="200" Height="16" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="06_lblpaisacreedor_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Field  X="220" Y="253" Width="360" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="pais" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="pais1.nombre" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="290" Width="561" Height="61" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="07_lblautoriza_ES" VAlignment="0" WordWrap ="1" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="354" Width="561" Height="51" FontFamily="Arial" FontSize="7" FontWeight="50" Text ="07_lblautoriza_TR" VAlignment="0" WordWrap ="1" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="432" Width="200" Height="12" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="08_lblnombredeudor_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Field  X="220" Y="420" Width="360" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="nombre" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="clientes.nombre" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="420" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="08_lblnombredeudor_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="460" Width="200" Height="12" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="09_lbldirecciondeudor_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Field  X="220" Y="448" Width="360" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="direccion" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="dirclientes.direccion" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="448" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="09_lbldirecciondeudor_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="476" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="10_lblcpciudadprovinciadeudor_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="488" Width="200" Height="12" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="10_lblcpciudadprovinciadeudor_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<CalculatedField  X="220" Y="476" Width="360" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="CodPostal/Ciudad/Provincia" HAlignment="0" VAlignment="1" WordWrap ="0" DataType="0" Field="empresa.ciudad" CalculationType="6" FunctionName="flfactinfo.codpostalCiudadProvinciaCliente" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Field  X="220" Y="504" Width="360" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="Pais" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="pais2.nombre" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="516" Width="200" Height="12" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="11_lblpaisdeudor_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="504" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="11_lblpaisdeudor_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="532" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="12_lblbic_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="544" Width="200" Height="12" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="12_lblbic_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Field  X="220" Y="532" Width="360" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="bic" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="cuentasbcocli.bic" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="560" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="13_lbliban_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="572" Width="200" Height="14" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="13_lbliban_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<CalculatedField  X="220" Y="560" Width="360" Height="14" FontFamily="Arial" FontSize="10" FontWeight="50" Text ="iban" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="cuentasbcocli.iban" CalculationType="6" FunctionName="flfactinfo.iface.formateaIban" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<CalculatedField  X="220" Y="588" Width="360" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="tipopago" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="mandatoscli.tipopago" CalculationType="6" FunctionName="flfactinfo.tipoPago" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="588" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="14_lbltipopago_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="600" Width="200" Height="16" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="14_lbltipopago_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Field  X="220" Y="616" Width="60" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="fecha" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="3" Field="mandatoscli.fechafirma" DateFormat="18" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="628" Width="200" Height="16" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="15_lblfechafirma_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="616" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="15_lblfechafirma_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Field  X="290" Y="616" Width="285" Height="14" FontFamily="Arial" FontSize="9" FontWeight="50" Text ="lugar" HAlignment="0" VAlignment="0" WordWrap ="0" DataType="0" Field="mandatoscli.lugarfirma" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="696" Width="200" Height="16" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="16_lblfirmadeudor_TR" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="15" Y="684" Width="200" Height="14" FontFamily="Arial" FontSize="9" FontWeight="65" Text ="16_lblfirmadeudor_ES" HAlignment="0" VAlignment="0" WordWrap ="0" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="20" Y="754" Width="551" Height="22" FontFamily="Arial" FontSize="7" FontWeight="50" Text ="17_lblcamposobli_TR" HAlignment="1" VAlignment="0" WordWrap ="1" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="20" Y="726" Width="551" Height="22" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="17_lblcamposobli_ES" HAlignment="1" VAlignment="0" WordWrap ="1" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="283" Y="616" Width="5" Height="14" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="-" HAlignment="0" VAlignment="0" WordWrap ="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="125" Y2="125" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="153" Y2="153" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="184" Y2="184" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="212" Y2="212" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="240" Y2="240" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="268" Y2="268" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="435" Y2="435" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="463" Y2="463" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="491" Y2="491" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="519" Y2="519" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="547" Y2="547" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="575" Y2="575" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="603" Y2="603" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="631" Y2="631" Width="1" Color="0,0,0"/>
+<Line Style="1" X1="220" X2="580" Y1="705" Y2="705" Width="1" Color="0,0,0"/>
+<Label  X="20" Y="795" Width="551" Height="16" FontFamily="Arial" FontSize="8" FontWeight="50" Text ="18_lblnotapie_ES" HAlignment="1" VAlignment="0" WordWrap ="1" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+<Label  X="20" Y="815" Width="551" Height="16" FontFamily="Arial" FontSize="7" FontWeight="50" Text ="18_lblnotapie_TR" HAlignment="1" VAlignment="0" WordWrap ="1" LabelFunction="flfactinfo.traducir" DataType="0" BackgroundColor="255,255,255" ForegroundColor="0,0,0"/>
+</Detail>
+</KugarTemplate>

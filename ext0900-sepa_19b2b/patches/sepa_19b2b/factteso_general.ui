@@ -1,0 +1,33 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,factteso_general]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">466</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,factteso_general]/vbox[vbox,1]/widget[QTabWidget,tbwDatosGenerales]/widget[QWidget,datosgenerales]/vbox[vbox,1]/widget[QGroupBox,gbxProcesos]/hbox[hbox,1]/spacer[spacerProcesos]">
+    <widget class="QToolButton">
+      <property name="name">
+        <cstring>tbnCalcularMandatoPagos</cstring>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="iconSet">
+        <iconset>sepa_19b2bimage51194</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Calcular mandatos asociados a pagos</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Calcular mandatos asociados a pagos</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="sepa_19b2bimage51194">
+      <data format="PNG" length="1482">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000059149444154789cb597c18b1cc715c67f637ae0158ca0072498863d4c830419b1028f4e99213e6821076bc9415afb121f7508c4b7b047e72f707cf4256173932f66ed833cb621307b10cc1a623c0683c760410b62e88115748317eac1146c0ed5ddd333dbabc801bf4b53f5baeb7defabefbdaa869a4947f8b52cec848df3aded898b8b8b8b5f0340abd5ba140b20689accce324464fd860313182c1643fd092600ebfcb3d11c6000b8602b611169062022ccbf9dffefb400758a041eac04823addf08f7f3b06e0fd0fdee7f02f871becb65aad56108621799e372e5e7edc64b3af668cdfd8f4cf9e16732ba0edc7b40ba0e705b015586731c6d312e4795eedfbd1df8f2e053afeec98782726cf737abd1e713fc68841012ca45f1ec3590e3742e8c53e7811a87ab661f16cc1ec74060ae37b6be0d516d89f2de932ad1c82dfdb830707d522d5a2851f03d183836a2ea9655c59311efe66c87834f6acd46c4303d35c78af9855bcb0a62753ef747e8f2514ee0eef7a7101d65a4ce0e99440982d262c7e3a253bcfd8eb3daad6ded6c62500268082d8b539d8bbb7b71ed71828bf2cf7b20c321eec331eec036c645b0af54a00b636698abac1c0e4c9846ed84544b8fbfa5d2fa0b6a9324a9f4cfc76f4a2c600a59dfcf009e68b25a3f08fcd004c60d6b4967056b0ff87fdf5db2b36e80688eafe32e3523335bbb7fb9077df3c7c89069c8562514301a60dc79f1e13f77d15c4bd98f8665cbcef03a55f4ee06c89dce8c1f582856d2102aa9eb16d2dac010406eacec00738a8a9fcd297ed2b1868b0b2b36e6b618b81f5ac3af5cde464568d2510c230e4f69ddbeb4c6a744b20cc7e9cb0783e273d4fb9df5405ee721e35066a880381d566d3d8c8a8cca446b73a657c6b9ff1ada62ae86e47dc1eda4d67a181729132f32ae3026cfaf1b10fd011080b0d64df63f35386bd04fbdd6300c6f173a627334279f70a00ed4d064acf76bfaf322efcd1db6b8d0c921936790f3a29a623d8f28c71307ebd8f5545f503f819b836de02b0da64a0dcb3c99309f14ecc325f12efc4c4fd18da6b7ffae931640ab71610cc5197214104fdfb989e14c216ec32455f7c8e8411f6f911e6faac81819a957b5cf681dbdc6ef4470f0e484f0ed11753704aefe608d31f003370b2be4fec184cef1decb31938c52e177c7674efe2b535030d34bf82658b63d2f911d97f12c2fe10ae039a60550083751402b7c00273b38b3fca94bd515c67606b65c7a5aeb56db3a733c2f95fe15c89ee0c911dc138c1a298407cdb2e83974f07a627d8e74b087acd37a29795df86a553bef9b73fc2a51f81822d0e34eb1402b02e2a2e715995180ee884e0f40a000508da30f96282c19024098ffefc68e395f4dbc774c398cc254818ae3ba9530806a019b805568af274390482aad2ed08d9327f0980624bf6dfdcbff215b2055c13ba44a0ea2bc329aa10ee642c9e9e12dd19a0cb05615808b260287320b2d5976cd9076a0d68fba2598d03881c843722f255e157f5f4aa455fe4c4a3878826e464a05d1490a22aa403ba0de0a02f15fd971a5083a5f9003ac099a71507aafe284f9fcd214888770784fdfbe4cb39688a3afca95bdcae5eab2f5867e0552cdc7dc7b3d2ed82ae83e320de7d089917e8fcc9116147fccd5815cdf3aa8fb4a0f81b5ac1375fcff8f01f1f7aa7e3f2d9d0a098c30739e1f510344735f3db73ae84bb43248821483012917c3d05cdb12b4bf75a1744086f0e6a0080bfcd2d5d312816e1d59efd9f3e627f3723fbe1143aa0cb1455253bcb2080c11b7bccff35250cbc6e4ca78b443d400977069b0cfc920e58b7e49f63e2dfdf277b36878ea0cb84ec2c2d34a1beef694e341a91fd9860c420518c76469b0cfc225bc1e38f1f577f3c43f99c783828822755590a909f6770aea0397484f0d68845d6e5ad3f7dd26a1587c5fff5475cfdc0e22bf0e1ef04896264a5a8660503c591acf8f2ebc7e4e719d3af7204e1bf0d1d979d9427ede00000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+</xupdate:modifications>
