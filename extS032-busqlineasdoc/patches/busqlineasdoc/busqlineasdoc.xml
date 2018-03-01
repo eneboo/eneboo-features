@@ -1,0 +1,16 @@
+<flpatch:modifications xmlns:flpatch="busqlineasdoc" name="fullpatch">
+  <flpatch:patchXml name="masteralbaranescli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masteralbaranesprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterfacturascli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterfacturasprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterpedidoscli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterpedidosprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterpresupuestoscli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchScript name="masteralbaranescli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masteralbaranesprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterfacturascli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterfacturasprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterpedidoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterpedidosprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterpresupuestoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+</flpatch:modifications>
