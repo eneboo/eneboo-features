@@ -2835,7 +2835,7 @@ function eFactura_nodoIndividualTypeFacturae(nombreNodo:String, version:String, 
 		return cadenaFun + sufijoError;
 	cadenaXML += cadenaFun;
 
-	cadenaFun = this.iface.nodoTextMax40TypeFacturae("SecondSurname", version, datosEmpresa["apellido1pf"]);
+	cadenaFun = this.iface.nodoTextMax40TypeFacturae("SecondSurname", version, datosEmpresa["apellido2pf"]);
 	if (cadenaFun.startsWith("ERROR:"))
 		return cadenaFun + sufijoError;
 	cadenaXML += cadenaFun;
