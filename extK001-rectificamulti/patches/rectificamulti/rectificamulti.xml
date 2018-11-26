@@ -1,0 +1,11 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="rectificamulti">
+  <flpatch:patchXml name="flfacturac.xml" path="facturacion/facturacion/" style="legacy1"/>
+  <flpatch:patchXml name="facturascli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchScript name="facturascli.qs" path="facturacion/facturacion/scripts/" style="qsdir"/>
+  <flpatch:patchScript name="flfacturac.qs" path="facturacion/facturacion/scripts/" style="qsdir"/>
+  <flpatch:patchXml name="facturascli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:addFile name="facturasclirect.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:replaceFile name="i_facturascli.kut" path="facturacion/informes/reports/"/>
+  <flpatch:patchScript name="i_masterfacturascli.qs" path="facturacion/informes/scripts/" style="qsdir"/>
+  <flpatch:patchScript name="flfactppal.qs" path="facturacion/principal/scripts/" style="qsdir"/>
+</flpatch:modifications>

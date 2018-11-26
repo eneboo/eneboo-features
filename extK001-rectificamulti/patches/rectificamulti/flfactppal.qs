@@ -1,0 +1,36 @@
+@@add-classes
+  interna
+  oficial
++ rectificamulti
+  head
+  ifaceCtx
+..
+@@added-class rectificamulti
+  /** @class_declaration rectificamulti */
+  /////////////////////////////////////////////////////////////////
+  //// RECTIFICAMULTI /////////////////////////////////////////////////
+  class rectificamulti extends PARENT_CLASS {
+      function rectificamulti( context ) { PARENT_CLASS ( context ); }
+      function extension(nE) {
+          return this.ctx.rectificamulti_extension(nE);
+      }
+  }
+  //// RECTIFICAMULTI /////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////
+  
+  /** @class_definition rectificamulti */
+  /////////////////////////////////////////////////////////////////
+  //// RECTIFICAMULTI////////////////////////////////////////////////
+  function rectificamulti_extension(nE)
+  {
+      var _i = this.iface;
+      if (nE == "rectificamulti") {
+          return true;
+      }
+      return _i.__extension(nE);
+  }
+  //// RECTIFICAMULTI////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////
+  
+..
+
