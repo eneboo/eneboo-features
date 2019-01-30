@@ -2,13 +2,13 @@
 /** @class_declaration busqLineasDocs */
 //////////////////////////////////////////////////////////////////
 //// BUSQUEDA EN LINEAS DOCUMENTOS ///////////////////////////////
-class busqLineasDocs extends marcaImpresion
+class busqLineasDocs extends barCode
 {
 	var filtroOriginal:String;
 	var leBusqueda:Object;
 	var tbnBuscar:Object;
 
-	function busqLineasDocs( context ) { marcaImpresion ( context ); }
+	function busqLineasDocs( context ) { barCode ( context ); }
 	function init() {
 		return this.ctx.busqLineasDocs_init();
 	}

@@ -1,4 +1,4 @@
-<flpatch:modifications xmlns:flpatch="ultimopreccompra" name="fullpatch">
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="trinanes2">
   <flpatch:patchXml name="articulos.ui" path="facturacion/almacen/forms/" style="legacy1"/>
   <flpatch:patchScript name="articulos.qs" path="facturacion/almacen/scripts/" style="legacy"/>
   <flpatch:patchXml name="articulos.mtd" path="facturacion/almacen/tables/" style="legacy1"/>

@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[codcliente]/relation[lineaspedidosprov,codcliente]">
+    <relation>
+      <table>articulosclientes</table>
+      <field>codcliente</field>
+      <card>1M</card>
+    </relation>
+  </xupdate:insert-after>
+  <xupdate:update select="/TMD[TMD,1]/field[riesgomax]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[riesgoalcanzado]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[capitalimpagado]/partD[partD,1]/text()[1]">3</xupdate:update>
+</xupdate:modifications>

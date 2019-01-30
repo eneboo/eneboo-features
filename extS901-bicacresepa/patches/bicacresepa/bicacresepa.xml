@@ -1,0 +1,4 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="bicacresepa">
+  <flpatch:patchXml name="cuentasbanco.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:patchXml name="cuentasbanco.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+</flpatch:modifications>

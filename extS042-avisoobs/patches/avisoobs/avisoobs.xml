@@ -1,0 +1,16 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="fullpatch">
+  <flpatch:patchXml name="albaranescli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="albaranesprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="facturascli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="facturasprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="pedidoscli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="pedidosprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="presupuestoscli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchScript name="albaranescli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="albaranesprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="facturascli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="facturasprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="pedidoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="pedidosprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="presupuestoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+</flpatch:modifications>

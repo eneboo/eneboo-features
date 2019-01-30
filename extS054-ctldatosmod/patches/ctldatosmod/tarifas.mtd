@@ -1,0 +1,44 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/TMD[TMD,1]/field[incporcentual]">
+    <field>
+      <name>idusuarioalta</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","U.Alta")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>50</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idusuarioalta]">
+    <field>
+      <name>fechaalta</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","F.Alta")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>date</type>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[fechaalta]">
+    <field>
+      <name>idusuariomod</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","U.Mod.")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>50</length>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idusuariomod]">
+    <field>
+      <name>fechamod</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","F.Mod.")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>date</type>
+      <editable>false</editable>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

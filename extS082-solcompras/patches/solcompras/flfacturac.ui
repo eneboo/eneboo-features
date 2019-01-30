@@ -1,0 +1,80 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:append-first select="/UI[UI,1]/menubar[menubar,menubar]/item[Compras]">
+    <action name="solpresupuestosprov"/>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Compras]/action[solpresupuestosprov]">
+    <action name="presupuestosprov"/>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">341</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,2]">
+    <action name="solpresupuestosprov"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[solpresupuestosprov]">
+    <action name="presupuestosprov"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[cambiarejer]">
+    <action>
+      <property name="name">
+        <cstring>solpresupuestosprov</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>image11926</iconset>
+      </property>
+      <property name="text">
+        <string>Solicitud de gestión de compra a proveedor</string>
+      </property>
+      <property name="menuText">
+        <string>&amp;Solicitud de gestión de compra a proveedor</string>
+      </property>
+      <property name="whatsThis">
+        <string>Solicitud de gestión de compras</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[solpresupuestosprov]">
+    <action>
+      <property name="name">
+        <cstring>presupuestosprov</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>image36323</iconset>
+      </property>
+      <property name="text">
+        <string>Gestión de compras</string>
+      </property>
+      <property name="menuText">
+        <string>Gestión de compras</string>
+      </property>
+      <property name="whatsThis">
+        <string>Gestión de Compras</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image48528]">
+    <image name="image11926">
+      <data format="PNG" length="164">89504e470d0a1a0a0000000d49484452000000300000003008060000005702f9870000006b49444154789cedd5310a804000034123feffcbb1152c2dd6c04e7756b71c92b43d969df405be328076bdbe24fffe29da3c8ff32f60002dee00cc00da7c8043463380e690d10ca0cd0738643403680e19cd00da7c8043463380e690d10ca0cd0738643403680e19cd00da0d014621539504874c0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image11926]">
+    <image name="image36323">
+      <data format="PNG" length="621">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000023449444154789cc597bd6b145114c57f7776b44db7a2825560b3339822c48f58994213842db48981d8ed5f10d0ffc1d63a20d898d422c42a428a90088b51de2c0b568128591bd34820eb5c8bccaebbcedb8f99d98f030333f7cd3be7cc7d6feedc115565927026aa0eb8d6a888e0fbf709c32b4351719c138cf98825dd128b79de1c225bc0f450c4ffe11baa2b0441a5c35bec36c7793e027180e988bb03f125507dd2974ae414d5778854a239738894509dea39cfc26ddb0397fbc86f737e5ea6563bee88160ad771dd0d60b9c7dc1877d2b7a0423e5f8a8903d46ac7e4f325a0129fd61d490d94d9d96900e0fb6bf8fe4174ac014463e52484f1b7c0f7bb55a61f18730d8062f1268ef3a563340c67a956bf461cdf81ab561663a4fdd25e076c50fd89e73d05c0715662e3b9dc33e04574f5b9ab81ff30b8019159e06d8f3b76dbce6f0c4a3bac527c8831ef0198992900c5711aa8e2ba0f510d999fbf84ebbe4ec23bf812d8f18b46e301c6d4595c74393bdb42752109415603ebad9a50afbf041e2725c8b204bf0982370078de5d603d0d4916031554ff5cb038f7d292a45f02915cab2e883c1abf01d50544126d381b26de92a53720b287ea2aaaab88ec8ddf001c11049b04c126703409034381ed737c00dc1a91de278cb9dd1eb065e0d588c4addcf10c40b3e1282362fb2f58eeda7c8a9c02dbb1b8ea0961b8d16a58fa1ae805dfbf83c88798898b4e790963f693d025df84c6eca3ba143d6d2671489381269a9900d28a6733d03401a415cf6e6008f80ba706c84c89c7a8630000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[cambiarejer,activated(),FLWidgetApplication,execDefaultScript()]">
+    <connection>
+      <sender>solpresupuestosprov</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[solpresupuestosprov,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>presupuestosprov</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -2,11 +2,11 @@
 /** @class_declaration obtPrecioCompra */
 /////////////////////////////////////////////////////////////////
 //// OBTENER ULTIMO PRECIO COMPRA ///////////////////////////////
-class obtPrecioCompra extends articuloscomp /** %from: oficial */ {
+class obtPrecioCompra extends barCode /** %from: oficial */ {
 
     var tbnObtenerUltimoPrecComp:Object;
 
-    function obtPrecioCompra( context ) { articuloscomp ( context ); }
+    function obtPrecioCompra( context ) { barCode ( context ); }
 		function init() {
 		return this.ctx.obtPrecioCompra_init();
 	}
@@ -50,6 +50,9 @@ function obtPrecioCompra_obtenerUltimoPrecioCompra()
 	qryAlbaranes.setFrom("lineasalbaranesprov l inner join albaranesprov a on a.idalbaran = l.idalbaran ");
 	qryAlbaranes.setWhere("l.referencia = '" + cursor.valueBuffer("referencia") + "'");
 	qryAlbaranes.setOrderBy(" a.fecha desc, a.hora desc ");
+	
+	
+	
 
 	if (qryAlbaranes.exec()) {
 

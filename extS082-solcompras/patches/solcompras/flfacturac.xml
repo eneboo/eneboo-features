@@ -1,0 +1,56 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[cambiarejer]">
+    <action>
+      <name>solpresupuestosprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Solicitudes de gestión de compra para ciertos artículo o para los artículos de un pedido de cliente")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Solicitud de gestión de compra a proveedor")</alias>
+      <scriptform>mastersolpresupuestosprov</scriptform>
+      <scriptformrecord>solpresupuestosprov</scriptformrecord>
+      <table>solpresupuestosprov</table>
+      <form>master</form>
+      <formrecord>solpresupuestosprov</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[solpresupuestosprov]">
+    <action>
+      <name>lineassolpresupuestosprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Líneas de solicitudes de gestión de compra para ciertos artículo o para los artículos de un pedido de cliente")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Líneas de solicitud de gestión de compra a proveedor")</alias>
+      <table>lineassolpresupuestosprov</table>
+      <formrecord>lineassolpresupuestosprov</formrecord>
+      <scriptformrecord>lineassolpresupuestosprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lineassolpresupuestosprov]">
+    <action>
+      <name>presupuestosprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Gestión de compras a proveedores")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Gestión de compras a proveedor")</alias>
+      <table>presupuestosprov</table>
+      <form>masterpresupuestosprov</form>
+      <scriptform>masterpresupuestosprov</scriptform>
+      <formrecord>presupuestosprov</formrecord>
+      <scriptformrecord>presupuestosprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[presupuestosprov]">
+    <action>
+      <name>lineaspresupuestosprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Lineas de gestión de compras a proveedores)</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Líneas de gestión de compras a proveedor")</alias>
+      <table>lineaspresupuestosprov</table>
+      <form>master</form>
+      <formrecord>lineaspresupuestosprov</formrecord>
+      <scriptformrecord>lineaspresupuestosprov</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[lineaspresupuestosprov]">
+    <action>
+      <name>altamasivadtoprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Inserción masiva de descuentos a proveedores")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Esta acción permite actualizar de manera rápida los descuentos en los datos del proveedor habitual de cada artículo que cumpla los criterios indicados.")</alias>
+      <table>altamasivadtoprov</table>
+      <form>masteraltamasivadtoprov</form>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

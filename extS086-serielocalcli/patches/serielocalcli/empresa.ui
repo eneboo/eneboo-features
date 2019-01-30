@@ -1,0 +1,663 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">562</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">564</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDivisa]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbCodDivisa]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbDesDivisa]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">2</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout9]/hbox[hbox,1]/widget[FLFieldDB,fdbDesDivisa]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPago]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbCodPago]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbDesPago]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">2</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout10]/hbox[hbox,1]/widget[FLFieldDB,fdbDesPago]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAlmacen]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[FLFieldDB,fdbCodAlmacen]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[FLFieldDB,fdbDesAlmacen]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">2</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11]/hbox[hbox,1]/widget[FLFieldDB,fdbDesAlmacen]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodSerie]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2]/hbox[hbox,1]/widget[FLFieldDB,fdbDesSerie]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">2</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2]/hbox[hbox,1]/widget[FLFieldDB,fdbDesSerie]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[FLFieldDB,fdbRecEquivalencia]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout44]/hbox[hbox,1]/widget[FLFieldDB,fdbRecEquivalencia]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13]/hbox[hbox,1]/widget[FLFieldDB,fdbContIntegrada]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13]/hbox[hbox,1]/widget[FLFieldDB,fdbContIntegrada]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13_2]/hbox[hbox,1]/widget[FLFieldDB,fdbStockPedidos]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout13_2]/hbox[hbox,1]/widget[FLFieldDB,fdbStockPedidos]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbCodClienteEmp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreCliente]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">2</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2_2]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreCliente]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2_3]/hbox[hbox,1]/widget[FLFieldDB,fdbCodProveedorEmp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2_3]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreProveedor]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">2</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layout11_2_3]/hbox[hbox,1]/widget[FLFieldDB,fdbNombreProveedor]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QFrame,fdmValoresDefecto]/vbox[vbox,1]/widget[QLayoutWidget,layoutPieTicket]/hbox[hbox,1]/widget[FLFieldDB,fdbPieTicket]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QGroupBox,gbxPagares]/hbox[hbox,1]/widget[FLFieldDB,fdbPrefijoPag]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,valoresdefecto]/vbox[vbox,1]/widget[QGroupBox,gbxPagares]/hbox[hbox,1]/widget[FLFieldDB,fdbPrefijoPag]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,TabPage]/vbox[vbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,TabPage]/attribute[attribute,1]">
+    <grid>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="QGroupBox" row="0" column="0">
+        <property name="name">
+          <cstring>gbxConfLocal</cstring>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+          </font>
+        </property>
+        <property name="title">
+          <string/>
+        </property>
+        <grid>
+          <property name="name">
+            <cstring>unnamed</cstring>
+          </property>
+          <widget class="QGroupBox" row="1" column="0">
+            <property name="name">
+              <cstring>gbxClienteCorreo</cstring>
+            </property>
+            <property name="font">
+              <font>
+                                    </font>
+            </property>
+            <property name="title">
+              <string>Tipo de cliente de correo</string>
+            </property>
+            <hbox>
+              <property name="name">
+                <cstring>unnamed</cstring>
+              </property>
+              <widget class="QLabel">
+                <property name="name">
+                  <cstring>lblClienteCorreo</cstring>
+                </property>
+                <property name="sizePolicy">
+                  <sizepolicy>
+                    <hsizetype>1</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                  <size>
+                    <width>100</width>
+                    <height>30</height>
+                  </size>
+                </property>
+                <property name="font">
+                  <font>
+                                            </font>
+                </property>
+                <property name="text">
+                  <string/>
+                </property>
+                <property name="alignment">
+                  <set>AlignVCenter</set>
+                </property>
+              </widget>
+              <widget class="QPushButton">
+                <property name="name">
+                  <cstring>pbnCambiarClienteCorreo</cstring>
+                </property>
+                <property name="maximumSize">
+                  <size>
+                    <width>100</width>
+                    <height>32767</height>
+                  </size>
+                </property>
+                <property name="text">
+                  <string>Cambiar</string>
+                </property>
+                <property name="toolTip" stdset="0">
+                  <string>Usuario</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                  <string>Cambiar usuario</string>
+                </property>
+              </widget>
+            </hbox>
+          </widget>
+          <widget class="QGroupBox" row="2" column="0">
+            <property name="name">
+              <cstring>gbxEjecutableCorreo</cstring>
+            </property>
+            <property name="font">
+              <font>
+                                    </font>
+            </property>
+            <property name="title">
+              <string>Nombre (y ruta, en caso necesario) de la aplicación de correo</string>
+            </property>
+            <hbox>
+              <property name="name">
+                <cstring>unnamed</cstring>
+              </property>
+              <widget class="QLabel">
+                <property name="name">
+                  <cstring>lblNombreCorreo</cstring>
+                </property>
+                <property name="sizePolicy">
+                  <sizepolicy>
+                    <hsizetype>1</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                  <size>
+                    <width>100</width>
+                    <height>30</height>
+                  </size>
+                </property>
+                <property name="font">
+                  <font>
+                                            </font>
+                </property>
+                <property name="text">
+                  <string/>
+                </property>
+                <property name="alignment">
+                  <set>AlignVCenter</set>
+                </property>
+              </widget>
+              <widget class="QPushButton">
+                <property name="name">
+                  <cstring>pbnCambiarNombreCorreo</cstring>
+                </property>
+                <property name="maximumSize">
+                  <size>
+                    <width>100</width>
+                    <height>32767</height>
+                  </size>
+                </property>
+                <property name="text">
+                  <string>Cambiar</string>
+                </property>
+                <property name="toolTip" stdset="0">
+                  <string>Usuario</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                  <string>Cambiar usuario</string>
+                </property>
+              </widget>
+            </hbox>
+          </widget>
+          <widget class="QGroupBox" row="3" column="0">
+            <property name="name">
+              <cstring>gbxDirectorioCorreo</cstring>
+            </property>
+            <property name="font">
+              <font>
+                                    </font>
+            </property>
+            <property name="title">
+              <string>Directorio donde se guardarán temporalmente los documentos a adjuntar en los correos</string>
+            </property>
+            <hbox>
+              <property name="name">
+                <cstring>unnamed</cstring>
+              </property>
+              <widget class="QLabel">
+                <property name="name">
+                  <cstring>lblDirIntermedia</cstring>
+                </property>
+                <property name="sizePolicy">
+                  <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                  <size>
+                    <width>400</width>
+                    <height>30</height>
+                  </size>
+                </property>
+                <property name="font">
+                  <font>
+                                            </font>
+                </property>
+                <property name="text">
+                  <string/>
+                </property>
+                <property name="alignment">
+                  <set>AlignVCenter</set>
+                </property>
+              </widget>
+              <widget class="QPushButton">
+                <property name="name">
+                  <cstring>pbnCambiarDirIntermedia</cstring>
+                </property>
+                <property name="maximumSize">
+                  <size>
+                    <width>100</width>
+                    <height>32767</height>
+                  </size>
+                </property>
+                <property name="text">
+                  <string>Cambiar</string>
+                </property>
+                <property name="toolTip" stdset="0">
+                  <string>Usuario</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                  <string>Cambiar usuario</string>
+                </property>
+              </widget>
+            </hbox>
+          </widget>
+          <widget class="QGroupBox" row="0" column="0">
+            <property name="name">
+              <cstring>gbxAccesoNavegador</cstring>
+            </property>
+            <property name="font">
+              <font>
+                                    </font>
+            </property>
+            <property name="title">
+              <string>Nombre o ruta de acceso al navegador</string>
+            </property>
+            <hbox>
+              <property name="name">
+                <cstring>unnamed</cstring>
+              </property>
+              <widget class="QLabel">
+                <property name="name">
+                  <cstring>lblNombreNavegador</cstring>
+                </property>
+                <property name="sizePolicy">
+                  <sizepolicy>
+                    <hsizetype>1</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                  <size>
+                    <width>100</width>
+                    <height>30</height>
+                  </size>
+                </property>
+                <property name="font">
+                  <font>
+                                            </font>
+                </property>
+                <property name="text">
+                  <string/>
+                </property>
+                <property name="alignment">
+                  <set>AlignVCenter</set>
+                </property>
+              </widget>
+              <widget class="QPushButton">
+                <property name="name">
+                  <cstring>pbnCambiarNavegador</cstring>
+                </property>
+                <property name="maximumSize">
+                  <size>
+                    <width>100</width>
+                    <height>32767</height>
+                  </size>
+                </property>
+                <property name="text">
+                  <string>Cambiar</string>
+                </property>
+                <property name="toolTip" stdset="0">
+                  <string>Usuario</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                  <string>Cambiar usuario</string>
+                </property>
+              </widget>
+            </hbox>
+          </widget>
+          <spacer row="5" column="0">
+            <property name="name">
+              <cstring>spcConfLocal</cstring>
+            </property>
+            <property name="orientation">
+              <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+              <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+              <size>
+                <width>20</width>
+                <height>30</height>
+              </size>
+            </property>
+          </spacer>
+          <widget class="QGroupBox" row="4" column="0">
+            <property name="name">
+              <cstring>gbxSerieLocalCli</cstring>
+            </property>
+            <property name="font">
+              <font>
+                                    </font>
+            </property>
+            <property name="title">
+              <string>Serie de facturación local para CLIENTES</string>
+            </property>
+            <grid>
+              <property name="name">
+                <cstring>unnamed</cstring>
+              </property>
+              <widget class="QLayoutWidget" row="1" column="0">
+                <property name="name">
+                  <cstring>layout29</cstring>
+                </property>
+                <grid>
+                  <property name="name">
+                    <cstring>unnamed</cstring>
+                  </property>
+                  <widget class="QLabel" row="0" column="1">
+                    <property name="name">
+                      <cstring>lblNombreSerieLocalCli</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                      <sizepolicy>
+                        <hsizetype>1</hsizetype>
+                        <vsizetype>5</vsizetype>
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                      </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                      <size>
+                        <width>100</width>
+                        <height>30</height>
+                      </size>
+                    </property>
+                    <property name="font">
+                      <font>
+                                                    </font>
+                    </property>
+                    <property name="text">
+                      <string>.</string>
+                    </property>
+                    <property name="alignment">
+                      <set>AlignVCenter</set>
+                    </property>
+                  </widget>
+                  <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                      <cstring>lblSerieLocalCli</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                      <sizepolicy>
+                        <hsizetype>1</hsizetype>
+                        <vsizetype>5</vsizetype>
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                      </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                      <size>
+                        <width>100</width>
+                        <height>30</height>
+                      </size>
+                    </property>
+                    <property name="font">
+                      <font>
+                                                    </font>
+                    </property>
+                    <property name="text">
+                      <string>.</string>
+                    </property>
+                    <property name="alignment">
+                      <set>AlignVCenter</set>
+                    </property>
+                  </widget>
+                  <widget class="QPushButton" row="0" column="2">
+                    <property name="name">
+                      <cstring>pbnCambiarSerieLocalCli</cstring>
+                    </property>
+                    <property name="maximumSize">
+                      <size>
+                        <width>100</width>
+                        <height>32767</height>
+                      </size>
+                    </property>
+                    <property name="text">
+                      <string>Cambiar</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                      <string>Usuario</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                      <string>Cambiar usuario</string>
+                    </property>
+                  </widget>
+                </grid>
+              </widget>
+              <widget class="QLabel" row="0" column="0">
+                <property name="name">
+                  <cstring>textLabel1</cstring>
+                </property>
+                <property name="text">
+                  <string>La serie local para Clientes prevalece sobre las demás definiciones de series
+de facturación. Si se define prevalecerá sobre la de parámetros de empresa
+y sobre la definida en cada cliente. No afecta a proveedores</string>
+                </property>
+                <property name="scaledContents">
+                  <bool>false</bool>
+                </property>
+                <property name="alignment">
+                  <set>WordBreak|AlignVCenter</set>
+                </property>
+              </widget>
+            </grid>
+          </widget>
+        </grid>
+      </widget>
+    </grid>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,efactura]/vbox[vbox,1]/widget[QGroupBox,gbxEFactura]/vbox[vbox,1]/widget[QGroupBox,gbxEFactura]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaFacturae]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta]/grid[grid,1]/widget[QLayoutWidget,layout23]/grid[grid,1]/widget[FLFieldDB,ffdbBloqPreCliImp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta]/grid[grid,1]/widget[QLayoutWidget,layout23]/grid[grid,1]/widget[FLFieldDB,fdbBloqPedCliImp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta]/grid[grid,1]/widget[QLayoutWidget,layout23]/grid[grid,1]/widget[FLFieldDB,fdbBloqFacCliImp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta]/grid[grid,1]/widget[QLayoutWidget,layout23]/grid[grid,1]/widget[FLFieldDB,fdbBloqAlbCliImp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta_2]/grid[grid,1]/widget[QLayoutWidget,layout23_2]/grid[grid,1]/widget[FLFieldDB,fdbBloqPedProImp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta_2]/grid[grid,1]/widget[QLayoutWidget,layout23_2]/grid[grid,1]/widget[FLFieldDB,fdbBloqPedProImp]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta_2]/grid[grid,1]/widget[QLayoutWidget,layout23_2]/grid[grid,1]/widget[FLFieldDB,fdbBloqFacCliImp_2]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta_2]/grid[grid,1]/widget[QLayoutWidget,layout23_2]/grid[grid,1]/widget[FLFieldDB,fdbBloqFacCliImp_2]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta_2]/grid[grid,1]/widget[QLayoutWidget,layout23_2]/grid[grid,1]/widget[FLFieldDB,fdbBloqAlbProImp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta_2]/grid[grid,1]/widget[QLayoutWidget,layout23_2]/grid[grid,1]/widget[FLFieldDB,fdbBloqAlbProImp]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:append-first select="/UI[UI,1]/includehints[includehints,1]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,2]"/>
+</xupdate:modifications>

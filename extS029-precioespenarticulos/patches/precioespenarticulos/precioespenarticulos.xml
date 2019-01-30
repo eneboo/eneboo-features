@@ -1,4 +1,0 @@
-<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="fullpatch">
-  <flpatch:patchXml name="articulos.ui" path="facturacion/almacen/forms/" style="legacy1"/>
-  <flpatch:patchXml name="articulosclientes.mtd" path="facturacion/principal/tables/" style="legacy1"/>
-</flpatch:modifications>

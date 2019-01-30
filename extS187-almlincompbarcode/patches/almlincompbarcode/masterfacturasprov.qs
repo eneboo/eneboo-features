@@ -1,0 +1,25 @@
+
+/** @class_declaration almacenLinea */
+/////////////////////////////////////////////////////////////////
+//// ALMACEN_LINEA //////////////////////////////////////////////
+class almacenLinea extends busqLineasDocs /** %from: oficial */ {
+	function almacenLinea( context ) { busqLineasDocs ( context ); }
+	function copiadatosLineaFactura(curLineaFactura:FLSqlCursor):Boolean {
+		return this.ctx.almacenLinea_copiadatosLineaFactura(curLineaFactura);
+	}
+}
+//// ALMACEN_LINEA //////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+/** @class_definition almacenLinea */
+/////////////////////////////////////////////////////////////////
+//// ALMACEN_LINEA //////////////////////////////////////////////
+function almacenLinea_copiadatosLineaFactura(curLineaFactura:FLSqlCursor):Boolean
+{
+
+	this.iface.curLineaFactura.setValueBuffer("codalmacen", curLineaFactura.valueBuffer("codalmacen"));
+	return this.iface.__copiadatosLineaFactura(curLineaFactura);
+}
+//// ALMACEN_LINEA //////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+

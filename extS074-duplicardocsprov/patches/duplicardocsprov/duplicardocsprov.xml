@@ -1,0 +1,6 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="duplicardocsprov">
+  <flpatch:patchXml name="masteralbaranesprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterpedidosprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchScript name="masteralbaranesprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterpedidosprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  </flpatch:modifications>

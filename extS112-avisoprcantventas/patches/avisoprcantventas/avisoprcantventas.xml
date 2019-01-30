@@ -1,0 +1,3 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="trinanes2">
+  <flpatch:patchScript name="lineasalbaranescli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+</flpatch:modifications>

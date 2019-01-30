@@ -1,0 +1,147 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/grid[grid,1]/widget[QGroupBox,groupBox7]/hbox[hbox,1]/widget[FLFieldDB,fdbDescripcion]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/grid[grid,1]/widget[QGroupBox,gbxAtributo]/hbox[hbox,1]/widget[FLFieldDB,fdbTalla]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/grid[grid,1]/widget[QGroupBox,gbxAtributo]/hbox[hbox,1]/widget[FLFieldDB,fdbColor]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/grid[grid,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/vbox[vbox,1]"/>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/grid[grid,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox9]/property[title]">
+    <grid>
+      <property name="name">
+        <cstring>unnamed</cstring>
+      </property>
+      <widget class="FLFieldDB" row="0" column="0">
+        <property name="name">
+          <cstring>fdbCantidad</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>38</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>cantidad</string>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="4" column="0">
+        <property name="name">
+          <cstring>fdbCerrada</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>26</width>
+            <height>22</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>cerrada</string>
+        </property>
+      </widget>
+      <spacer row="3" column="0">
+        <property name="name">
+          <cstring>spacer28</cstring>
+        </property>
+        <property name="orientation">
+          <enum>Vertical</enum>
+        </property>
+        <property name="sizeType">
+          <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+          <size>
+            <width>20</width>
+            <height>20</height>
+          </size>
+        </property>
+      </spacer>
+      <widget class="FLFieldDB" row="1" column="0">
+        <property name="name">
+          <cstring>fdbTotalEnAlbaran</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>38</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>totalenalbaran</string>
+        </property>
+      </widget>
+      <widget class="FLFieldDB" row="2" column="0">
+        <property name="name">
+          <cstring>fdbTotalPendiente</cstring>
+        </property>
+        <property name="sizePolicy">
+          <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+          </sizepolicy>
+        </property>
+        <property name="minimumSize">
+          <size>
+            <width>38</width>
+            <height>24</height>
+          </size>
+        </property>
+        <property name="font">
+          <font>
+            <bold>0</bold>
+            <italic>0</italic>
+          </font>
+        </property>
+        <property name="fieldName">
+          <string>totalpendiente</string>
+        </property>
+      </widget>
+    </grid>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/grid[grid,1]/widget[QLayoutWidget,layout65]/hbox[hbox,1]/widget[QGroupBox,groupBox8]/vbox[vbox,1]/widget[QLayoutWidget,layout39]/hbox[hbox,1]/widget[FLFieldDB,fdbPvpTotal]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">28</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/grid[grid,1]/widget[QGroupBox,gbxAlmacen]/grid[grid,1]/widget[QLayoutWidget,layout8_2]/grid[grid,1]/widget[FLFieldDB,fdbNombreAlmacen_2]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

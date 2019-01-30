@@ -1,0 +1,3 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="actualizadto">
+  <flpatch:patchScript name="flfacturac.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+</flpatch:modifications>

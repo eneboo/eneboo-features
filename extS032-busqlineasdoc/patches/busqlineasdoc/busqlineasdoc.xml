@@ -1,4 +1,4 @@
-<flpatch:modifications xmlns:flpatch="busqlineasdoc" name="fullpatch">
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="fullpatch">
   <flpatch:patchXml name="masteralbaranescli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
   <flpatch:patchXml name="masteralbaranesprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
   <flpatch:patchXml name="masterfacturascli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>

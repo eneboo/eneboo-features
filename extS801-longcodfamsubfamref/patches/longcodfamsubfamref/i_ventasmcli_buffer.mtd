@@ -1,0 +1,15 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[ventas01]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ventas02]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ventas03]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ventas04]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ventas05]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ventas06]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ventas07]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ventas08]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ventas09]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ventas10]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ventas11]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ventas12]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[ventascli]/partD[partD,1]/text()[1]">3</xupdate:update>
+</xupdate:modifications>

@@ -1,0 +1,14 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="hgolden_facturas">
+  <flpatch:patchXml name="flfacturac.xml" path="facturacion/facturacion/" style="legacy1"/>
+  <flpatch:patchXml name="flfacturac.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:addFile name="hgolden_facturascli.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="hgolden_facturasprov.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="hgolden_lineasfacturascli.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="hgolden_lineasfacturasprov.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="hgolden_masterfacturascli.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="hgolden_masterfacturasprov.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="hgolden_facturascli.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:addFile name="hgolden_facturasprov.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:addFile name="hgolden_lineasfacturascli.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:addFile name="hgolden_lineasfacturasprov.mtd" path="facturacion/facturacion/tables/"/>
+</flpatch:modifications>

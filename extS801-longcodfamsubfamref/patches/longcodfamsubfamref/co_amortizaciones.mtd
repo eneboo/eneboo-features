@@ -1,0 +1,11 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[valoradquisicion]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[valorresidual]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[valoramortizable]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[porcentajeanual]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[amorperiodo]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[amorprimerperiodo]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[amorultimoperiodo]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[totalamortizado]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[pendiente]/partD[partD,1]/text()[1]">3</xupdate:update>
+</xupdate:modifications>

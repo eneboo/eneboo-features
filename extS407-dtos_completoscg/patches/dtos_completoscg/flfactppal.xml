@@ -1,0 +1,12 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[contactos]">
+    <action>
+      <name>dtoscompletoscli</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Descuentos completos de cliente")</alias>
+      <table>dtoscompletoscli</table>
+      <form>master</form>
+      <formrecord>dtoscompletoscli</formrecord>
+      <scriptformrecord>dtoscompletoscli</scriptformrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

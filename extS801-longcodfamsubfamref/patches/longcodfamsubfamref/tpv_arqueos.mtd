@@ -1,0 +1,17 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[inicio]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[totalmov]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[totalcaja]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[totaltarjeta]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[totalvale]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[sacadodecaja]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[diferenciaefectivo]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[diferenciatarjeta]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[diferenciavale]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[cambiocaja]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[pagosefectivo]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[pagostarjeta]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[pagosvale]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[totalpagos]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[devolucionesvale]/partD[partD,1]/text()[1]">3</xupdate:update>
+</xupdate:modifications>

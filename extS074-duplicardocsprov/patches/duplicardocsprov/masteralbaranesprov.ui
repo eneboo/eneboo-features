@@ -1,0 +1,4 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[toolButtonCopy,clicked(),tableDBRecords,copyRecord()]"/>
+  <xupdate:delete select="/UI[UI,1]/connections[connections,1]/connection[tableDBRecords,readOnlyChanged(bool),toolButtonCopy,setDisabled(bool)]"/>
+</xupdate:modifications>

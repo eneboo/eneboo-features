@@ -1,0 +1,4 @@
+extS096-totalStocksDocs
+=======================
+
+Esta extensión pon tanto no formulario principal coma nas liñas o stock da referencia en curso, con barcode se procede.

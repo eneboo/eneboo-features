@@ -1,0 +1,102 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">606</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/grid[grid,1]/widget[QGroupBox,gbxAlmacen]/grid[grid,1]/widget[QLayoutWidget,layout8_2]/grid[grid,1]/widget[FLFieldDB,fdbNombreAlmacen_2]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">4</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/grid[grid,1]/widget[QGroupBox,gbxAlmacen]/grid[grid,1]/widget[QLayoutWidget,layout8_2]/grid[grid,1]/widget[FLFieldDB,fdbNombreAlmacen_2]/property[minimumSize]/size[size,1]/height[height,1]/text()[1]">20</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formLineasPedidosCli]/grid[grid,1]/widget[QGroupBox,gbxAlmacen]">
+    <widget class="QGroupBox" row="7" column="0">
+      <property name="name">
+        <cstring>gbxStocks</cstring>
+      </property>
+      <property name="title">
+        <string/>
+      </property>
+      <grid>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+          <number>0</number>
+        </property>
+        <widget class="QLabel" row="0" column="0">
+          <property name="name">
+            <cstring>lblTotalStocks_2</cstring>
+          </property>
+          <property name="paletteForegroundColor">
+            <color>
+              <red>0</red>
+              <green>0</green>
+              <blue>127</blue>
+            </color>
+          </property>
+          <property name="font">
+            <font>
+              <family>Sans Serif</family>
+            </font>
+          </property>
+          <property name="text">
+            <string>*Todos los almacenes</string>
+          </property>
+          <property name="alignment">
+            <set>AlignVCenter|AlignLeft</set>
+          </property>
+        </widget>
+        <spacer row="0" column="3">
+          <property name="name">
+            <cstring>spacer10</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Fixed</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>31</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+        <widget class="QLabel" row="0" column="2">
+          <property name="name">
+            <cstring>lblTotalStocks</cstring>
+          </property>
+          <property name="paletteForegroundColor">
+            <color>
+              <red>0</red>
+              <green>0</green>
+              <blue>127</blue>
+            </color>
+          </property>
+          <property name="font">
+            <font>
+                        </font>
+          </property>
+          <property name="text">
+            <string>Total en stock:</string>
+          </property>
+          <property name="alignment">
+            <set>AlignVCenter|AlignRight</set>
+          </property>
+        </widget>
+        <spacer row="0" column="1">
+          <property name="name">
+            <cstring>spacerVF</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Minimum</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>70</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </grid>
+    </widget>
+  </xupdate:insert-after>
+</xupdate:modifications>

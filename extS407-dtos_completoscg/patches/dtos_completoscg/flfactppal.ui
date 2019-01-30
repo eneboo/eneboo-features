@@ -1,0 +1,55 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QMainWindow,FLWidgetApplication]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">1140</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">1140</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">23</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Tablas_Generales]/action[descuentos]">
+    <action name="dtoscompletoscli"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[descuentos]">
+    <action name="dtoscompletoscli"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[dtoscompletoscli]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,5]"/>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[tiposrappel]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,6]"/>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[gruposclientes]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,7]"/>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[provincias]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[provincias]">
+    <action>
+      <property name="name">
+        <cstring>dtoscompletoscli</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>image65132</iconset>
+      </property>
+      <property name="text">
+        <string>Dtos. Completos de Cliente</string>
+      </property>
+      <property name="menuText">
+        <string>Dtos. Completos de Cliente</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image18054]">
+    <image name="image65132">
+        <data format="PNG" length="767">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000002c649444154789cb5d74f8855551c07f08f8e3a490c22a5680b1513352975a3492b09c124185c0b235256242dc285e0c655a81b17b313b5d08d12086e4c11c44222721142ca4444900b4163d4fe4039bcd1ebe2fedebc33cf7367ee7bbef9c28f7bcfeffc7ebfeff79c77fedc4767d88e4bd88dbec4df17be4b11332358818728c2ee605fd89dc4ff30627b8ab9b891904c673722675accaaf06fc13b18c07cacc78e0e455fc6cff81fffe207fc5837f991faa3ad6b8fea922f9b01f2a62d6b279b9d11f0465da55de0b9da39011b6650c05b53752ec4301a9e9fbabf7005dfe07ea6bf88bc9bf8b5a2bf19331c5c93b007a31549a7f172123b075f64e24e467faeafdd46837302b95117f85debc4fb0047939cab49dc7f780d4be3bdce826ca402ae57041d4b62fe0cdf8a68ef4be28e84ef644df222382716e15979fc9dbcbf1acf05f1fc279e0f9433b356dbb44e8373696311c6332abf4e627e514e5b7301357febfdd1be90c9afb2f1e09cc06a8c6502c76264b00e5b13c1f7949750bff2d8eee4401a0bce097c3745f03d7c8235781dbbf05bf4ed8efcef3b14500427d8db4572a1bc686661506bc7ec09a1ebf099d6c2adb2bd30d2a580f7955b74246669710ce86dac8af7b5a6de9623f0319e76397d1f46fb70b417287fdf5b5a385351e36970838fe4774155e266bc84bbe11b8a3a1ba2fd2411702853633c382761a8a680f3117f30f17d1ebe95d11e4dea1ecbd41892c1f21ae40de5f679c5e48f96f44b67189fc67b3ffec8d4599e13b0a98680e3538cea94d629094b70b1a2cea69c80f76a08b8896fe50fad028f950bf0b6ea0bae082e94576b13454e551b364ed3df8f376bd4a9e41ac4975aabbb9776376a0fd61008ded5f9f95065dbea92b6e35a0fc8af754b0e3b7b2060e78b0898ad5cd50dfc841338a0fc0869277a107d2722b6a1dc0db92fef8ed087796dbe9551bc497e3b7c29e699fc0fbae718c0576103dd167906033b0187d0ec3ae10000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[provincias,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>dtoscompletoscli</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

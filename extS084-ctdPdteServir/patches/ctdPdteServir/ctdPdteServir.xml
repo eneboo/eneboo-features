@@ -1,0 +1,8 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="ctdPdteServir">
+  <flpatch:patchXml name="lineaspedidoscli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="lineaspedidosprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchScript name="flfacturac.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="lineaspedidoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchXml name="lineaspedidoscli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:patchXml name="lineaspedidosprov.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+</flpatch:modifications>
