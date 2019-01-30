@@ -1,0 +1,77 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/menubar[menubar,menubar]/property[geometry]/rect[rect,1]/height[height,1]/text()[1]">22</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[&amp;Ventas]/action[facturascli]">
+    <action name="hgolden_facturascli"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/menubar[menubar,menubar]/item[Compras]/action[presupuestosprov]">
+    <action name="hgolden_facturasprov"/>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">403</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/separator[separator,3]">
+    <action name="hgolden_facturascli"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[hgolden_facturascli]">
+    <action name="hgolden_facturasprov"/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/toolbars[toolbars,1]/toolbar[toolBar]/action[hgolden_facturasprov]">
+    <separator/>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[ventas_alb]">
+    <action>
+      <property name="name">
+        <cstring>hgolden_facturascli</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>image11263</iconset>
+      </property>
+      <property name="text">
+        <string>Histórico Golden facturas de venta</string>
+      </property>
+      <property name="menuText">
+        <string>Histórico Golden facturas de venta</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/actions[actions,1]/action[hgolden_facturascli]">
+    <action>
+      <property name="name">
+        <cstring>hgolden_facturasprov</cstring>
+      </property>
+      <property name="iconSet">
+        <iconset>image15796</iconset>
+      </property>
+      <property name="text">
+        <string>Histórico &amp;Golden facturas de compra</string>
+      </property>
+      <property name="menuText">
+        <string>Histórico &amp;Golden facturas de compra</string>
+      </property>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image39382]">
+    <image name="image11263">
+      <data format="XPM.GZ" length="1029">789c75d2494fc2401c05f03b9fa2811b314317b6c67850505962e2d1c47828331dd94728508af1bbdbf7a646ea328fa4f9bdfc3bdd68d49da7c707a7dea824bb6837938e9c465ba7aef6ab55f6fc72f55ea97a5d27ff05a1e3552f2ad5a3239d9aebba4a4b302da8b5060f64a8db9e0feec87cd475c104f4f259cb39d86921e0826c23e0908c1070464a04bc2363049c805d0f01a7a48f804b32404049b610f095e402151922604c4a04d4a442c0375223e035187a08382603297deebc225b08682c95e737c13519e6e41345648c800350c508780fc64d04ac911a01fba0f610704ffa41d7e53df7c8000147640b016fc810014f64fefd14b9b5f4dbf60bde92bc309891f9d79d74c04dc1ae1d1696baf8ab885f8b6d2d9a4815ebd7e96cbe982df5cab66b535a6fb635a5d38d2ab59bcd364976c2c8af1627e6eda6dcdad9fd3e391cce76e06c9a1eb3ec248c2ecda6699a6599f8be073b7b3cb2bdfef3ce4a6df10cdf3b60ddfc7c8a1ed117c5ec549cbd33735b1cefcedb7b33606f86e7ad18d9cb8d85f8e7ad7f5c563e01f96cf3f8</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image11263]">
+    <image name="image15796">
+      <data format="XPM.GZ" length="2887">789c85d5594f23471000e0777e8545bda1a876667aae569407ee6b0d981ba23cf4310d066c2e038655fe7b7aaacafd80128562177deef2f455ddf363657079341cacfc587a9d99d9d80ddcad7919acf8b7c9e4f3cfbffef8b5b49c3783fe57358362f9b7a5659c0cdc002a979b4cf736a677a38b2273bde1acb73685cd02b503d92e0c4aecf28cfc931c0a2ffeea6daaa2cb73f28cec5526beeb6db52a73452ec95e55e2037250b5f8a2b7cb92d7c87974497e2357aa112359ab567c4ab64a8b1f922bf23eb953868d343e9ff741ed9fe44259c97f25b7cae73599d6cfeb85f1926c1636be7757f741ed23725316794bdf3f4fa6fd80a158e586bc2a6e0b1a8fe9d87dd0f368fdbb36b6d3fae3b558733e6e897d41f926b0fba076daef4e575941fde37932f58f5aac0a4fe3b9175705d5039e8a6bc5f5f5296e14ef17d54f672aaff8f9cfc9fcfc1371a72cf98a6cebbaa4fdc20b7153f2faed905dad4b1eff9ad89554bf3816fbb2a3f9a2b82b79bcc7e220fe62f741a67ae87c9355bc7e33715ef1fc0ec4aae2f11d2673fd1c89cb8ac7bb29ae2adeafa1b8ad78be737217cdebb12df635eda7b1ecfe87d6b3228736abb9ff0d715e73ffabe2a2e6fe9ec455cdcf7f4de6feefc56d4dcfc7f7de216b6d43f38523719c117924ee1aaeff637168a83fa0f508b92e1baa17b4e2aae1e7b7e2bae57aa5fa0885d62dafaf118796c77b4b8ec7b3e5fb498b8b96d7a315ab96efa7b1b8d47c7e1b71a5793e1fe25a737dcec58de6f9d1f90da569359ff75aac35efe7aed8689eef2499cf7321f69ad617dec59de6f373220e9ad7639d5cd94c1cc485e1f15b719c21b5bf896bc3fbebc48df8865c2ff2e156bc68efc4ade1f12ef2b5e1fb2724f3fa7bb1313c9fc5f7ade1fd58b43bc3f373c93c9fa9d81b7e9f487b1fd44ef771685c69f93cd7e2caf27df1218e232053fd87d63596ebb711b796cf6f293696cff79ed83aae3725f68eebed85dd0799f74ffbccf179cac5b9e3fd7e16178ef31fc5caf1fabd24f3fdfd242e1d8f3713d78ed78bbf1fcbc5f3fb732a8e570499eeef60e3fb83eb81ee87e0e2fdcdfbbb29d61dd7ef86d8f0fb0676c496df17b02bf61d8dcff0febb3ea89debd10715b8bf6b711df83cf07a76a11167621df8f9b9d805ae97ab647afe88eed3403fecff0bce424083161d7aec30a4b8c15b1ce35dcaba8f7ac0c9b798e2233ee133be48d62bcef02d7efefe2deb03e7f8895f92b58a6bb81e3fdff89635c54ddc4a59dbb883bbffd2e31eeee3cf94358c59b3f8bd033cc4a3149bf1b37d1ca5ac633cc1533c93384f718a177899b2aef03aae46863916a8b0c40aeb38e7065bd4808b2c003060710a0e7c8c0e02dcc06dfc3bc611dca5ac7b7880094ce1113378c24778c61c5ee011c6f00ab3d4e316bce13abcc3478c796cebe323fe9bc3277ca567adc25afc641d366013b6603bfebf03bbb01733f721ad040ce100031cc2118c521ce33b9cc0299ca5ac73b8804bb882ebf8fd0cf2452d40119fa55256090750c53dda853af6d2401b43c3dca00123f7d56866e2cd64baff88606e96fffe7de91f5a479fa9</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[ventas_alb,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>hgolden_facturascli</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/connections[connections,1]/connection[hgolden_facturascli,activated(),FLWidgetApplication,openDefaultForm()]">
+    <connection>
+      <sender>hgolden_facturasprov</sender>
+      <signal>activated()</signal>
+      <receiver>FLWidgetApplication</receiver>
+      <slot>openDefaultForm()</slot>
+    </connection>
+  </xupdate:insert-after>
+</xupdate:modifications>

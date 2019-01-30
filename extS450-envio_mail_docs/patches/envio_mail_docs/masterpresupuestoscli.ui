@@ -1,0 +1,65 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/spacer[Spacer2]/property[sizeHint]/size[size,1]/width[width,1]/text()[1]">250</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,FLWidgetMasterTable]/vbox[vbox,1]/widget[QFrame,barraBotones]/hbox[hbox,1]/widget[QPushButton,toolButtonPrint]">
+    <widget class="QPushButton">
+      <property name="name">
+        <cstring>tbnEnviarMail</cstring>
+      </property>
+      <property name="enabled">
+        <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>1</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32</width>
+          <height>32</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="text">
+        <string/>
+      </property>
+      <property name="accel">
+        <string>I</string>
+      </property>
+      <property name="iconSet">
+        <iconset>envio_mailimage62172</iconset>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Enviar por email</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Envía por email el documento seleccionado</string>
+      </property>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:append-first select="/UI[UI,1]/images[images,1]">
+    <image name="envio_mailimage62172">
+      <data format="PNG" length="458">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000019149444154789ced97b14e02411086bf0589ada1b23221a1a03656f002162646b08084de5730f822d8585b181b4c08f115b4c29a1e1f0063a28e0573c72cdec91d0a47c19f4c727b33f3cf7f7b73bb7b4e44c812b94cab6f056c82801d3b70cee58013a001ecfe73ad77e01e781091cff0ae888406dc01b262eb79354df103e0630d02be807250d7f6c02190d7eb2b60907a92e331504e00071c058eb8261c89c831d002c67f283c065aca358a0ab0029cb9de0710915ba0025c339dbea410cda92847c8f93372d60367f8efea06281a7f1518b2f81d0f81aac92b2a978d694635613d82ec15689b980270094c226227ea2b98f8b672ccc7261610d823a6738112d037fe3e5032feb2e6c4f1450a682c98da37a033f7844d8f6c3a431d8dfd8d6b290181bd0035bb98687e4d7d493822059c274c0e16932eb0a7d6d57b49f34301de5e90020eb8004e751cfd89258015e062a3e2b174e100996fc7712b61260232c17606ac8067d2ed78cb4280a7d9c85fcd7aacfe44e41dc99cfd3372cee5991e4aebace950ea09c8021bd5845b0199e01b70c9a95823a76b9c0000000049454e44ae426082</data>
+    </image>
+  </xupdate:append-first>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[envio_mailimage62172]">
+    <image name="ofertas_provimage6">
+      <data format="PNG" length="164">89504e470d0a1a0a0000000d49484452000000300000003008060000005702f9870000006b49444154789cedd5310a804000034123feffcbb1152c2dd6c04e7756b71c92b43d969df405be328076bdbe24fffe29da3c8ff32f60002dee00cc00da7c8043463380e690d10ca0cd0738643403680e19cd00da7c8043463380e690d10ca0cd0738643403680e19cd00da0d014621539504874c0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/images[images,1]/image[ofertas_provimage6]"/>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[fltabledb.h]">
+    <includehint>fltabledb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,34 @@
+extS014-orderwcols 				Permite por usuario ordenar las columnas en los grids, así como ponerle un ancho y orden asc o desc.
+extS016-cifconta 				Arrastra o cif do cliente aos apuntes contables.
+extS018-tallermec				Adapta a facturación e o almacén ao taller mecánico, con servizos etc...
+extS019-parche_pmcp				Arranxa algúns fallos do cálculo do PMPC no circuito de facturación.
+extS022-codigoslargos			Permite poñer códigos largos para os artigos. Máis de 18 caracteres.
+extS026-avisosventas			Establece avisos no circuito de ventas/compras. Os avisos defínense nos artículos para cada un dos documentos ou un aviso xenérico que sae en todos.
+extS028-bloqdocimpr				Bloquea a edición de documentos impresos por usuarios. Esto se decide nos parámetros da emrpesa do programa, a nivel do tipo de documento que desexamos bloquear. Se está activado o bloqueo para editar un documento deberíamos desactivalo primerio, e logo se tal marcalo como non impreso e volver a activalo.
+extS029-precioespenarticulos	Permite definir uns precios especiais nos artículos para cada un dos clientes. Este será o precio que colla no circuito de ventas e avisará no caso de que teña prezo especial.
+extS032-busqlineasdoc			Nos master dos documentos engade un filtro que busca dentro das súas liñas unha cadea ao modo LIKE %cadea% tanto na referencia coma na descripción. E amosa os documentos que teñen esa cadea buscada.
+extS036-ultimopreccompra		Establece como prezo base para o cálculo de prezo de venta o último prezo ao que se comprou ese artículo según albaráns de compra. Para establecelo hai un botón.
+extS042-avisoobs				Nos documentos de compra/venta, na primeira pestaña, avisa en roxo se o documento ten establecidas observacións, para que non pasen desapercibidas.
+extS043-gdArticulos				Permite la gestión documental en artículos.
+extS046-generarAlbDireccion		Al generar albarán coge la dirección del pedido en vez de la de envío.
+extS048-agruparDocMod			Modificaciones en la agrupación de documentos.
+extS054-ctldatosmod				Establécese o nome e data e hroa de creación/modificación dos rexistros especificados. Cuando se refira a algunha pública noutro script poñer a completa que é: flfactalma.iface.pub_controlDatosMod. Extraido y ampliado de infosial.
+extS074-duplicardocsprov		Permite duplicar todos los documentos de proveedor (pedidos, albaranes y facturas, que ya estaba)
+extS082-solcompras				Cuadro de mandos para realizar compras a partir de pedidos de clientes y generar ofertas a proveedor. Viene de juntar y modificar funcionamiento de otras extensiones.
+extS084-ctdPdteServir			Se añade campo y funcionalidad a líneas de pedidos de cliente con la cantidad pendiente de servir para cuando son parciales.
+extS086-serielocalcli			Establece una serie de facturación por puesto local, que prevalece de la del cliente.
+extS089-actualizadto			Actualiza descuentos
+extS092-almacenenserie			Permite establecer una serie dependiendo del almacén con el que se haga el documento de facturación
+extS094-tablapadrebarcodes		Modifica la función para añadirle funcionalidad y permitir compatibilizar y fusionar barcodes con artículos compuestos
+extS450-envio_mail_docs 		Substitúe a ext0450-envio_mail, polo que leva a mesma clase, para que os que dependan dela poidan empregala igual Establece localmente, nos parámetros da emrpesa uns asuntos e corpos para cada un dos documentos de facturación, que son os que serán pasados ao programa de mail correspondente. Pódense usar certos campos dentro do mail, especificados na sua pantalla. Hai que ter en conta que é unha configuración local por posto/usuario do posto. Se se cambia de bbdd esta configuración seguirá sendo a mesma. Tamén rexistra no documento o día e hora no que se enviou o mail, e que usuario foi o que o fixo. 
+extS096-totalStocksDocs			Visualiza los stocks en los documentos de compra y venta, así como en sus líneas
+extS107-numerosLineaProv		Pone números de línea en los documentos de proveedor para ordenar como deseemos.
+extS112-avisoprcantventas		Avisa en ventas si el precio anterios al que se vendió era diferente.
+extS187-almlincompbarcode		Almacén en línea de documento, compatible con artículos compuestos y barcodes.
+extS189-ctlstockminmax			Controla mediante avisos los stocks mínimos y máximos. Avisa cuando rebasamos alguno de ellos en documentos de vompra y venta.
+extS407-dtos_completoscg		Descuentos muy completos. Modifica otra extensión, permite por familia, subfamilia, artículo, cliente, grupo de cliente...
+extS450-envio_mail_docs			Permite definir cuerpos con campos y demás para enviar documentos de facturación por mail.
+extS800-precioespcli			Permite ver en los clientes los precios especiales que tienen en artículos.
+extS801-longcodfamsubfamref		Permite códigos largos a familias, subfamilias, referencias.
+extS901-bicacresepa				BIC acreedores en SEPA.
+extS909-jpluginlanza			Compatibiliza o plugin jasper con vellos módulos de Infosial que lanzan doutro xeito os informes (cunha función chamada lanzainforme en vez de lanzaRinforme).

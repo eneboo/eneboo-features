@@ -1,0 +1,5 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="gdArticulos">
+  <flpatch:patchScript name="gd_documentos.qs" path="colaboracion/gesdoc/scripts/" style="legacy"/>
+  <flpatch:patchXml name="articulos.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:patchScript name="articulos.qs" path="facturacion/almacen/scripts/" style="legacy"/>
+</flpatch:modifications>

@@ -28,16 +28,17 @@ function bloqDocImpr_init()
   var cursor: FLSqlCursor = this.cursor();
 
   if (cursor.modeAccess() == cursor.Edit) {
-	    if (cursor.valueBuffer("impreso") == true && util.sqlSelect("empresa", "bloqalbproimp", " 1 = 1") == true )
-		{
-			MessageBox.warning(util.translate("scripts", "Según la configuración actual no es posible\neditar un albarán de proveedor impreso.\n\nContacte con un administrador si es necesario."), MessageBox.Ok, MessageBox.NoButton);
-			this.form.close();
-		}
+    if (cursor.valueBuffer("impreso") == true && util.sqlSelect("empresa", "bloqalbproimp", " 1 = 1") == true ) {
+      if (util.sqlSelect("usuariosedicionimpresos", "iduser", " iduser = '" + sys.nameUser() + "'") == sys.nameUser()) {
+       // MessageBox.warning(util.translate("scripts", "Este documento ya fue impreso pero\nel usuario " + sys.nameUser() + " puede editarlo igualmente.\n\nProcede con precaución."), MessageBox.Ok, MessageBox.NoButton);
+      } else {
+	MessageBox.warning(util.translate("scripts", "Según la configuración actual no es posible\neditar un albarán de proveedor impreso.\n\nContacte con un administrador si es necesario."), MessageBox.Ok, MessageBox.NoButton);
+	this.child("formalbaranesprov").setDisabled(true);
+	//this.form.close();		
+      }
     }
-
-
-
-
+  }
+    
 }
 //// BLOQUEO DOCUMENTOS IMPRESION ///////////////////////////////
 /////////////////////////////////////////////////////////////////

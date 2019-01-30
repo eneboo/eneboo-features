@@ -1,0 +1,4 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="agruparDocMod">
+  <flpatch:patchScript name="agruparpedidoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="agruparalbaranescli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+</flpatch:modifications>

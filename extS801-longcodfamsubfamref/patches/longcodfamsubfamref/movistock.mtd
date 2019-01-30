@@ -1,0 +1,5 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[referencia]/length[length,1]/text()[1]">31</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[barcode]/length[length,1]/text()[1]">99</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[cantidad]/partD[partD,1]/text()[1]">3</xupdate:update>
+</xupdate:modifications>

@@ -1,0 +1,415 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+   <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/property[name]">
+    <widget class="QGroupBox" row="0" column="0">
+      <property name="name">
+        <cstring>groupBox6</cstring>
+      </property>
+      <property name="sizePolicy">
+        <sizepolicy>
+          <hsizetype>5</hsizetype>
+          <vsizetype>5</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+          <width>0</width>
+          <height>0</height>
+        </size>
+      </property>
+      <property name="maximumSize">
+        <size>
+          <width>32767</width>
+          <height>50</height>
+        </size>
+      </property>
+      <property name="focusPolicy">
+        <enum>NoFocus</enum>
+      </property>
+      <property name="title">
+        <string/>
+      </property>
+      <property name="toolTip" stdset="0">
+        <string>Alta de prendas (P)</string>
+      </property>
+      <property name="whatsThis" stdset="0">
+        <string>Permite insertar o modificar las prendas a traves de una matriz talla / color</string>
+      </property>
+      <hbox>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbAutomatica</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>170</horstretch>
+              <verstretch>25</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>26</width>
+              <height>22</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>90</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>automatica</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbTPV</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>170</horstretch>
+              <verstretch>25</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>80</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>tpv</string>
+          </property>
+          <property name="tableName">
+            <string/>
+          </property>
+          <property name="foreignField">
+            <string/>
+          </property>
+          <property name="fieldRelation">
+            <string/>
+          </property>
+        </widget>
+        <widget class="QCheckBox">
+          <property name="name">
+            <cstring>ckbContabilizada</cstring>
+          </property>
+          <property name="enabled">
+            <bool>false</bool>
+          </property>
+          <property name="text">
+            <string>Contabilizada</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbDeAbono</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>5</hsizetype>
+              <vsizetype>5</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>26</width>
+              <height>22</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>90</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>deabono</string>
+          </property>
+        </widget>
+        <widget class="QToolButton">
+          <property name="name">
+            <cstring>tbnBuscarFactura</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>28</width>
+              <height>28</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>28</width>
+              <height>28</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+                                    </font>
+          </property>
+          <property name="focusPolicy">
+            <enum>StrongFocus</enum>
+          </property>
+          <property name="text">
+            <string/>
+          </property>
+          <property name="iconSet">
+            <iconset>image53321</iconset>
+          </property>
+        </widget>
+        <widget class="QLabel">
+          <property name="name">
+            <cstring>lblDatosFacturaAbono</cstring>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>350</width>
+              <height>0</height>
+            </size>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>350</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="text">
+            <string/>
+          </property>
+        </widget>
+        <widget class="FLFieldDB">
+          <property name="name">
+            <cstring>fdbImpreso</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="maximumSize">
+            <size>
+              <width>90</width>
+              <height>32767</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>impreso</string>
+          </property>
+        </widget>
+      </hbox>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]">
+    <widget class="QLayoutWidget" row="1" column="0">
+      <property name="name">
+        <cstring>layout33_2</cstring>
+      </property>
+      <grid>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="FLFieldDB" row="0" column="3">
+          <property name="name">
+            <cstring>fdbEnviadoMailIdUsuario_2</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>34</width>
+              <height>24</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>enviadomailidusuario</string>
+          </property>
+          <property name="fieldAlias">
+            <string>enviadomailidusuario</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB" row="0" column="0">
+          <property name="name">
+            <cstring>fdbEnviadoMail_2</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>26</width>
+              <height>22</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>enviadomail</string>
+          </property>
+          <property name="fieldAlias">
+            <string>enviadomail</string>
+          </property>
+        </widget>
+        <widget class="FLFieldDB" row="0" column="1">
+          <property name="name">
+            <cstring>fdbEnviadoMailFecha_2</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>26</width>
+              <height>22</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>enviadomailfecha</string>
+          </property>
+          <property name="fieldAlias">
+            <string>enviadomailfecha</string>
+          </property>
+        </widget>
+        <spacer row="0" column="4">
+          <property name="name">
+            <cstring>spacerImpreso_2_3</cstring>
+          </property>
+          <property name="orientation">
+            <enum>Horizontal</enum>
+          </property>
+          <property name="sizeType">
+            <enum>Expanding</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>272</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+        <widget class="FLFieldDB" row="0" column="2">
+          <property name="name">
+            <cstring>fdbEnviadoMailHora_2</cstring>
+          </property>
+          <property name="sizePolicy">
+            <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+            <size>
+              <width>26</width>
+              <height>22</height>
+            </size>
+          </property>
+          <property name="font">
+            <font>
+              <bold>0</bold>
+            </font>
+          </property>
+          <property name="fieldName">
+            <string>enviadomailhora</string>
+          </property>
+          <property name="fieldAlias">
+            <string>enviadomailhora</string>
+          </property>
+        </widget>
+      </grid>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/widget[QWidget,formFacturasCli]/vbox[vbox,1]/widget[QTabWidget,tbwFactura]/widget[QWidget,observaciones]/grid[grid,1]/widget[QGroupBox,groupBox6]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]"/>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/includehints[includehints,1]/includehint[flfielddb.h]">
+    <includehint>flfielddb.h</includehint>
+  </xupdate:insert-after>
+</xupdate:modifications>

@@ -1,0 +1,53 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="solcompras">
+  <flpatch:patchXml name="articulosprov.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:patchXml name="articulos.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="atributosarticulos.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="familias.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="flfacturac.xml" path="facturacion/facturacion/" style="legacy1"/>
+  <flpatch:patchXml name="flfacturac.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="lineaspedidosprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:addFile name="lineaspresupuestosprov.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="lineassolpresupuestosprov.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="masteraltamasivadtoprov.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="masterdatosofertaprov.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:patchXml name="masterpedidoscli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterpedidosprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:patchXml name="masterpresupuestoscli.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:addFile name="masterpresupuestosprov.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:patchXml name="pedidosprov.ui" path="facturacion/facturacion/forms/" style="legacy1"/>
+  <flpatch:addFile name="presupuestosprov.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:addFile name="solpresupuestosprov.ui" path="facturacion/facturacion/forms/"/>
+  <flpatch:patchScript name="flfacturac.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:addFile name="lineaspresupuestosprov.qs" path="facturacion/facturacion/scripts/"/>
+  <flpatch:addFile name="lineassolpresupuestosprov.qs" path="facturacion/facturacion/scripts/"/>
+  <flpatch:addFile name="masterdatosofertaprov.qs" path="facturacion/facturacion/scripts/"/>
+  <flpatch:patchScript name="masterpedidoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="masterpedidosprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:addFile name="masterpresupuestosprov.qs" path="facturacion/facturacion/scripts/"/>
+  <flpatch:patchScript name="pedidosprov.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:addFile name="presupuestosprov.qs" path="facturacion/facturacion/scripts/"/>
+  <flpatch:addFile name="solpresupuestosprov.qs" path="facturacion/facturacion/scripts/"/>
+  <flpatch:addFile name="altamasivadtoprov.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:addFile name="datosofertaprov.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:patchXml name="lineaspedidosprov.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:addFile name="lineaspresupuestosprov.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:addFile name="lineassolpresupuestosprov.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:patchXml name="pedidoscli.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:patchXml name="pedidosprov.mtd" path="facturacion/facturacion/tables/" style="legacy1"/>
+  <flpatch:addFile name="presupuestosprov.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:addFile name="solpresupuestosprov.mtd" path="facturacion/facturacion/tables/"/>
+  <flpatch:patchXml name="flfactinfo.xml" path="facturacion/informes/" style="legacy1"/>
+  <flpatch:patchXml name="flfactinfo.ui" path="facturacion/informes/forms/" style="legacy1"/>
+  <flpatch:addFile name="i_presupuestosprov.ui" path="facturacion/informes/forms/"/>
+  <flpatch:addFile name="i_presupuestosprov.qry" path="facturacion/informes/queries/"/>
+  <flpatch:addFile name="i_presupuestosprov.kut" path="facturacion/informes/reports/"/>
+  <flpatch:addFile name="i_masterpresupuestosprov.qs" path="facturacion/informes/scripts/"/>
+  <flpatch:addFile name="i_presupuestosprov.qs" path="facturacion/informes/scripts/"/>
+  <flpatch:addFile name="i_presupuestosprov.mtd" path="facturacion/informes/tables/"/>
+  <flpatch:patchXml name="clientes.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="ejercicios.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="proveedores.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="series.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchXml name="usuarios.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:replaceFile name="tpv_i_rentabilidad.kut" path="facturacion/tpv/reports/"/>
+</flpatch:modifications>

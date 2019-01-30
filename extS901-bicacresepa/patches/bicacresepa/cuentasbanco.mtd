@@ -1,0 +1,14 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[swift]/alias[alias,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","SWIFT/BIC")</xupdate:update>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[idsubcuentaecgc]">
+    <field>
+      <name>idacreedorsepa</name>
+      <!-- Código identificador del acreedor SEPA y que no se usa para nada-->
+      <alias>QT_TRANSLATE_NOOP("MetaData","Id del Acreedor SEPA")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>string</type>
+      <length>20</length>
+    </field>
+  </xupdate:insert-after>
+</xupdate:modifications>

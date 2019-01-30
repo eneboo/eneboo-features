@@ -1,0 +1,26 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/TMD[TMD,1]/field[referencia]/length[length,1]/text()[1]">31</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[codfamilia]/length[length,1]/text()[1]">27</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[codbarras]/length[length,1]/text()[1]">31</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[codsubfamilia]/length[length,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[stockmax]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[stockmin]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[stockfis]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[costemedio]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[pvpvariable]/alias[alias,1]/text()[1]">QT_TRANSLATE_NOOP("MetaData","Precio coste variable")</xupdate:update>
+  <xupdate:update select="/TMD[TMD,1]/field[aqpeso]/partD[partD,1]/text()[1]">3</xupdate:update>
+  <xupdate:delete select="/TMD[TMD,1]/field[pvp]"/>
+  <xupdate:insert-after select="/TMD[TMD,1]/field[stockfis]">
+    <field>
+      <name>pvp</name>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Precio de coste")</alias>
+      <null>true</null>
+      <pk>false</pk>
+      <type>double</type>
+      <partI>6</partI>
+      <partD>3</partD>
+      <default>0</default>
+    </field>
+  </xupdate:insert-after>
+  
+</xupdate:modifications>

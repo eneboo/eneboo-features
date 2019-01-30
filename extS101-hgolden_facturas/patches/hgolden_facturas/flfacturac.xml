@@ -1,0 +1,42 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[plantillastextofac]">
+    <action>
+      <name>hgolden_facturascli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Facturas históricas de ventas históricas de Golden")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Histórico Golden Facturas de ventas")</alias>
+      <table>hgolden_facturascli</table>
+      <form>hgolden_masterfacturascli</form>
+      <formrecord>hgolden_facturascli</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[hgolden_facturascli]">
+    <action>
+      <name>hgolden_facturasprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Facturas históricas de compras históricas en Golden")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Histórico Golden Facturas de compras")</alias>
+      <table>hgolden_facturasprov</table>
+      <form>hgolden_masterfacturasprov</form>
+      <formrecord>hgolden_facturasprov</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[hgolden_facturasprov]">
+    <action>
+      <name>hgolden_lineasfacturascli</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada línea de la factura del histórico de Golden")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Histórico de Golden de lineas de facturas de cliente")</alias>
+      <table>hgolden_lineasfacturascli</table>
+      <form>master</form>
+      <formrecord>hgolden_lineasfacturascli</formrecord>
+    </action>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/ACTIONS[ACTIONS,1]/action[hgolden_lineasfacturascli]">
+    <action>
+      <name>hgolden_lineasfacturasprov</name>
+      <description>QT_TRANSLATE_NOOP("MetaData","Cada línea de la factura del histórico de Golden")</description>
+      <alias>QT_TRANSLATE_NOOP("MetaData","Histórico de Golden de lineas de facturas de proveedor")</alias>
+      <table>hgolden_lineasfacturasprov</table>
+      <form>master</form>
+      <formrecord>hgolden_lineasfacturasprov</formrecord>
+    </action>
+  </xupdate:insert-after>
+</xupdate:modifications>

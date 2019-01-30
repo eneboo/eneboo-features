@@ -1,0 +1,686 @@
+<xupdate:modifications xmlns:xupdate="http://www.xmldb.org/xupdate" version="legacy1">
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/property[geometry]/rect[rect,1]/width[width,1]/text()[1]">734</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxAdministrador]/vbox[vbox,1]/widget[QLayoutWidget,layout31]/hbox[hbox,1]/widget[QLayoutWidget,layout30]/vbox[vbox,1]/widget[QLayoutWidget,layout29]/hbox[hbox,1]/widget[QLabel,lblValEjercicioActual]/property[name]">
+    <property name="sizePolicy">
+      <sizepolicy>
+        <hsizetype>5</hsizetype>
+        <vsizetype>5</vsizetype>
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+      </sizepolicy>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,general]/vbox[vbox,1]/widget[QGroupBox,gbxAdministrador]/vbox[vbox,1]/widget[QLayoutWidget,layout31]/hbox[hbox,1]/widget[QLayoutWidget,layout30]/vbox[vbox,1]/widget[QLayoutWidget,layout29]/hbox[hbox,1]/widget[QLabel,lblValEjercicioActual]/property[text]">
+    <property name="alignment">
+      <set>AlignVCenter</set>
+    </property>
+  </xupdate:insert-after>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,efactura]/vbox[vbox,1]/widget[QGroupBox,gbxEFactura]/vbox[vbox,1]/widget[QGroupBox,gbxEFactura]/vbox[vbox,1]/widget[QLayoutWidget,layout43]/hbox[hbox,1]/widget[FLFieldDB,fdbCodCuentaFacturae]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta]/grid[grid,1]/widget[QLayoutWidget,layout23]/grid[grid,1]/widget[FLFieldDB,ffdbBloqPreCliImp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta]/grid[grid,1]/widget[QLayoutWidget,layout23]/grid[grid,1]/widget[FLFieldDB,fdbBloqPedCliImp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta]/grid[grid,1]/widget[QLayoutWidget,layout23]/grid[grid,1]/widget[FLFieldDB,fdbBloqFacCliImp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta]/grid[grid,1]/widget[QLayoutWidget,layout23]/grid[grid,1]/widget[FLFieldDB,fdbBloqAlbCliImp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta_2]/grid[grid,1]/widget[QLayoutWidget,layout23_2]/grid[grid,1]/widget[FLFieldDB,fdbBloqPedProImp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta_2]/grid[grid,1]/widget[QLayoutWidget,layout23_2]/grid[grid,1]/widget[FLFieldDB,fdbBloqFacCliImp_2]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:update select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]/grid[grid,1]/widget[QLayoutWidget,layout24]/grid[grid,1]/widget[QGroupBox,gbxBloqueoDocVenta_2]/grid[grid,1]/widget[QLayoutWidget,layout23_2]/grid[grid,1]/widget[FLFieldDB,fdbBloqAlbProImp]/property[minimumSize]/size[size,1]/width[width,1]/text()[1]">26</xupdate:update>
+  <xupdate:insert-after select="/UI[UI,1]/widget[QWidget,formEmpresa]/vbox[vbox,1]/widget[QTabWidget,tbwEmpresa]/widget[QWidget,Comportamiento]">
+    <widget class="QWidget">
+      <property name="name">
+        <cstring>definicionEmail</cstring>
+      </property>
+      <attribute name="title">
+        <string>&amp;Definición email</string>
+      </attribute>
+      <grid>
+        <property name="name">
+          <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+          <property name="name">
+            <cstring>layout78</cstring>
+          </property>
+          <grid>
+            <property name="name">
+              <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLabel" row="0" column="0">
+              <property name="name">
+                <cstring>textLabel1_2_3_4_2_2</cstring>
+              </property>
+              <property name="font">
+                <font>
+                  <family>Sans Serif</family>
+                  <bold>0</bold>
+                </font>
+              </property>
+              <property name="text">
+                <string>* Las definiciones de emails son a nivel local, por puesto.</string>
+              </property>
+            </widget>
+            <widget class="QPushButton" row="0" column="1">
+              <property name="name">
+                <cstring>pbnGuardarDefinicionesEmail</cstring>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>0</width>
+                  <height>30</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>180</width>
+                  <height>32767</height>
+                </size>
+              </property>
+              <property name="text">
+                <string>Guardar definiciones</string>
+              </property>
+              <property name="iconSet">
+                <iconset>image18833</iconset>
+              </property>
+              <property name="toolTip" stdset="0">
+                <string>Cambiar la ruta al fichero de clave</string>
+              </property>
+              <property name="whatsThis" stdset="0">
+                <string>Cambiar la ruta al fichero de clave</string>
+              </property>
+            </widget>
+          </grid>
+        </widget>
+        <widget class="QTabWidget" row="2" column="0">
+          <property name="name">
+            <cstring>tabDefinicionEmail</cstring>
+          </property>
+          <widget class="QWidget">
+            <property name="name">
+              <cstring>compras</cstring>
+            </property>
+            <attribute name="title">
+              <string>&amp;Compras</string>
+            </attribute>
+            <grid>
+              <property name="name">
+                <cstring>unnamed</cstring>
+              </property>
+              <widget class="QTabWidget" row="1" column="0">
+                <property name="name">
+                  <cstring>tabMailCompras</cstring>
+                </property>
+                <widget class="QWidget">
+                  <property name="name">
+                    <cstring>pedidos</cstring>
+                  </property>
+                  <attribute name="title">
+                    <string>&amp;Pedidos</string>
+                  </attribute>
+                  <grid>
+                    <property name="name">
+                      <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QFrame" row="0" column="0">
+                      <property name="name">
+                        <cstring>frame10</cstring>
+                      </property>
+                      <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                        <enum>Raised</enum>
+                      </property>
+                      <grid>
+                        <property name="name">
+                          <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                          <property name="name">
+                            <cstring>layout59</cstring>
+                          </property>
+                          <grid>
+                            <property name="name">
+                              <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="1" column="0">
+                              <property name="name">
+                                <cstring>layout57</cstring>
+                              </property>
+                              <grid>
+                                <property name="name">
+                                  <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel" row="0" column="0">
+                                  <property name="name">
+                                    <cstring>textLabel1_2</cstring>
+                                  </property>
+                                  <property name="font">
+                                    <font>
+                                      <family>Sans Serif</family>
+                                      <bold>0</bold>
+                                    </font>
+                                  </property>
+                                  <property name="text">
+                                    <string>Asunto</string>
+                                  </property>
+                                </widget>
+                                <widget class="QLineEdit" row="0" column="1">
+                                  <property name="name">
+                                    <cstring>lineEditPCAsunto</cstring>
+                                  </property>
+                                </widget>
+                              </grid>
+                            </widget>
+                          </grid>
+                        </widget>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                          <property name="name">
+                            <cstring>layout58</cstring>
+                          </property>
+                          <grid>
+                            <property name="name">
+                              <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QTextEdit" row="0" column="1">
+                              <property name="name">
+                                <cstring>textEditPCCuerpo</cstring>
+                              </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                              <property name="name">
+                                <cstring>textLabel1_2_2</cstring>
+                              </property>
+                              <property name="font">
+                                <font>
+                                  <family>Sans Serif</family>
+                                  <bold>0</bold>
+                                </font>
+                              </property>
+                              <property name="text">
+                                <string>Cuerpo</string>
+                              </property>
+                            </widget>
+                          </grid>
+                        </widget>
+                      </grid>
+                    </widget>
+                  </grid>
+                </widget>
+              </widget>
+              <widget class="QLabel" row="0" column="0">
+                <property name="name">
+                  <cstring>textLabel1_2_3_4_2_3</cstring>
+                </property>
+                <property name="font">
+                  <font>
+                    <family>Sans Serif</family>
+                    <bold>0</bold>
+                  </font>
+                </property>
+                <property name="text">
+                  <string>* Campos disponibles: &lt;CodDocumento&gt; &lt;FechaDocumento&gt; &lt;CodProveedor&gt; &lt;NomProveedor&gt;</string>
+                </property>
+                <property name="alignment">
+                  <set>WordBreak|AlignVCenter</set>
+                </property>
+              </widget>
+            </grid>
+          </widget>
+          <widget class="QWidget">
+            <property name="name">
+              <cstring>ventas</cstring>
+            </property>
+            <attribute name="title">
+              <string>&amp;Ventas</string>
+            </attribute>
+            <grid>
+              <property name="name">
+                <cstring>unnamed</cstring>
+              </property>
+              <widget class="QTabWidget" row="1" column="0">
+                <property name="name">
+                  <cstring>tabMailVentas</cstring>
+                </property>
+                <widget class="QWidget">
+                  <property name="name">
+                    <cstring>Presupuestos</cstring>
+                  </property>
+                  <attribute name="title">
+                    <string>P&amp;resupuestos</string>
+                  </attribute>
+                  <grid>
+                    <property name="name">
+                      <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QFrame" row="0" column="0">
+                      <property name="name">
+                        <cstring>frame10_4_2</cstring>
+                      </property>
+                      <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                        <enum>Raised</enum>
+                      </property>
+                      <grid>
+                        <property name="name">
+                          <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                          <property name="name">
+                            <cstring>layout59_4_2</cstring>
+                          </property>
+                          <grid>
+                            <property name="name">
+                              <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="1" column="0">
+                              <property name="name">
+                                <cstring>layout57_4_2</cstring>
+                              </property>
+                              <grid>
+                                <property name="name">
+                                  <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel" row="0" column="0">
+                                  <property name="name">
+                                    <cstring>textLabel1_2_6_2</cstring>
+                                  </property>
+                                  <property name="font">
+                                    <font>
+                                      <family>Sans Serif</family>
+                                      <bold>0</bold>
+                                    </font>
+                                  </property>
+                                  <property name="text">
+                                    <string>Asunto</string>
+                                  </property>
+                                </widget>
+                                <widget class="QLineEdit" row="0" column="1">
+                                  <property name="name">
+                                    <cstring>lineEditPRVAsunto</cstring>
+                                  </property>
+                                </widget>
+                              </grid>
+                            </widget>
+                          </grid>
+                        </widget>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                          <property name="name">
+                            <cstring>layout58_4_2</cstring>
+                          </property>
+                          <grid>
+                            <property name="name">
+                              <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QTextEdit" row="0" column="1">
+                              <property name="name">
+                                <cstring>textEditPRVCuerpo</cstring>
+                              </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                              <property name="name">
+                                <cstring>textLabel1_2_2_4_2</cstring>
+                              </property>
+                              <property name="font">
+                                <font>
+                                  <family>Sans Serif</family>
+                                  <bold>0</bold>
+                                </font>
+                              </property>
+                              <property name="text">
+                                <string>Cuerpo</string>
+                              </property>
+                            </widget>
+                          </grid>
+                        </widget>
+                      </grid>
+                    </widget>
+                  </grid>
+                </widget>
+                <widget class="QWidget">
+                  <property name="name">
+                    <cstring>pedidos</cstring>
+                  </property>
+                  <attribute name="title">
+                    <string>&amp;Pedidos</string>
+                  </attribute>
+                  <grid>
+                    <property name="name">
+                      <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QFrame" row="0" column="0">
+                      <property name="name">
+                        <cstring>frame10_4</cstring>
+                      </property>
+                      <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                        <enum>Raised</enum>
+                      </property>
+                      <grid>
+                        <property name="name">
+                          <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                          <property name="name">
+                            <cstring>layout59_4</cstring>
+                          </property>
+                          <grid>
+                            <property name="name">
+                              <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="1" column="0">
+                              <property name="name">
+                                <cstring>layout57_4</cstring>
+                              </property>
+                              <grid>
+                                <property name="name">
+                                  <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel" row="0" column="0">
+                                  <property name="name">
+                                    <cstring>textLabel1_2_6</cstring>
+                                  </property>
+                                  <property name="font">
+                                    <font>
+                                      <family>Sans Serif</family>
+                                      <bold>0</bold>
+                                    </font>
+                                  </property>
+                                  <property name="text">
+                                    <string>Asunto</string>
+                                  </property>
+                                </widget>
+                                <widget class="QLineEdit" row="0" column="1">
+                                  <property name="name">
+                                    <cstring>lineEditPVAsunto</cstring>
+                                  </property>
+                                </widget>
+                              </grid>
+                            </widget>
+                          </grid>
+                        </widget>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                          <property name="name">
+                            <cstring>layout58_4</cstring>
+                          </property>
+                          <grid>
+                            <property name="name">
+                              <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QTextEdit" row="0" column="1">
+                              <property name="name">
+                                <cstring>textEditPVCuerpo</cstring>
+                              </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                              <property name="name">
+                                <cstring>textLabel1_2_2_4</cstring>
+                              </property>
+                              <property name="font">
+                                <font>
+                                  <family>Sans Serif</family>
+                                  <bold>0</bold>
+                                </font>
+                              </property>
+                              <property name="text">
+                                <string>Cuerpo</string>
+                              </property>
+                            </widget>
+                          </grid>
+                        </widget>
+                      </grid>
+                    </widget>
+                  </grid>
+                </widget>
+                <widget class="QWidget">
+                  <property name="name">
+                    <cstring>albaranes</cstring>
+                  </property>
+                  <attribute name="title">
+                    <string>&amp;Albaranes</string>
+                  </attribute>
+                  <grid>
+                    <property name="name">
+                      <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QFrame" row="0" column="0">
+                      <property name="name">
+                        <cstring>frame10_2_2</cstring>
+                      </property>
+                      <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                        <enum>Raised</enum>
+                      </property>
+                      <grid>
+                        <property name="name">
+                          <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                          <property name="name">
+                            <cstring>layout59_2_2</cstring>
+                          </property>
+                          <grid>
+                            <property name="name">
+                              <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="1" column="0">
+                              <property name="name">
+                                <cstring>layout57_2_2</cstring>
+                              </property>
+                              <grid>
+                                <property name="name">
+                                  <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel" row="0" column="0">
+                                  <property name="name">
+                                    <cstring>textLabel1_2_4_2</cstring>
+                                  </property>
+                                  <property name="font">
+                                    <font>
+                                      <family>Sans Serif</family>
+                                      <bold>0</bold>
+                                    </font>
+                                  </property>
+                                  <property name="text">
+                                    <string>Asunto</string>
+                                  </property>
+                                </widget>
+                                <widget class="QLineEdit" row="0" column="1">
+                                  <property name="name">
+                                    <cstring>lineEditAVAsunto</cstring>
+                                  </property>
+                                </widget>
+                              </grid>
+                            </widget>
+                          </grid>
+                        </widget>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                          <property name="name">
+                            <cstring>layout58_2_2</cstring>
+                          </property>
+                          <grid>
+                            <property name="name">
+                              <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QTextEdit" row="0" column="1">
+                              <property name="name">
+                                <cstring>textEditAVCuerpo</cstring>
+                              </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                              <property name="name">
+                                <cstring>textLabel1_2_2_2_2</cstring>
+                              </property>
+                              <property name="font">
+                                <font>
+                                  <family>Sans Serif</family>
+                                  <bold>0</bold>
+                                </font>
+                              </property>
+                              <property name="text">
+                                <string>Cuerpo</string>
+                              </property>
+                            </widget>
+                          </grid>
+                        </widget>
+                      </grid>
+                    </widget>
+                  </grid>
+                </widget>
+                <widget class="QWidget">
+                  <property name="name">
+                    <cstring>facturas</cstring>
+                  </property>
+                  <attribute name="title">
+                    <string>&amp;Facturas</string>
+                  </attribute>
+                  <grid>
+                    <property name="name">
+                      <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QFrame" row="0" column="0">
+                      <property name="name">
+                        <cstring>frame10_3_2</cstring>
+                      </property>
+                      <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                        <enum>Raised</enum>
+                      </property>
+                      <grid>
+                        <property name="name">
+                          <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                          <property name="name">
+                            <cstring>layout59_3_2</cstring>
+                          </property>
+                          <grid>
+                            <property name="name">
+                              <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="1" column="0">
+                              <property name="name">
+                                <cstring>layout57_3_2</cstring>
+                              </property>
+                              <grid>
+                                <property name="name">
+                                  <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel" row="0" column="0">
+                                  <property name="name">
+                                    <cstring>textLabel1_2_5_2</cstring>
+                                  </property>
+                                  <property name="font">
+                                    <font>
+                                      <family>Sans Serif</family>
+                                      <bold>0</bold>
+                                    </font>
+                                  </property>
+                                  <property name="text">
+                                    <string>Asunto</string>
+                                  </property>
+                                </widget>
+                                <widget class="QLineEdit" row="0" column="1">
+                                  <property name="name">
+                                    <cstring>lineEditFVAsunto</cstring>
+                                  </property>
+                                </widget>
+                              </grid>
+                            </widget>
+                          </grid>
+                        </widget>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                          <property name="name">
+                            <cstring>layout58_3_2</cstring>
+                          </property>
+                          <grid>
+                            <property name="name">
+                              <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QTextEdit" row="0" column="1">
+                              <property name="name">
+                                <cstring>textEditFVCuerpo</cstring>
+                              </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                              <property name="name">
+                                <cstring>textLabel1_2_2_3_2</cstring>
+                              </property>
+                              <property name="font">
+                                <font>
+                                  <family>Sans Serif</family>
+                                  <bold>0</bold>
+                                </font>
+                              </property>
+                              <property name="text">
+                                <string>Cuerpo</string>
+                              </property>
+                            </widget>
+                          </grid>
+                        </widget>
+                      </grid>
+                    </widget>
+                  </grid>
+                </widget>
+              </widget>
+              <widget class="QLabel" row="0" column="0">
+                <property name="name">
+                  <cstring>textLabel1_2_3_4_2_3_2</cstring>
+                </property>
+                <property name="font">
+                  <font>
+                    <family>Sans Serif</family>
+                    <bold>0</bold>
+                  </font>
+                </property>
+                <property name="text">
+                  <string>* Campos disponibles: &lt;CodDocumento&gt; &lt;FechaDocumento&gt; &lt;CodCliente&gt; &lt;NomCliente&gt;</string>
+                </property>
+                <property name="alignment">
+                  <set>WordBreak|AlignVCenter</set>
+                </property>
+              </widget>
+            </grid>
+          </widget>
+        </widget>
+      </grid>
+    </widget>
+  </xupdate:insert-after>
+  <xupdate:insert-after select="/UI[UI,1]/images[images,1]/image[image48528]">
+    <image name="image18833">
+      <data format="PNG" length="359">89504e470d0a1a0a0000000d494844520000001f0000001f08060000001fae16390000012e49444154789cedd7bd2b45611800f0dfc562f25906d99824f923fc11fe07996d169332dd415186bbc96a30d82c22f2319819c84274238eba06e7948eab7b5e97f3963cf5d47b9ef739efef7c763afc8118c45c2cf8140d2c940d9fa470038fe82b031ec8c1598e97011f3781ebe88c0137b01bb2504720dc8f1d4c7e317f10b85e107ca4f9196739f31b704f01b881d19045bb0af6cd62aa40df628bf973ace10a2a69711ac3b9c6439ca5e34b8c143accd691600c175961dbe74b38ff6187a726f3ede412c59ff64aeb96a09808c17f3a2a31f1e798f87e2c3cc17a2c7c13d7b1f06a36281b3fc05e2cbcfa71a34cfc061bb1f055bc7c07afb7092758c9178be2b536f19af4f5fa0ebeecfd7e2581e82bb67cf143917dad86d09d9bbbc37daed69b66d1b8c54340ff7ffc7ebc01513565790008dace0000000049454e44ae426082</data>
+    </image>
+  </xupdate:insert-after>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+  <xupdate:delete select="/UI[UI,1]/includehints[includehints,1]/includehint[FLFieldDB.h]"/>
+</xupdate:modifications>

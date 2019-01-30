@@ -1,0 +1,13 @@
+<flpatch:modifications xmlns:flpatch="http://www.abanqg2.com/es/directori/abanq-ensambla/?flpatch" name="precioespcli">
+  <flpatch:patchXml name="factalma_general.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+  <flpatch:patchXml name="factalma_general.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="articulos.mtd" path="facturacion/almacen/tables/" style="legacy1"/>
+  <flpatch:patchXml name="clientes.mtd" path="facturacion/principal/tables/" style="legacy1"/>
+  <flpatch:patchScript name="lineaspedidoscli.qs" path="facturacion/facturacion/scripts/" style="legacy"/>
+  <flpatch:patchScript name="flfactppal.qs" path="facturacion/principal/scripts/" style="legacy"/>
+  <flpatch:patchXml name="flfactppal.xml" path="facturacion/principal/" style="legacy1"/>
+  <flpatch:addFile name="articulosclientes.ui" path="facturacion/principal/forms/"/>
+  <flpatch:patchXml name="clientes.ui" path="facturacion/principal/forms/" style="legacy1"/>
+  <flpatch:addFile name="articulosclientes.mtd" path="facturacion/principal/tables/"/>
+   <flpatch:patchXml name="articulos.ui" path="facturacion/almacen/forms/" style="legacy1"/>
+</flpatch:modifications>
