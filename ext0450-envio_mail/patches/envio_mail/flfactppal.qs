@@ -183,7 +183,15 @@ function envioMail_componerCorreo(cuerpo:String, asunto:String, arrayDest:String
 
  	var comando:Array;
 	switch (clienteCorreo) {
-		case "Thunderbird": {
+                 case "Thunderbird": {
+                        if (documentos != "") {
+                                comando = [nombreCorreo + " -compose to='" + destinatarios + "',subject='" + asunto + "',body='" + cuerpo + "',attachment=file://" + documentos];
+                        } else {
+                                comando = [nombreCorreo + " -compose to='" + destinatarios + "',subject='" + asunto + "',body='" + cuerpo + "'"];
+                                }
+                        break;
+		}
+		case "ThunderbirdLegacy": {
 			if (documentos != "") {
 				comando = [nombreCorreo, "-compose", "to='" + destinatarios + "',subject=", asunto, ",body=", cuerpo, ",attachment=file://" + documentos];
 			} else {

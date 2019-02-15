@@ -81,7 +81,7 @@ function envioMail_init()
 function envioMail_cambiarClienteCorreo()
 {
 	var util:FLUtil = new FLUtil();
-	var opciones:Array = ["KMail", "Thunderbird", "Outlook"];
+	var opciones:Array = ["KMail", "Thunderbird", "ThunderbirdLegacy", "Outlook"];
 	var codClienteCorreo:String = Input.getItem( util.translate( "scripts", "Cliente de correo:"), opciones, "KMail", false);
 
 	if (!codClienteCorreo) {
@@ -95,6 +95,7 @@ function envioMail_cambiarClienteCorreo()
 	switch (codClienteCorreo) {
 		case "KMail": { nombreCorreo = "kmail"; break; }
 		case "Thunderbird": { nombreCorreo = "thunderbird"; break; }
+                case "ThunderbirdLegacy": { nombreCorreo = "thunderbird"; break; }
 		case "Outlook": { nombreCorreo = "outlook.exe"; break; }
 	}
 	if (nombreCorreo != "") {
