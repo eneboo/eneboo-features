@@ -54,6 +54,9 @@ class proveed extends oficial /** %from: oficial */ {
 	function obtenerDatosCuentaDomProv(codProveedor:String):Array {
 		return this.ctx.proveed_obtenerDatosCuentaDomProv(codProveedor);
 	}
+	function totalesReciboProv() {
+	    return this.ctx.provee_totalesReciboProv();
+	}
 }
 //// PROVEED /////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
@@ -830,6 +833,13 @@ function proveed_obtenerDatosCuentaDomProv(codProveedor:String):Array
 	}
 
 	return datosCuentaDom;
+}
+
+function provee_totalesReciboProv()
+{
+  this.iface.curReciboProv.setValueBuffer("fechapago", formRecordrecibosprov.iface.pub_commonCalculateField("fechapago", this.iface.curReciboProv));
+  this.iface.curReciboProv.setValueBuffer("codcuentapagoprov", formRecordrecibosprov.iface.pub_commonCalculateField("codcuentapagoprov", this.iface.curReciboProv));
+  return true;
 }
 
 //// PROVEED ////////////////////////////////////////////////////
