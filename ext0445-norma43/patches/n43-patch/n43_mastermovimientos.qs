@@ -591,8 +591,8 @@ function oficial_procesarRegistro22(contenido: String)
   }
 
   ret.claveorig = campos[1];
-  ret.fechaop = util.dateDMAtoAMD(util.dateAMDtoDMA("20" + campos[2]));
-  ret.fechaval = util.dateDMAtoAMD(util.dateAMDtoDMA("20" + campos[3]));
+  ret.fechaop = "20" + campos[2].left(2) + "-" + campos[2].mid(2,2) + "-" + campos[2].right(2);
+  ret.fechaval = "20" + campos[3].left(2) + "-" + campos[3].mid(2,2) + "-" + campos[3].right(2);
   ret.cptocomun = campos[4];
   ret.cptopropio = campos[5];
   ret.debehaber = this.iface.desDebeOHaber(campos[6]);
