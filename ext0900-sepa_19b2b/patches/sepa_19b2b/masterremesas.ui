@@ -296,7 +296,7 @@
           <enum>NoFocus</enum>
         </property>
         <property name="text">
-          <string>SEPA</string>
+          <string/>
         </property>
         <property name="accel">
           <string/>
